@@ -1,0 +1,476 @@
+ Image opensearchproject/opensearch:3.9.0 Pulling 
+ Image redis:7 Pulling 
+ Image postgres:18 Pulling 
+ 9d1f594c66dc Pulling fs layer 0B
+ 0189f02e683f Pulling fs layer 0B
+ b14c48cb507d Pulling fs layer 0B
+ 46f4de2e4236 Pulling fs layer 0B
+ 4f4fb700ef54 Pulling fs layer 0B
+ e5604524ac8c Pulling fs layer 0B
+ fe7bbed45059 Pulling fs layer 0B
+ b978112db001 Pulling fs layer 0B
+ dd051e1b8c92 Pulling fs layer 0B
+ f43705d71c46 Pulling fs layer 0B
+ 1af2d1c5b5d7 Pulling fs layer 0B
+ 94e14de0ef29 Pulling fs layer 0B
+ 4f4fb700ef54 Pulling fs layer 0B
+ e68f2e5c8d50 Pulling fs layer 0B
+ 37fb86c2a767 Pulling fs layer 0B
+ 62f716619e2e Pulling fs layer 0B
+ 1837bb99b431 Pulling fs layer 0B
+ 3e6fbba58ab6 Pulling fs layer 0B
+ 335cde62193e Pulling fs layer 0B
+ 09b93095874b Pulling fs layer 0B
+ 9f5cf0b65151 Pulling fs layer 0B
+ 7b5527ff7489 Pulling fs layer 0B
+ 00f4238ff416 Pulling fs layer 0B
+ dad2840f1c78 Pulling fs layer 0B
+ 0fbd9729f0d0 Pulling fs layer 0B
+ 8c4393616907 Pulling fs layer 0B
+ 4f4fb700ef54 Already exists 0B
+ 4f4fb700ef54 Already exists 0B
+ 1af2d1c5b5d7 Download complete 0B
+ b978112db001 Download complete 0B
+ 37fb86c2a767 Downloading 4.194MB
+ dd051e1b8c92 Downloading 1.049MB
+ 9d1f594c66dc Download complete 0B
+ 62f716619e2e Download complete 0B
+ 94e14de0ef29 Download complete 0B
+ 9f5cf0b65151 Download complete 0B
+ e68f2e5c8d50 Download complete 0B
+ fe7bbed45059 Download complete 0B
+ 46f4de2e4236 Downloading 8.389MB
+ 3e6fbba58ab6 Download complete 0B
+ e5604524ac8c Download complete 0B
+ 1837bb99b431 Download complete 0B
+ dd051e1b8c92 Downloading 6.291MB
+ 7b5527ff7489 Downloading 1.049MB
+ b14c48cb507d Downloading 2.097MB
+ f43705d71c46 Downloading 4.194MB
+ 00f4238ff416 Download complete 0B
+ dad2840f1c78 Downloading 1.049MB
+ 37fb86c2a767 Downloading 12.58MB
+ 335cde62193e Downloading 1.049MB
+ 0189f02e683f Download complete 0B
+ 46f4de2e4236 Downloading 16.78MB
+ 0fbd9729f0d0 Download complete 0B
+ 09b93095874b Downloading 1.049MB
+ 46f4de2e4236 Downloading 24.12MB
+ b14c48cb507d Downloading 8.389MB
+ 997e218b00c5 Download complete 0B
+ dd051e1b8c92 Downloading 14.68MB
+ 26d06a935726 Download complete 0B
+ dad2840f1c78 Downloading 8.389MB
+ 37fb86c2a767 Downloading 19.92MB
+ ed4e4f8e1aa3 Downloading 1.049MB
+ f43705d71c46 Downloading 10.49MB
+ 335cde62193e Download complete 0B
+ 09b93095874b Download complete 0B
+ 8c4393616907 Download complete 0B
+ 7b5527ff7489 Downloading 6.291MB
+ dad2840f1c78 Downloading 17.83MB
+ 37fb86c2a767 Downloading 29.86MB
+ ed4e4f8e1aa3 Download complete 0B
+ f43705d71c46 Download complete 0B
+ 46f4de2e4236 Downloading 33.55MB
+ b14c48cb507d Downloading 19.92MB
+ 7b5527ff7489 Download complete 0B
+ 713b18672f38 Download complete 0B
+ dd051e1b8c92 Downloading 24.12MB
+ 46f4de2e4236 Downloading 45.09MB
+ b14c48cb507d Downloading 31.46MB
+ dad2840f1c78 Downloading 30.41MB
+ 37fb86c2a767 Download complete 0B
+ dd051e1b8c92 Download complete 0B
+ dd051e1b8c92 Extracting 1B
+ 37fb86c2a767 Extracting 1B
+ 46f4de2e4236 Downloading 54.53MB
+ b14c48cb507d Downloading 45.09MB
+ dad2840f1c78 Downloading 41.94MB
+ dd051e1b8c92 Extracting 1B
+ 37fb86c2a767 Extracting 1B
+ dad2840f1c78 Downloading 54.53MB
+ 46f4de2e4236 Downloading 67.11MB
+ b14c48cb507d Download complete 0B
+ b14c48cb507d Extracting 1B
+ dd051e1b8c92 Extracting 1B
+ 37fb86c2a767 Extracting 1B
+ dad2840f1c78 Downloading 65.01MB
+ 46f4de2e4236 Downloading 78.64MB
+ dd051e1b8c92 Extracting 1B
+ b14c48cb507d Extracting 1B
+ 37fb86c2a767 Extracting 1B
+ dad2840f1c78 Downloading 76.55MB
+ 46f4de2e4236 Downloading 90.18MB
+ b14c48cb507d Extracting 1B
+ dd051e1b8c92 Extracting 1B
+ 37fb86c2a767 Extracting 1B
+ dad2840f1c78 Downloading 90.18MB
+ 46f4de2e4236 Downloading 100.7MB
+ b14c48cb507d Extracting 1B
+ dd051e1b8c92 Extracting 1B
+ 37fb86c2a767 Extracting 1B
+ dad2840f1c78 Downloading 102.8MB
+ 46f4de2e4236 Downloading 114.3MB
+ b14c48cb507d Extracting 1B
+ dd051e1b8c92 Extracting 1B
+ 37fb86c2a767 Extracting 1B
+ 46f4de2e4236 Downloading 129MB
+ dad2840f1c78 Downloading 117.4MB
+ b14c48cb507d Extracting 1B
+ dd051e1b8c92 Extracting 1B
+ 37fb86c2a767 Extracting 1B
+ 46f4de2e4236 Downloading 147.8MB
+ dad2840f1c78 Download complete 0B
+ dd051e1b8c92 Extracting 1B
+ b14c48cb507d Extracting 1B
+ 37fb86c2a767 Extracting 1B
+ 46f4de2e4236 Downloading 167.8MB
+ b14c48cb507d Extracting 1B
+ dd051e1b8c92 Extracting 1B
+ 37fb86c2a767 Extracting 1B
+ 46f4de2e4236 Downloading 188.7MB
+ b14c48cb507d Extracting 1B
+ dd051e1b8c92 Extracting 2B
+ 37fb86c2a767 Extracting 1B
+ 46f4de2e4236 Downloading 206.6MB
+ b14c48cb507d Extracting 1B
+ dd051e1b8c92 Extracting 2B
+ 37fb86c2a767 Extracting 2B
+ 46f4de2e4236 Downloading 224.4MB
+ b14c48cb507d Extracting 1B
+ dd051e1b8c92 Extracting 2B
+ 37fb86c2a767 Extracting 2B
+ 46f4de2e4236 Downloading 245.4MB
+ b14c48cb507d Extracting 2B
+ dd051e1b8c92 Extracting 2B
+ 37fb86c2a767 Extracting 2B
+ 46f4de2e4236 Downloading 266.3MB
+ b14c48cb507d Extracting 2B
+ dd051e1b8c92 Extracting 2B
+ 37fb86c2a767 Extracting 2B
+ 46f4de2e4236 Downloading 287.3MB
+ dd051e1b8c92 Extracting 2B
+ b14c48cb507d Extracting 2B
+ 37fb86c2a767 Extracting 2B
+ 46f4de2e4236 Downloading 299.9MB
+ b14c48cb507d Extracting 2B
+ dd051e1b8c92 Extracting 2B
+ 37fb86c2a767 Extracting 2B
+ 46f4de2e4236 Downloading 315.6MB
+ b14c48cb507d Extracting 2B
+ dd051e1b8c92 Extracting 2B
+ 37fb86c2a767 Extracting 2B
+ 46f4de2e4236 Downloading 335.5MB
+ 0fbd9729f0d0 Pull complete 0B
+ b14c48cb507d Extracting 2B
+ 09b93095874b Extracting 1B
+ dd051e1b8c92 Extracting 2B
+ 37fb86c2a767 Pull complete 0B
+ 46f4de2e4236 Downloading 354.4MB
+ 09b93095874b Extracting 1B
+ dd051e1b8c92 Extracting 2B
+ b14c48cb507d Extracting 2B
+ 46f4de2e4236 Downloading 363.9MB
+ 94e14de0ef29 Extracting 1B
+ b14c48cb507d Extracting 2B
+ 09b93095874b Extracting 1B
+ dd051e1b8c92 Pull complete 0B
+ 46f4de2e4236 Downloading 373.3MB
+ b14c48cb507d Extracting 2B
+ 94e14de0ef29 Pull complete 0B
+ e68f2e5c8d50 Pull complete 0B
+ f43705d71c46 Extracting 1B
+ 09b93095874b Extracting 1B
+ 46f4de2e4236 Downloading 393.2MB
+ f43705d71c46 Extracting 1B
+ b14c48cb507d Extracting 2B
+ 09b93095874b Pull complete 0B
+ 8c4393616907 Extracting 1B
+ 46f4de2e4236 Downloading 411MB
+ f43705d71c46 Extracting 1B
+ b14c48cb507d Extracting 3B
+ 8c4393616907 Pull complete 0B
+ 7b5527ff7489 Extracting 1B
+ 46f4de2e4236 Downloading 432MB
+ f43705d71c46 Extracting 1B
+ b14c48cb507d Extracting 3B
+ 7b5527ff7489 Extracting 1B
+ 46f4de2e4236 Downloading 453MB
+ f43705d71c46 Extracting 1B
+ b14c48cb507d Extracting 3B
+ 7b5527ff7489 Extracting 1B
+ 46f4de2e4236 Downloading 475MB
+ 4f4fb700ef54 Pull complete 0B
+ 1af2d1c5b5d7 Pull complete 0B
+ b978112db001 Extracting 1B
+ f43705d71c46 Pull complete 0B
+ 7b5527ff7489 Extracting 1B
+ b14c48cb507d Extracting 3B
+ b978112db001 Pull complete 0B
+ Image redis:7 Pulled 
+ 46f4de2e4236 Downloading 492.8MB
+ b14c48cb507d Extracting 3B
+ 335cde62193e Extracting 1B
+ 7b5527ff7489 Pull complete 0B
+ 46f4de2e4236 Downloading 515.9MB
+ 9f5cf0b65151 Pull complete 0B
+ 3e6fbba58ab6 Pull complete 0B
+ b14c48cb507d Extracting 3B
+ 335cde62193e Pull complete 0B
+ dad2840f1c78 Extracting 1B
+ 46f4de2e4236 Downloading 539MB
+ dad2840f1c78 Extracting 1B
+ b14c48cb507d Extracting 3B
+ 46f4de2e4236 Downloading 562MB
+ dad2840f1c78 Extracting 1B
+ b14c48cb507d Extracting 3B
+ 46f4de2e4236 Downloading 583MB
+ dad2840f1c78 Extracting 1B
+ b14c48cb507d Extracting 3B
+ 46f4de2e4236 Downloading 609.2MB
+ dad2840f1c78 Extracting 1B
+ b14c48cb507d Extracting 3B
+ 46f4de2e4236 Downloading 632.3MB
+ dad2840f1c78 Extracting 1B
+ b14c48cb507d Extracting 4B
+ 46f4de2e4236 Downloading 653.3MB
+ dad2840f1c78 Extracting 1B
+ b14c48cb507d Extracting 4B
+ 46f4de2e4236 Downloading 676.3MB
+ dad2840f1c78 Extracting 1B
+ b14c48cb507d Extracting 4B
+ 46f4de2e4236 Downloading 699.4MB
+ dad2840f1c78 Extracting 1B
+ b14c48cb507d Extracting 4B
+ 46f4de2e4236 Downloading 721.4MB
+ dad2840f1c78 Extracting 1B
+ 0189f02e683f Extracting 1B
+ b14c48cb507d Pull complete 0B
+ 46f4de2e4236 Downloading 744.5MB
+ 0189f02e683f Extracting 1B
+ dad2840f1c78 Extracting 2B
+ 46f4de2e4236 Downloading 766.5MB
+ dad2840f1c78 Extracting 2B
+ 0189f02e683f Pull complete 0B
+ 46f4de2e4236 Downloading 789.6MB
+ dad2840f1c78 Extracting 2B
+ fe7bbed45059 Pull complete 0B
+ 46f4de2e4236 Downloading 815.8MB
+ dad2840f1c78 Extracting 2B
+ 46f4de2e4236 Downloading 845.2MB
+ dad2840f1c78 Extracting 2B
+ 46f4de2e4236 Downloading 870.3MB
+ dad2840f1c78 Extracting 2B
+ 46f4de2e4236 Downloading 896.5MB
+ dad2840f1c78 Extracting 2B
+ 46f4de2e4236 Downloading 923.8MB
+ dad2840f1c78 Extracting 2B
+ 46f4de2e4236 Downloading 954.2MB
+ dad2840f1c78 Extracting 2B
+ 46f4de2e4236 Downloading 981.5MB
+ dad2840f1c78 Extracting 2B
+ 46f4de2e4236 Downloading 1.009GB
+ dad2840f1c78 Extracting 2B
+ 46f4de2e4236 Downloading 1.036GB
+ dad2840f1c78 Extracting 3B
+ 46f4de2e4236 Downloading 1.063GB
+ dad2840f1c78 Extracting 3B
+ 46f4de2e4236 Downloading 1.094GB
+ dad2840f1c78 Extracting 3B
+ 46f4de2e4236 Downloading 1.1GB
+ dad2840f1c78 Extracting 3B
+ 46f4de2e4236 Downloading 1.1GB
+ dad2840f1c78 Extracting 3B
+ 46f4de2e4236 Downloading 1.1GB
+ dad2840f1c78 Extracting 3B
+ 46f4de2e4236 Downloading 1.1GB
+ dad2840f1c78 Extracting 3B
+ 46f4de2e4236 Downloading 1.1GB
+ dad2840f1c78 Extracting 3B
+ 46f4de2e4236 Downloading 1.1GB
+ dad2840f1c78 Extracting 3B
+ 46f4de2e4236 Downloading 1.1GB
+ dad2840f1c78 Extracting 3B
+ 46f4de2e4236 Downloading 1.1GB
+ dad2840f1c78 Extracting 4B
+ 46f4de2e4236 Downloading 1.1GB
+ dad2840f1c78 Extracting 4B
+ 46f4de2e4236 Downloading 1.1GB
+ dad2840f1c78 Extracting 4B
+ 46f4de2e4236 Downloading 1.1GB
+ dad2840f1c78 Extracting 4B
+ 46f4de2e4236 Downloading 1.1GB
+ dad2840f1c78 Extracting 4B
+ 46f4de2e4236 Downloading 1.1GB
+ dad2840f1c78 Extracting 4B
+ 46f4de2e4236 Downloading 1.1GB
+ 46f4de2e4236 Downloading 1.1GB
+ 46f4de2e4236 Downloading 1.1GB
+ 46f4de2e4236 Downloading 1.1GB
+ dad2840f1c78 Pull complete 0B
+ 46f4de2e4236 Downloading 1.1GB
+ 46f4de2e4236 Downloading 1.1GB
+ 46f4de2e4236 Downloading 1.1GB
+ 46f4de2e4236 Downloading 1.1GB
+ 62f716619e2e Pull complete 0B
+ 1837bb99b431 Pull complete 0B
+ 00f4238ff416 Pull complete 0B
+ Image postgres:18 Pulled 
+ 46f4de2e4236 Download complete 0B
+ 46f4de2e4236 Extracting 1B
+ 46f4de2e4236 Extracting 1B
+ 46f4de2e4236 Extracting 1B
+ 46f4de2e4236 Extracting 1B
+ 46f4de2e4236 Extracting 1B
+ 46f4de2e4236 Extracting 1B
+ 46f4de2e4236 Extracting 1B
+ 46f4de2e4236 Extracting 1B
+ 46f4de2e4236 Extracting 1B
+ 46f4de2e4236 Extracting 1B
+ 46f4de2e4236 Extracting 1B
+ 46f4de2e4236 Extracting 2B
+ 46f4de2e4236 Extracting 2B
+ 46f4de2e4236 Extracting 2B
+ 46f4de2e4236 Extracting 2B
+ 46f4de2e4236 Extracting 2B
+ 46f4de2e4236 Extracting 2B
+ 46f4de2e4236 Extracting 2B
+ 46f4de2e4236 Extracting 2B
+ 46f4de2e4236 Extracting 2B
+ 46f4de2e4236 Extracting 2B
+ 46f4de2e4236 Extracting 3B
+ 46f4de2e4236 Extracting 3B
+ 46f4de2e4236 Extracting 3B
+ 46f4de2e4236 Extracting 3B
+ 46f4de2e4236 Extracting 3B
+ 46f4de2e4236 Extracting 3B
+ 46f4de2e4236 Extracting 3B
+ 46f4de2e4236 Extracting 3B
+ 46f4de2e4236 Extracting 3B
+ 46f4de2e4236 Extracting 3B
+ 46f4de2e4236 Extracting 4B
+ 46f4de2e4236 Extracting 4B
+ 46f4de2e4236 Extracting 4B
+ 46f4de2e4236 Extracting 4B
+ 46f4de2e4236 Extracting 4B
+ 46f4de2e4236 Extracting 4B
+ 46f4de2e4236 Extracting 4B
+ 46f4de2e4236 Extracting 4B
+ 46f4de2e4236 Extracting 4B
+ 46f4de2e4236 Extracting 4B
+ 46f4de2e4236 Extracting 5B
+ 46f4de2e4236 Extracting 5B
+ 46f4de2e4236 Extracting 5B
+ 46f4de2e4236 Extracting 5B
+ 46f4de2e4236 Extracting 5B
+ 46f4de2e4236 Extracting 5B
+ 46f4de2e4236 Extracting 5B
+ 46f4de2e4236 Extracting 5B
+ 46f4de2e4236 Extracting 5B
+ 46f4de2e4236 Extracting 6B
+ 46f4de2e4236 Extracting 6B
+ 46f4de2e4236 Extracting 6B
+ 46f4de2e4236 Extracting 6B
+ 46f4de2e4236 Extracting 6B
+ 46f4de2e4236 Extracting 6B
+ 46f4de2e4236 Extracting 6B
+ 46f4de2e4236 Extracting 6B
+ 46f4de2e4236 Extracting 6B
+ 46f4de2e4236 Extracting 6B
+ 46f4de2e4236 Extracting 6B
+ 46f4de2e4236 Extracting 7B
+ 46f4de2e4236 Extracting 7B
+ 46f4de2e4236 Extracting 7B
+ 46f4de2e4236 Pull complete 0B
+ 4f4fb700ef54 Pull complete 0B
+ 9d1f594c66dc Pull complete 0B
+ e5604524ac8c Pull complete 0B
+ Image opensearchproject/opensearch:3.9.0 Pulled 
+ Network docker_services_cli_default Creating 
+ Network docker_services_cli_default Created 
+ Container docker_services_cli-postgresql-1 Creating 
+ Container docker_services_cli-opensearch-1 Creating 
+ Container docker_services_cli-redis-1 Creating 
+ Container docker_services_cli-postgresql-1 Created 
+ Container docker_services_cli-redis-1 Created 
+ Container docker_services_cli-opensearch-1 Created 
+ Container docker_services_cli-postgresql-1 Starting 
+ Container docker_services_cli-opensearch-1 Starting 
+ Container docker_services_cli-redis-1 Starting 
+ Container docker_services_cli-opensearch-1 Started 
+ Container docker_services_cli-redis-1 Started 
+ Container docker_services_cli-postgresql-1 Started 
+============================= test session starts ==============================
+platform linux -- Python 3.14.10, pytest-8.4.2, pluggy-1.7.0
+rootdir: /home/runner/work/itd-runner/itd-runner/workdir/tests/invenio-records-permissions/original
+configfile: pyproject.toml
+testpaths: tests, invenio_records_permissions
+plugins: github-actions-annotate-failures-0.4.2, black-0.6.0, mock-3.17.0, isort-4.0.0, invenio-4.1.0, pydocstyle-2.4.0, cov-7.1.0, flask-1.3.0, platformdirs-4.14.8, pycodestyle-2.5.0
+collected 89 items
+::warning file=workdir/tests/invenio-records-permissions/original/tests/test_permissions_base.py,line=24::cannot collect test class 'TestPermissionPolicy' because it has a __init__ constructor (from: tests/test_permissions_base.py)
+
+tests/conftest.py ...                                                    [  3%]
+tests/test_composite_generator.py ...........                            [ 15%]
+tests/test_generators.py .................                               [ 34%]
+tests/test_invenio_records_permissions.py ....                           [ 39%]
+tests/test_permissions_base.py ...::warning file=workdir/tests/invenio-records-permissions/original/.venv/lib/python3.14/site-packages/invenio_rest/ext.py,line=24::CSRF validation will be enabled by default in the version 1.3.x
+....                                   [ 47%]
+tests/test_record_permission_policy.py ...::warning file=workdir/tests/invenio-records-permissions/original/.venv/lib/python3.14/site-packages/invenio_rest/ext.py,line=24::CSRF validation will be enabled by default in the version 1.3.x
+.....                          [ 56%]
+tests/test_same_as_generator.py ...::warning file=workdir/tests/invenio-records-permissions/original/.venv/lib/python3.14/site-packages/invenio_rest/ext.py,line=24::CSRF validation will be enabled by default in the version 1.3.x
+.........                             [ 69%]
+invenio_records_permissions/__init__.py ...                              [ 73%]
+invenio_records_permissions/api.py ...                                   [ 76%]
+invenio_records_permissions/config.py ...                                [ 79%]
+invenio_records_permissions/errors.py ...                                [ 83%]
+invenio_records_permissions/ext.py ...                                   [ 86%]
+invenio_records_permissions/generators.py ...                            [ 89%]
+invenio_records_permissions/policies/__init__.py ...                     [ 93%]
+invenio_records_permissions/policies/base.py ...                         [ 96%]
+invenio_records_permissions/policies/records.py ...                      [100%]
+
+=============================== warnings summary ===============================
+tests/test_permissions_base.py:24
+  /home/runner/work/itd-runner/itd-runner/workdir/tests/invenio-records-permissions/original/tests/test_permissions_base.py:24: PytestCollectionWarning: cannot collect test class 'TestPermissionPolicy' because it has a __init__ constructor (from: tests/test_permissions_base.py)
+    class TestPermissionPolicy(BasePermissionPolicy):
+
+tests/test_permissions_base.py::test_base_permission_policy_generators
+tests/test_record_permission_policy.py::test_delete_record_policy
+tests/test_same_as_generator.py::test_same_as_basic_delegation
+  /home/runner/work/itd-runner/itd-runner/workdir/tests/invenio-records-permissions/original/.venv/lib/python3.14/site-packages/invenio_rest/ext.py:24: FutureWarning: CSRF validation will be enabled by default in the version 1.3.x
+    self.init_app(app)
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+- generated xml file: /home/runner/work/itd-runner/itd-runner/workdir/artifacts/invenio-records-permissions/original_junit.xml -
+================================ tests coverage ================================
+_______________ coverage: platform linux, python 3.14.10-final-0 _______________
+
+Name                                               Stmts   Miss  Cover   Missing
+--------------------------------------------------------------------------------
+invenio_records_permissions/__init__.py                4      0   100%
+invenio_records_permissions/api.py                     6      0   100%
+invenio_records_permissions/config.py                  2      0   100%
+invenio_records_permissions/errors.py                  1      0   100%
+invenio_records_permissions/ext.py                    14      1    93%   27
+invenio_records_permissions/generators.py            145      2    99%   178, 275
+invenio_records_permissions/policies/__init__.py       2      0   100%
+invenio_records_permissions/policies/base.py          44      0   100%
+invenio_records_permissions/policies/records.py       31      7    77%   25, 40-44, 93
+--------------------------------------------------------------------------------
+TOTAL                                                249     10    96%
+======================== 89 passed, 4 warnings in 7.58s ========================
+ Container docker_services_cli-redis-1 Stopping 
+ Container docker_services_cli-opensearch-1 Stopping 
+ Container docker_services_cli-postgresql-1 Stopping 
+ Container docker_services_cli-redis-1 Stopped 
+ Container docker_services_cli-redis-1 Removing 
+ Container docker_services_cli-postgresql-1 Stopped 
+ Container docker_services_cli-postgresql-1 Removing 
+ Container docker_services_cli-postgresql-1 Removed 
+ Container docker_services_cli-redis-1 Removed 
+ Container docker_services_cli-opensearch-1 Stopped 
+ Container docker_services_cli-opensearch-1 Removing 
+ Container docker_services_cli-opensearch-1 Removed 
+ Network docker_services_cli_default Removing 
+ Network docker_services_cli_default Removed 

@@ -1,0 +1,389 @@
+ Image opensearchproject/opensearch:3.9.0 Pulling 
+ Image postgres:18 Pulling 
+ 7cb67b3b537a Pulling fs layer 0B
+ 0f12a37b90bb Pulling fs layer 0B
+ 8e4857f35fce Pulling fs layer 0B
+ 7fe3468bf416 Pulling fs layer 0B
+ 84a852dae169 Pulling fs layer 0B
+ edf2405c6afe Pulling fs layer 0B
+ a1361b767ece Pulling fs layer 0B
+ c1436cf65049 Pulling fs layer 0B
+ 40748add9f4f Pulling fs layer 0B
+ 61061a425fb0 Pulling fs layer 0B
+ 0afa8bd0fe3a Pulling fs layer 0B
+ 1c59edd7eb40 Pulling fs layer 0B
+ 46f4de2e4236 Pulling fs layer 0B
+ e5604524ac8c Pulling fs layer 0B
+ b14c48cb507d Pulling fs layer 0B
+ 4f4fb700ef54 Pulling fs layer 0B
+ 0189f02e683f Pulling fs layer 0B
+ fe7bbed45059 Pulling fs layer 0B
+ 9d1f594c66dc Pulling fs layer 0B
+ 4f4fb700ef54 Already exists 0B
+ 7cb67b3b537a Download complete 0B
+ 7fe3468bf416 Download complete 0B
+ 1c59edd7eb40 Download complete 0B
+ 46f4de2e4236 Downloading 23.07MB
+ edf2405c6afe Downloading 1.049MB
+ a1361b767ece Downloading 2.097MB
+ fe7bbed45059 Download complete 0B
+ 0f12a37b90bb Download complete 0B
+ 9d1f594c66dc Download complete 0B
+ 0afa8bd0fe3a Download complete 0B
+ e5604524ac8c Download complete 0B
+ b14c48cb507d Downloading 1.049MB
+ 0189f02e683f Downloading 1.049MB
+ c1436cf65049 Download complete 0B
+ 8e4857f35fce Download complete 0B
+ 84a852dae169 Download complete 0B
+ 61061a425fb0 Download complete 0B
+ 40748add9f4f Downloading 1.049MB
+ b14c48cb507d Downloading 10.49MB
+ 3c65b9afb00e Downloading 3.146MB
+ 40748add9f4f Downloading 10.49MB
+ edf2405c6afe Downloading 13.63MB
+ a1361b767ece Downloading 8.204MB
+ 0189f02e683f Download complete 0B
+ 46f4de2e4236 Downloading 34.6MB
+ 46f4de2e4236 Downloading 49.28MB
+ b14c48cb507d Downloading 24.12MB
+ edf2405c6afe Downloading 29.36MB
+ a1361b767ece Download complete 0B
+ 59e8b6ceb028 Download complete 0B
+ 3c65b9afb00e Download complete 0B
+ 40748add9f4f Downloading 26.21MB
+ 40748add9f4f Downloading 29.84MB
+ b14c48cb507d Downloading 49.28MB
+ 46f4de2e4236 Downloading 71.3MB
+ edf2405c6afe Downloading 52.43MB
+ b14c48cb507d Downloading 54.57MB
+ 46f4de2e4236 Downloading 99.61MB
+ 40748add9f4f Downloading 29.84MB
+ edf2405c6afe Downloading 81.79MB
+ b14c48cb507d Downloading 54.57MB
+ 46f4de2e4236 Downloading 108MB
+ edf2405c6afe Downloading 91.23MB
+ b14c48cb507d Downloading 54.57MB
+ 46f4de2e4236 Downloading 139.5MB
+ edf2405c6afe Downloading 121.4MB
+ b14c48cb507d Downloading 54.57MB
+ 46f4de2e4236 Downloading 179.3MB
+ 40748add9f4f Download complete 0B
+ edf2405c6afe Downloading 121.4MB
+ 40748add9f4f Extracting 1B
+ 46f4de2e4236 Downloading 216MB
+ b14c48cb507d Downloading 54.57MB
+ edf2405c6afe Downloading 121.4MB
+ 40748add9f4f Extracting 1B
+ 46f4de2e4236 Downloading 241.2MB
+ b14c48cb507d Downloading 54.57MB
+ edf2405c6afe Downloading 121.4MB
+ 46f4de2e4236 Downloading 245.4MB
+ 40748add9f4f Extracting 1B
+ edf2405c6afe Downloading 121.4MB
+ 40748add9f4f Extracting 1B
+ edf2405c6afe Downloading 121.4MB
+ 46f4de2e4236 Downloading 265.3MB
+ 40748add9f4f Extracting 1B
+ 46f4de2e4236 Downloading 300.9MB
+ edf2405c6afe Downloading 121.4MB
+ b14c48cb507d Download complete 0B
+ b14c48cb507d Extracting 1B
+ 40748add9f4f Extracting 1B
+ 46f4de2e4236 Downloading 338.7MB
+ edf2405c6afe Download complete 0B
+ b14c48cb507d Extracting 1B
+ 40748add9f4f Extracting 1B
+ 46f4de2e4236 Downloading 374.3MB
+ b14c48cb507d Extracting 1B
+ 40748add9f4f Extracting 1B
+ 46f4de2e4236 Downloading 407.9MB
+ b14c48cb507d Extracting 1B
+ 40748add9f4f Extracting 1B
+ 46f4de2e4236 Downloading 440.4MB
+ b14c48cb507d Extracting 1B
+ 40748add9f4f Extracting 1B
+ 46f4de2e4236 Downloading 475MB
+ b14c48cb507d Extracting 1B
+ 40748add9f4f Extracting 2B
+ 46f4de2e4236 Downloading 508.6MB
+ b14c48cb507d Extracting 1B
+ 40748add9f4f Extracting 2B
+ 46f4de2e4236 Downloading 521.1MB
+ b14c48cb507d Extracting 1B
+ 46f4de2e4236 Downloading 524.3MB
+ 40748add9f4f Pull complete 0B
+ b14c48cb507d Extracting 1B
+ 8e4857f35fce Extracting 1B
+ 46f4de2e4236 Downloading 555.7MB
+ 0f12a37b90bb Extracting 1B
+ 8e4857f35fce Pull complete 0B
+ b14c48cb507d Extracting 1B
+ 46f4de2e4236 Downloading 586.2MB
+ 0f12a37b90bb Extracting 1B
+ b14c48cb507d Extracting 2B
+ 46f4de2e4236 Downloading 622.9MB
+ b14c48cb507d Extracting 2B
+ 0f12a37b90bb Pull complete 0B
+ 46f4de2e4236 Downloading 657.5MB
+ c1436cf65049 Pull complete 0B
+ b14c48cb507d Extracting 2B
+ a1361b767ece Extracting 1B
+ 46f4de2e4236 Downloading 690MB
+ b14c48cb507d Extracting 2B
+ a1361b767ece Extracting 1B
+ 46f4de2e4236 Downloading 721.4MB
+ 84a852dae169 Extracting 1B
+ b14c48cb507d Extracting 2B
+ a1361b767ece Pull complete 0B
+ 46f4de2e4236 Downloading 756MB
+ 7fe3468bf416 Pull complete 0B
+ 0afa8bd0fe3a Pull complete 0B
+ 84a852dae169 Pull complete 0B
+ b14c48cb507d Extracting 2B
+ edf2405c6afe Extracting 1B
+ 46f4de2e4236 Downloading 787.5MB
+ edf2405c6afe Extracting 1B
+ b14c48cb507d Extracting 2B
+ 46f4de2e4236 Downloading 824.2MB
+ edf2405c6afe Extracting 1B
+ b14c48cb507d Extracting 2B
+ 46f4de2e4236 Downloading 858.8MB
+ edf2405c6afe Extracting 1B
+ b14c48cb507d Extracting 2B
+ 46f4de2e4236 Downloading 891.3MB
+ edf2405c6afe Extracting 1B
+ b14c48cb507d Extracting 2B
+ 46f4de2e4236 Downloading 924.8MB
+ edf2405c6afe Extracting 1B
+ b14c48cb507d Pull complete 0B
+ 46f4de2e4236 Downloading 961.5MB
+ edf2405c6afe Extracting 1B
+ 0189f02e683f Extracting 1B
+ 46f4de2e4236 Downloading 995.1MB
+ 0189f02e683f Pull complete 0B
+ edf2405c6afe Extracting 1B
+ 46f4de2e4236 Downloading 999.3MB
+ 46f4de2e4236 Downloading 1GB
+ edf2405c6afe Extracting 1B
+ edf2405c6afe Extracting 1B
+ 46f4de2e4236 Downloading 1.015GB
+ fe7bbed45059 Extracting 1B
+ edf2405c6afe Extracting 1B
+ 46f4de2e4236 Downloading 1.054GB
+ fe7bbed45059 Pull complete 0B
+ edf2405c6afe Extracting 2B
+ 46f4de2e4236 Downloading 1.094GB
+ edf2405c6afe Extracting 2B
+ 46f4de2e4236 Downloading 1.1GB
+ edf2405c6afe Extracting 2B
+ 46f4de2e4236 Downloading 1.1GB
+ edf2405c6afe Extracting 2B
+ 46f4de2e4236 Downloading 1.1GB
+ edf2405c6afe Extracting 2B
+ 46f4de2e4236 Downloading 1.1GB
+ edf2405c6afe Extracting 2B
+ 46f4de2e4236 Downloading 1.1GB
+ edf2405c6afe Extracting 2B
+ 46f4de2e4236 Downloading 1.1GB
+ edf2405c6afe Extracting 2B
+ 46f4de2e4236 Downloading 1.1GB
+ edf2405c6afe Extracting 2B
+ 46f4de2e4236 Downloading 1.1GB
+ edf2405c6afe Extracting 2B
+ 46f4de2e4236 Downloading 1.1GB
+ edf2405c6afe Extracting 3B
+ 46f4de2e4236 Downloading 1.1GB
+ edf2405c6afe Extracting 3B
+ 46f4de2e4236 Downloading 1.1GB
+ 46f4de2e4236 Downloading 1.1GB
+ edf2405c6afe Pull complete 0B
+ 46f4de2e4236 Downloading 1.1GB
+ 46f4de2e4236 Downloading 1.1GB
+ 1c59edd7eb40 Extracting 1B
+ 46f4de2e4236 Downloading 1.1GB
+ 1c59edd7eb40 Extracting 1B
+ 46f4de2e4236 Downloading 1.1GB
+ 1c59edd7eb40 Extracting 1B
+ 46f4de2e4236 Downloading 1.1GB
+ 46f4de2e4236 Downloading 1.1GB
+ 1c59edd7eb40 Pull complete 0B
+ 46f4de2e4236 Downloading 1.1GB
+ 46f4de2e4236 Downloading 1.1GB
+ 61061a425fb0 Extracting 1B
+ 46f4de2e4236 Downloading 1.1GB
+ 61061a425fb0 Extracting 1B
+ 46f4de2e4236 Downloading 1.1GB
+ 46f4de2e4236 Downloading 1.1GB
+ 61061a425fb0 Pull complete 0B
+ 46f4de2e4236 Downloading 1.1GB
+ 46f4de2e4236 Downloading 1.1GB
+ 46f4de2e4236 Downloading 1.1GB
+ 7cb67b3b537a Extracting 1B
+ 46f4de2e4236 Downloading 1.1GB
+ 46f4de2e4236 Downloading 1.1GB
+ 46f4de2e4236 Downloading 1.1GB
+ 7cb67b3b537a Pull complete 0B
+ 46f4de2e4236 Downloading 1.1GB
+ 46f4de2e4236 Downloading 1.1GB
+ 46f4de2e4236 Downloading 1.1GB
+ 46f4de2e4236 Downloading 1.1GB
+ 46f4de2e4236 Downloading 1.1GB
+ 46f4de2e4236 Downloading 1.1GB
+ 46f4de2e4236 Downloading 1.1GB
+ 46f4de2e4236 Downloading 1.1GB
+ 46f4de2e4236 Downloading 1.1GB
+ Image postgres:18 Pulled 
+ 46f4de2e4236 Downloading 1.1GB
+ 46f4de2e4236 Downloading 1.1GB
+ 46f4de2e4236 Downloading 1.1GB
+ 46f4de2e4236 Downloading 1.1GB
+ 46f4de2e4236 Downloading 1.1GB
+ 46f4de2e4236 Downloading 1.1GB
+ 46f4de2e4236 Downloading 1.1GB
+ 46f4de2e4236 Downloading 1.1GB
+ 46f4de2e4236 Downloading 1.1GB
+ 46f4de2e4236 Downloading 1.1GB
+ 46f4de2e4236 Downloading 1.1GB
+ 46f4de2e4236 Downloading 1.1GB
+ 46f4de2e4236 Downloading 1.1GB
+ 46f4de2e4236 Downloading 1.1GB
+ 46f4de2e4236 Downloading 1.1GB
+ 46f4de2e4236 Downloading 1.1GB
+ 46f4de2e4236 Downloading 1.1GB
+ 46f4de2e4236 Downloading 1.1GB
+ 46f4de2e4236 Downloading 1.1GB
+ 46f4de2e4236 Downloading 1.1GB
+ 46f4de2e4236 Download complete 0B
+ 46f4de2e4236 Extracting 1B
+ 46f4de2e4236 Extracting 1B
+ 46f4de2e4236 Extracting 1B
+ 46f4de2e4236 Extracting 1B
+ 46f4de2e4236 Extracting 1B
+ 46f4de2e4236 Extracting 1B
+ 46f4de2e4236 Extracting 1B
+ 46f4de2e4236 Extracting 1B
+ 46f4de2e4236 Extracting 1B
+ 46f4de2e4236 Extracting 1B
+ 46f4de2e4236 Extracting 2B
+ 46f4de2e4236 Extracting 2B
+ 46f4de2e4236 Extracting 2B
+ 46f4de2e4236 Extracting 2B
+ 46f4de2e4236 Extracting 2B
+ 46f4de2e4236 Extracting 2B
+ 46f4de2e4236 Extracting 2B
+ 46f4de2e4236 Extracting 2B
+ 46f4de2e4236 Extracting 2B
+ 46f4de2e4236 Extracting 2B
+ 46f4de2e4236 Extracting 3B
+ 46f4de2e4236 Extracting 3B
+ 46f4de2e4236 Extracting 3B
+ 46f4de2e4236 Extracting 3B
+ 46f4de2e4236 Extracting 3B
+ 46f4de2e4236 Extracting 3B
+ 46f4de2e4236 Extracting 3B
+ 46f4de2e4236 Extracting 3B
+ 46f4de2e4236 Extracting 3B
+ 46f4de2e4236 Extracting 3B
+ 46f4de2e4236 Extracting 4B
+ 46f4de2e4236 Extracting 4B
+ 46f4de2e4236 Extracting 4B
+ 46f4de2e4236 Extracting 4B
+ 46f4de2e4236 Extracting 4B
+ 46f4de2e4236 Extracting 4B
+ 46f4de2e4236 Extracting 4B
+ 46f4de2e4236 Extracting 4B
+ 46f4de2e4236 Extracting 4B
+ 46f4de2e4236 Extracting 4B
+ 46f4de2e4236 Extracting 5B
+ 46f4de2e4236 Extracting 5B
+ 46f4de2e4236 Extracting 5B
+ 46f4de2e4236 Extracting 5B
+ 4f4fb700ef54 Pull complete 0B
+ 46f4de2e4236 Pull complete 0B
+ 9d1f594c66dc Pull complete 0B
+ e5604524ac8c Pull complete 0B
+ Image opensearchproject/opensearch:3.9.0 Pulled 
+ Network docker_services_cli_default Creating 
+ Network docker_services_cli_default Created 
+ Container docker_services_cli-postgresql-1 Creating 
+ Container docker_services_cli-opensearch-1 Creating 
+ Container docker_services_cli-postgresql-1 Created 
+ Container docker_services_cli-opensearch-1 Created 
+ Container docker_services_cli-opensearch-1 Starting 
+ Container docker_services_cli-postgresql-1 Starting 
+ Container docker_services_cli-opensearch-1 Started 
+ Container docker_services_cli-postgresql-1 Started 
+============================= test session starts ==============================
+platform linux -- Python 3.14.10, pytest-8.4.2, pluggy-1.7.0
+rootdir: /home/runner/work/itd-runner/itd-runner/workdir/tests/invenio-search/original
+configfile: pyproject.toml
+testpaths: tests, invenio_search
+plugins: github-actions-annotate-failures-0.4.2, black-0.6.0, isort-4.0.0, invenio-4.1.0, pydocstyle-2.4.0, cov-7.1.0, flask-1.3.0, platformdirs-4.14.8, pycodestyle-2.5.0
+collected 137 items
+
+tests/conftest.py ...                                                    [  2%]
+tests/mock_module/__init__.py ...                                        [  4%]
+tests/mock_module/component_templates/__init__.py ...                    [  6%]
+tests/mock_module/component_templates/os-v2/__init__.py ...              [  8%]
+tests/mock_module/component_templates/v7/__init__.py ...                 [ 10%]
+tests/mock_module/index_templates/__init__.py ...                        [ 13%]
+tests/mock_module/index_templates/os-v2/__init__.py ...                  [ 15%]
+tests/mock_module/index_templates/v7/__init__.py ...                     [ 17%]
+tests/mock_module/mappings/__init__.py ...                               [ 19%]
+tests/mock_module/mappings/os-v1/__init__.py ...                         [ 21%]
+tests/mock_module/mappings/os-v2/__init__.py ...                         [ 24%]
+tests/mock_module/mappings/v7/__init__.py ...                            [ 26%]
+tests/mock_module/templates/__init__.py ...                              [ 28%]
+tests/mock_module/templates/os-v1/__init__.py ...                        [ 30%]
+tests/mock_module/templates/os-v2/__init__.py ...                        [ 32%]
+tests/mock_module/templates/v7/__init__.py ...                           [ 35%]
+tests/test_cli.py ...::warning file=workdir/tests/invenio-search/original/tests/test_cli.py,line=69::'isolated_filesystem' is deprecated and will be removed in Click 9.0. Use 'tempfile.TemporaryDirectory' or pytest's 'tmp_path' fixture with absolute paths instead.
+...                                                 [ 39%]
+tests/test_invenio_search.py ................................            [ 62%]
+tests/test_query.py .................                                    [ 75%]
+tests/test_utils.py .......                                              [ 80%]
+invenio_search/__init__.py ...                                           [ 82%]
+invenio_search/api.py ...                                                [ 84%]
+invenio_search/cli.py ...                                                [ 86%]
+invenio_search/config.py ...                                             [ 89%]
+invenio_search/engine.py ...                                             [ 91%]
+invenio_search/errors.py ...                                             [ 93%]
+invenio_search/ext.py ...                                                [ 95%]
+invenio_search/proxies.py ...                                            [ 97%]
+invenio_search/utils.py ...                                              [100%]
+
+=============================== warnings summary ===============================
+tests/test_cli.py::test_init
+  /home/runner/work/itd-runner/itd-runner/workdir/tests/invenio-search/original/tests/test_cli.py:69: DeprecationWarning: 'isolated_filesystem' is deprecated and will be removed in Click 9.0. Use 'tempfile.TemporaryDirectory' or pytest's 'tmp_path' fixture with absolute paths instead.
+    with runner.isolated_filesystem():
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+- generated xml file: /home/runner/work/itd-runner/itd-runner/workdir/artifacts/invenio-search/original_junit.xml -
+================================ tests coverage ================================
+_______________ coverage: platform linux, python 3.14.10-final-0 _______________
+
+Name                         Stmts   Miss  Cover   Missing
+----------------------------------------------------------
+invenio_search/__init__.py       5      0   100%
+invenio_search/api.py          129      8    94%   45, 49, 53, 57, 101, 109, 245, 253
+invenio_search/cli.py          122      6    95%   22, 35, 111-117, 175-176
+invenio_search/config.py        12      0   100%
+invenio_search/engine.py        33     16    52%   21-23, 29-32, 43, 60-66, 71, 76, 81-82
+invenio_search/errors.py         2      0   100%
+invenio_search/ext.py          275     13    95%   114, 122-131, 220, 339, 368, 438-439, 455, 527, 531, 541
+invenio_search/proxies.py        8      0   100%
+invenio_search/utils.py         23      0   100%
+----------------------------------------------------------
+TOTAL                          609     43    93%
+======================== 137 passed, 1 warning in 8.01s ========================
+ Container docker_services_cli-postgresql-1 Stopping 
+ Container docker_services_cli-opensearch-1 Stopping 
+ Container docker_services_cli-postgresql-1 Stopped 
+ Container docker_services_cli-postgresql-1 Removing 
+ Container docker_services_cli-opensearch-1 Stopped 
+ Container docker_services_cli-opensearch-1 Removing 
+ Container docker_services_cli-opensearch-1 Removed 
+ Container docker_services_cli-postgresql-1 Removed 
+ Network docker_services_cli_default Removing 
+ Network docker_services_cli_default Removed 

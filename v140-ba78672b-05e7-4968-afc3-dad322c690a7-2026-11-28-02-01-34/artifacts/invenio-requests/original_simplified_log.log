@@ -1,0 +1,590 @@
+ Image redis:7 Pulling 
+ Image postgres:18 Pulling 
+ Image opensearchproject/opensearch:3.9.0 Pulling 
+ 4f4fb700ef54 Already exists 0B
+ 4f4fb700ef54 Already exists 0B
+ Image redis:7 Pulled 
+ Image postgres:18 Pulled 
+ Image opensearchproject/opensearch:3.9.0 Pulled 
+ Network docker_services_cli_default Creating 
+ Network docker_services_cli_default Created 
+ Container docker_services_cli-redis-1 Creating 
+ Container docker_services_cli-postgresql-1 Creating 
+ Container docker_services_cli-opensearch-1 Creating 
+ Container docker_services_cli-opensearch-1 Created 
+ Container docker_services_cli-redis-1 Created 
+ Container docker_services_cli-postgresql-1 Created 
+ Container docker_services_cli-redis-1 Starting 
+ Container docker_services_cli-opensearch-1 Starting 
+ Container docker_services_cli-postgresql-1 Starting 
+ Container docker_services_cli-postgresql-1 Started 
+ Container docker_services_cli-opensearch-1 Started 
+ Container docker_services_cli-redis-1 Started 
+============================= test session starts ==============================
+platform linux -- Python 3.14.10, pytest-8.4.2, pluggy-1.7.0
+rootdir: /home/runner/work/itd-runner/itd-runner/workdir/tests/invenio-requests/original
+configfile: pyproject.toml
+testpaths: tests, invenio_requests
+plugins: github-actions-annotate-failures-0.4.2, black-0.6.0, isort-4.0.0, invenio-4.1.0, pydocstyle-2.4.0, cov-7.1.0, flask-1.3.0, platformdirs-4.14.9, time-machine-2.19.0, pycodestyle-2.5.0
+collected 520 items
+tests/__init__.py ...                                                    [  0%]
+tests/conftest.py ...                                                    [  1%]
+tests/customizations/test_event_types.py .....                           [  2%]
+tests/customizations/test_request_types.py 
+                         [  3%]
+tests/mock_module/__init__.py ...                                        [  3%]
+tests/mock_module/administration.py ...                                  [  4%]
+tests/mock_module/blueprint.py ...                                       [  4%]
+tests/mock_module/request_type.py ...                                    [  5%]
+tests/records/events/test_api.py 
+                                     [  5%]
+tests/records/systemfields/conftest.py ...                               [  6%]
+tests/records/systemfields/helpers.py ...                                [  7%]
+tests/records/systemfields/test_calculated_systemfield.py 
+           [  7%]
+tests/records/systemfields/test_last_activity_field.py 
+             [  8%]
+tests/records/systemfields/test_last_reply_field.py 
+               [ 10%]
+tests/records/test_request_api.py 
+                                    [ 10%]
+tests/records/test_request_numberseq.py 
+                              [ 11%]
+tests/records/test_systemfield_relatedrecord.py 
+                  [ 12%]
+tests/registry/conftest.py ...                                           [ 13%]
+tests/registry/test_registries.py 
+                                  [ 14%]
+tests/resources/events/conftest.py ...                                   [ 14%]
+tests/resources/events/test_request_events_resources.py 
+   [ 17%]
+tests/resources/files/conftest.py ...                                    [ 17%]
+tests/resources/files/test_request_files_resources.py 
+           [ 19%]
+tests/resources/requests/conftest.py ...                                 [ 20%]
+tests/resources/requests/test_requests_resources.py 
+             [ 21%]
+tests/resources/user_moderation/test_user_moderation_resources.py 
+ [ 22%]
+                                                                  [ 24%]
+tests/services/components/test_request_reviewers_component.py 
+ [ 25%]
+                                                                [ 27%]
+tests/services/conftest.py ...                                           [ 28%]
+tests/services/events/conftest.py ...                                    [ 28%]
+tests/services/events/test_event_permissions.py 
+                 [ 30%]
+tests/services/events/test_request_events_service.py 
+::error file=workdir/tests/invenio-requests/original/tests/services/events/test_request_events_service.py,line=328::test_reply_request_event_notification%0A%0Aassert 1 == 2%0A +  where 1 = len([<flask_mail.Message object at 0x744452928910>])
+F...       [ 32%]
+tests/services/events/test_request_events_service_config.py 
+         [ 33%]
+tests/services/requests/test_request_permissions.py 
+      [ 36%]
+tests/services/requests/test_request_search_permissions.py 
+           [ 37%]
+tests/services/requests/test_requests_schemas.py 
+                    [ 37%]
+tests/services/requests/test_requests_service.py 
+              [ 39%]
+tests/services/requests/test_requests_service_config.py 
+             [ 40%]
+tests/services/requests/test_requests_tasks.py 
+                       [ 41%]
+tests/services/user_moderation/test_user_moderation_service.py 
+ [ 42%]
+                                                                         [ 42%]
+tests/test_alembic.py ..s                                                [ 43%]
+tests/test_invenio_requests.py ....                                      [ 44%]
+tests/test_type_registry.py .....                                        [ 45%]
+tests/ui/conftest.py ...                                                 [ 45%]
+tests/ui/test_request_ui_files_resources.py 
+                          [ 46%]
+invenio_requests/__init__.py ...                                         [ 46%]
+invenio_requests/alembic/1759321170_add_index_to_request_events_request_id_.py . [ 47%]
+                                                                       [ 47%]
+invenio_requests/alembic/1763728177_create_request_files_table.py ...    [ 48%]
+invenio_requests/alembic/3ca07f2ee12b_change_datetime_types_addition.py . [ 48%]
+                                                                       [ 48%]
+invenio_requests/alembic/5cd30a3503c9_create_requests_branch.py ...      [ 49%]
+invenio_requests/alembic/74b23178bfbe_change_datetime_types.py ...       [ 49%]
+invenio_requests/alembic/a14fa442680f_create_tables.py ...               [ 50%]
+invenio_requests/config.py ...                                           [ 50%]
+invenio_requests/customizations/__init__.py ...                          [ 51%]
+invenio_requests/customizations/actions.py ...                           [ 52%]
+invenio_requests/customizations/event_types.py ...                       [ 52%]
+invenio_requests/customizations/request_types.py ...                     [ 53%]
+invenio_requests/customizations/states.py ...                            [ 53%]
+invenio_requests/customizations/user_moderation/__init__.py ...          [ 54%]
+invenio_requests/customizations/user_moderation/user_moderation.py ...   [ 55%]
+invenio_requests/errors.py ...                                           [ 55%]
+invenio_requests/ext.py ...                                              [ 56%]
+invenio_requests/notifications/__init__.py ...                           [ 56%]
+invenio_requests/notifications/builders.py ...                           [ 57%]
+invenio_requests/notifications/filters.py ...                            [ 57%]
+invenio_requests/notifications/generators.py ...                         [ 58%]
+invenio_requests/proxies.py ...                                          [ 59%]
+invenio_requests/records/__init__.py ...                                 [ 59%]
+invenio_requests/records/api.py ...                                      [ 60%]
+invenio_requests/records/dumpers/__init__.py ...                         [ 60%]
+invenio_requests/records/dumpers/calculated.py ...                       [ 61%]
+invenio_requests/records/dumpers/granttokens.py ...                      [ 61%]
+invenio_requests/records/dumpers/parentchild.py ...                      [ 62%]
+invenio_requests/records/jsonschemas/__init__.py ...                     [ 63%]
+invenio_requests/records/mappings/__init__.py ...                        [ 63%]
+invenio_requests/records/mappings/os-v1/__init__.py ...                  [ 64%]
+invenio_requests/records/mappings/os-v2/__init__.py ...                  [ 64%]
+invenio_requests/records/mappings/v7/__init__.py ...                     [ 65%]
+invenio_requests/records/models.py ...                                   [ 65%]
+invenio_requests/records/systemfields/__init__.py ...                    [ 66%]
+invenio_requests/records/systemfields/computed.py ...                    [ 67%]
+invenio_requests/records/systemfields/entity_reference.py ...            [ 67%]
+invenio_requests/records/systemfields/event_type.py ...                  [ 68%]
+invenio_requests/records/systemfields/expired_state.py ...               [ 68%]
+invenio_requests/records/systemfields/files.py ...                       [ 69%]
+invenio_requests/records/systemfields/identity.py ...                    [ 70%]
+invenio_requests/records/systemfields/relatedrecord.py ...               [ 70%]
+invenio_requests/records/systemfields/request_state.py ...               [ 71%]
+invenio_requests/records/systemfields/request_type.py ...                [ 71%]
+invenio_requests/records/systemfields/status.py ...                      [ 72%]
+invenio_requests/records/validators.py ...                               [ 72%]
+invenio_requests/registry.py ...                                         [ 73%]
+invenio_requests/resolvers/__init__.py ...                               [ 74%]
+invenio_requests/resolvers/registry.py ...                               [ 74%]
+invenio_requests/resolvers/requests.py ...                               [ 75%]
+invenio_requests/resources/__init__.py ...                               [ 75%]
+invenio_requests/resources/events/__init__.py ...                        [ 76%]
+invenio_requests/resources/events/config.py ...                          [ 76%]
+invenio_requests/resources/events/resource.py ...                        [ 77%]
+invenio_requests/resources/files/__init__.py ...                         [ 78%]
+invenio_requests/resources/files/config.py ...                           [ 78%]
+invenio_requests/resources/files/resource.py ...                         [ 79%]
+invenio_requests/resources/requests/__init__.py ...                      [ 79%]
+invenio_requests/resources/requests/config.py ...                        [ 80%]
+invenio_requests/resources/requests/fields.py ...                        [ 80%]
+invenio_requests/resources/requests/resource.py ...                      [ 81%]
+invenio_requests/services/__init__.py ...                                [ 82%]
+invenio_requests/services/events/__init__.py ...                         [ 82%]
+invenio_requests/services/events/config.py ...                           [ 83%]
+invenio_requests/services/events/service.py ...                          [ 83%]
+invenio_requests/services/files/__init__.py ...                          [ 84%]
+invenio_requests/services/files/config.py ...                            [ 85%]
+invenio_requests/services/files/errors.py ...                            [ 85%]
+invenio_requests/services/files/service.py ...                           [ 86%]
+invenio_requests/services/generators.py ...                              [ 86%]
+invenio_requests/services/links.py ...                                   [ 87%]
+invenio_requests/services/permissions.py ...                             [ 87%]
+invenio_requests/services/requests/__init__.py ...                       [ 88%]
+invenio_requests/services/requests/components.py ...                     [ 89%]
+invenio_requests/services/requests/config.py ...                         [ 89%]
+invenio_requests/services/requests/facets.py ...                         [ 90%]
+invenio_requests/services/requests/params.py ...                         [ 90%]
+invenio_requests/services/requests/results.py ...                        [ 91%]
+invenio_requests/services/requests/service.py ...                        [ 91%]
+invenio_requests/services/results.py ...                                 [ 92%]
+invenio_requests/services/schemas.py ...                                 [ 93%]
+invenio_requests/services/user_moderation/__init__.py ...                [ 93%]
+invenio_requests/services/user_moderation/errors.py ...                  [ 94%]
+invenio_requests/services/user_moderation/service.py ...                 [ 94%]
+invenio_requests/tasks.py ...                                            [ 95%]
+invenio_requests/views/__init__.py ...                                   [ 95%]
+invenio_requests/views/api.py ...                                        [ 96%]
+invenio_requests/views/decorators.py ...                                 [ 97%]
+invenio_requests/views/files/__init__.py ...                             [ 97%]
+invenio_requests/views/files/requests.py ...                             [ 98%]
+invenio_requests/views/files/ui.py ...                                   [ 98%]
+invenio_requests/views/ui.py ...                                         [ 99%]
+invenio_requests/webpack.py ...                                          [100%]
+=================================== FAILURES ===================================
+____________________ test_reply_request_event_notification _____________________
+app = <Flask 'invenio'>
+events_service_data = {'comment': {'payload': {'content': 'This is a comment.', 'format': 'html'}, 'type': 'C'}, 'log': {'payload': {'content': 'This is a log event.', 'event': 'LOG_EVENT', 'format': 'html'}, 'type': 'L'}}
+submit_request = <function submit_request.<locals>._submit_request at 0x744452a59850>
+request_events_service = <invenio_requests.services.events.service.RequestEventsService object at 0x744452ea0260>
+user1 = <pytest_invenio.user.UserFixtureBase object at 0x744452f197b0>
+user2 = <pytest_invenio.user.UserFixtureBase object at 0x744452fe3d80>
+superuser = <pytest_invenio.user.UserFixtureBase object at 0x744452d86780>
+monkeypatch = <_pytest.monkeypatch.MonkeyPatch object at 0x744452d90c20>
+    def test_reply_request_event_notification(
+        app,
+        events_service_data,
+        submit_request,
+        request_events_service,
+        user1,
+        user2,
+        superuser,
+        monkeypatch,
+    ):
+        """Test notification being sent on reply create to thread participants."""
+        from invenio_requests.notifications.builders import (
+            CommentRequestEventReplyNotificationBuilder,
+        )
+        original_builder = CommentRequestEventReplyNotificationBuilder
+        # Mock build to observe calls
+        mock_build = MagicMock()
+        mock_build.side_effect = original_builder.build
+        monkeypatch.setattr(original_builder, "build", mock_build)
+        # Register builder
+        monkeypatch.setattr(
+            current_notifications_manager,
+            "builders",
+            {
+                **current_notifications_manager.builders,
+                original_builder.type: original_builder,
+            },
+        )
+        mail = app.extensions.get("mail")
+        request = submit_request(user2.identity, receiver=user1.user)
+        request_id = request.id
+        comment = events_service_data["comment"]
+        # Create parent comment (by user2)
+        parent_comment = request_events_service.create(
+            user2.identity, request_id, dict(**comment), CommentEventType
+        )
+        parent_id = str(parent_comment.id)
+        # Test 1: First reply by user1 (receiver)
+        with mail.record_messages() as outbox:
+            comment_data = {
+                **comment,
+                "payload": {"content": "First reply", "format": "html"},
+            }
+            request_events_service.create(
+                user1.identity,
+                request_id,
+                dict(**comment_data),
+                CommentEventType,
+                parent_id=parent_id,
+            )
+            assert mock_build.called
+            # Only parent author (user2) should receive notification
+            assert len(outbox) == 1
+            assert user2.email in outbox[0].recipients
+            # Reply creator (user1) should NOT receive notification
+            recipients_all = [r for msg in outbox for r in msg.recipients]
+            assert user1.email not in recipients_all
+        # Test 2: Second reply by superuser
+        with mail.record_messages() as outbox:
+            comment_data = {
+                **comment,
+                "payload": {"content": "Second reply", "format": "html"},
+            }
+            request_events_service.create(
+                superuser.identity,
+                request_id,
+                dict(**comment_data),
+                CommentEventType,
+                parent_id=parent_id,
+            )
+            # Parent author (user2) and first reply author (user1) should receive notifications
+            assert mock_build.called
+            assert len(outbox) == 2
+            recipients_all = [r for msg in outbox for r in msg.recipients]
+            assert user2.email in recipients_all
+            assert user1.email in recipients_all
+            # Current reply creator (superuser) should NOT receive notification
+            assert superuser.email not in recipients_all
+        # Test 3: Parent author (user2) replies to their own thread
+        with mail.record_messages() as outbox:
+            comment_data = {
+                **comment,
+                "payload": {"content": "Parent replies", "format": "html"},
+            }
+            request_events_service.create(
+                user2.identity,
+                request_id,
+                dict(**comment_data),
+                CommentEventType,
+                parent_id=parent_id,
+            )
+            # First reply author (user1) and second reply author (superuser) should receive
+            assert mock_build.called
+>           assert len(outbox) == 2
+E           assert 1 == 2
+E            +  where 1 = len([<flask_mail.Message object at 0x744452928910>])
+tests/services/events/test_request_events_service.py:328: AssertionError
+----------------------------- Captured stdout call -----------------------------
+Content-Type: multipart/mixed; boundary="===============5378901433395594500=="
+MIME-Version: 1.0
+Subject: =?utf-8?b?8J+SrCBOZXcgcmVwbHkgb24gJ0ZvbyBiYXIn?=
+From: test@inveniosoftware.org
+To: user2@example.org
+Date: Sat, 28 Nov 2026 02:07:07 +0000
+Message-ID: <179583162786.5425.13550522706916134760@runnervm0hi8g.ct5khhrg2qpepjhexj34dmogfb.gx.internal.cloudapp.net>
+--===============5378901433395594500==
+Content-Type: multipart/alternative; boundary="===============0035433068486974642=="
+MIME-Version: 1.0
+--===============0035433068486974642==
+Content-Type: text/plain; charset="utf-8"
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+@user1 replied on comment
+First reply
+View reply: https://127.0.0.1:5000/me/requests/d695b0aa-a360-44d2-af23-2459ccc3f4ff#replyevent-0d3f3d31-0b8a-4b31-9b29-8c8e1d7c5174
+Check out the request: https://127.0.0.1:5000/requests/d695b0aa-a360-44d2-af23-2459ccc3f4ff#commentevent-61cce3e2-489a-4179-a7ef-6bc106620510_0d3f3d31-0b8a-4b31-9b29-8c8e1d7c5174
+--===============0035433068486974642==
+Content-Type: text/html; charset="utf-8"
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+<table style="font-family:'Lato',Helvetica,Arial,sans-serif;border-spacing:15px">
+    <tr>
+        <td>'@user1' replied on <a href='https://127.0.0.1:5000/me/requests/d695b0aa-a360-44d2-af23-2459ccc3f4ff#replyevent-0d3f3d31-0b8a-4b31-9b29-8c8e1d7c5174'>comment</a>:</td>
+    </tr>
+    <tr>
+        <td><em>First reply</em></td>
+    </tr>
+    <tr>
+        <td><a href="https://127.0.0.1:5000/requests/d695b0aa-a360-44d2-af23-2459ccc3f4ff#commentevent-61cce3e2-489a-4179-a7ef-6bc106620510_0d3f3d31-0b8a-4b31-9b29-8c8e1d7c5174" class="button">Check out the request</a></td>
+    </tr>
+    <tr>
+        <td><strong>_</strong></td>
+    </tr>
+    <tr>
+        <td style="font-size:smaller">This is an auto-generated message. To manage notifications, visit your <a href="https://127.0.0.1:5000/account/settings/notifications">account settings</a>.</td>
+    </tr>
+</table>
+--===============0035433068486974642==--
+--===============5378901433395594500==--
+Content-Type: multipart/mixed; boundary="===============6216031953565510938=="
+MIME-Version: 1.0
+Subject: =?utf-8?b?8J+SrCBOZXcgcmVwbHkgb24gJ0ZvbyBiYXIn?=
+From: test@inveniosoftware.org
+To: user1@example.org
+Date: Sat, 28 Nov 2026 02:07:08 +0000
+Message-ID: <179583162832.5425.10598831119654690268@runnervm0hi8g.ct5khhrg2qpepjhexj34dmogfb.gx.internal.cloudapp.net>
+--===============6216031953565510938==
+Content-Type: multipart/alternative; boundary="===============4916623951058306122=="
+MIME-Version: 1.0
+--===============4916623951058306122==
+Content-Type: text/plain; charset="utf-8"
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+@admin replied on comment
+Second reply
+View reply: https://127.0.0.1:5000/me/requests/d695b0aa-a360-44d2-af23-2459ccc3f4ff#replyevent-95d9aada-3b15-424b-a718-c759cc7a36e5
+Check out the request: https://127.0.0.1:5000/requests/d695b0aa-a360-44d2-af23-2459ccc3f4ff#commentevent-61cce3e2-489a-4179-a7ef-6bc106620510_95d9aada-3b15-424b-a718-c759cc7a36e5
+--===============4916623951058306122==
+Content-Type: text/html; charset="utf-8"
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+<table style="font-family:'Lato',Helvetica,Arial,sans-serif;border-spacing:15px">
+    <tr>
+        <td>'@admin' replied on <a href='https://127.0.0.1:5000/me/requests/d695b0aa-a360-44d2-af23-2459ccc3f4ff#replyevent-95d9aada-3b15-424b-a718-c759cc7a36e5'>comment</a>:</td>
+    </tr>
+    <tr>
+        <td><em>Second reply</em></td>
+    </tr>
+    <tr>
+        <td><a href="https://127.0.0.1:5000/requests/d695b0aa-a360-44d2-af23-2459ccc3f4ff#commentevent-61cce3e2-489a-4179-a7ef-6bc106620510_95d9aada-3b15-424b-a718-c759cc7a36e5" class="button">Check out the request</a></td>
+    </tr>
+    <tr>
+        <td><strong>_</strong></td>
+    </tr>
+    <tr>
+        <td style="font-size:smaller">This is an auto-generated message. To manage notifications, visit your <a href="https://127.0.0.1:5000/account/settings/notifications">account settings</a>.</td>
+    </tr>
+</table>
+--===============4916623951058306122==--
+--===============6216031953565510938==--
+Content-Type: multipart/mixed; boundary="===============6196875883166953713=="
+MIME-Version: 1.0
+Subject: =?utf-8?b?8J+SrCBOZXcgcmVwbHkgb24gJ0ZvbyBiYXIn?=
+From: test@inveniosoftware.org
+To: user2@example.org
+Date: Sat, 28 Nov 2026 02:07:08 +0000
+Message-ID: <179583162832.5425.12982980819377517408@runnervm0hi8g.ct5khhrg2qpepjhexj34dmogfb.gx.internal.cloudapp.net>
+--===============6196875883166953713==
+Content-Type: multipart/alternative; boundary="===============6587447516753073988=="
+MIME-Version: 1.0
+--===============6587447516753073988==
+Content-Type: text/plain; charset="utf-8"
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+@admin replied on comment
+Second reply
+View reply: https://127.0.0.1:5000/me/requests/d695b0aa-a360-44d2-af23-2459ccc3f4ff#replyevent-95d9aada-3b15-424b-a718-c759cc7a36e5
+Check out the request: https://127.0.0.1:5000/requests/d695b0aa-a360-44d2-af23-2459ccc3f4ff#commentevent-61cce3e2-489a-4179-a7ef-6bc106620510_95d9aada-3b15-424b-a718-c759cc7a36e5
+--===============6587447516753073988==
+Content-Type: text/html; charset="utf-8"
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+<table style="font-family:'Lato',Helvetica,Arial,sans-serif;border-spacing:15px">
+    <tr>
+        <td>'@admin' replied on <a href='https://127.0.0.1:5000/me/requests/d695b0aa-a360-44d2-af23-2459ccc3f4ff#replyevent-95d9aada-3b15-424b-a718-c759cc7a36e5'>comment</a>:</td>
+    </tr>
+    <tr>
+        <td><em>Second reply</em></td>
+    </tr>
+    <tr>
+        <td><a href="https://127.0.0.1:5000/requests/d695b0aa-a360-44d2-af23-2459ccc3f4ff#commentevent-61cce3e2-489a-4179-a7ef-6bc106620510_95d9aada-3b15-424b-a718-c759cc7a36e5" class="button">Check out the request</a></td>
+    </tr>
+    <tr>
+        <td><strong>_</strong></td>
+    </tr>
+    <tr>
+        <td style="font-size:smaller">This is an auto-generated message. To manage notifications, visit your <a href="https://127.0.0.1:5000/account/settings/notifications">account settings</a>.</td>
+    </tr>
+</table>
+--===============6587447516753073988==--
+--===============6196875883166953713==--
+Content-Type: multipart/mixed; boundary="===============1725279676245439374=="
+MIME-Version: 1.0
+Subject: =?utf-8?b?8J+SrCBOZXcgcmVwbHkgb24gJ0ZvbyBiYXIn?=
+From: test@inveniosoftware.org
+To: user1@example.org
+Date: Sat, 28 Nov 2026 02:07:08 +0000
+Message-ID: <179583162872.5425.2652317411626872030@runnervm0hi8g.ct5khhrg2qpepjhexj34dmogfb.gx.internal.cloudapp.net>
+--===============1725279676245439374==
+Content-Type: multipart/alternative; boundary="===============3757705763425513590=="
+MIME-Version: 1.0
+--===============3757705763425513590==
+Content-Type: text/plain; charset="utf-8"
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+@user2 replied on comment
+Parent replies
+View reply: https://127.0.0.1:5000/me/requests/d695b0aa-a360-44d2-af23-2459ccc3f4ff#replyevent-f45131a5-c9b2-4323-a5ef-97d4251ee90a
+Check out the request: https://127.0.0.1:5000/requests/d695b0aa-a360-44d2-af23-2459ccc3f4ff#commentevent-61cce3e2-489a-4179-a7ef-6bc106620510_f45131a5-c9b2-4323-a5ef-97d4251ee90a
+--===============3757705763425513590==
+Content-Type: text/html; charset="utf-8"
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+<table style="font-family:'Lato',Helvetica,Arial,sans-serif;border-spacing:15px">
+    <tr>
+        <td>'@user2' replied on <a href='https://127.0.0.1:5000/me/requests/d695b0aa-a360-44d2-af23-2459ccc3f4ff#replyevent-f45131a5-c9b2-4323-a5ef-97d4251ee90a'>comment</a>:</td>
+    </tr>
+    <tr>
+        <td><em>Parent replies</em></td>
+    </tr>
+    <tr>
+        <td><a href="https://127.0.0.1:5000/requests/d695b0aa-a360-44d2-af23-2459ccc3f4ff#commentevent-61cce3e2-489a-4179-a7ef-6bc106620510_f45131a5-c9b2-4323-a5ef-97d4251ee90a" class="button">Check out the request</a></td>
+    </tr>
+    <tr>
+        <td><strong>_</strong></td>
+    </tr>
+    <tr>
+        <td style="font-size:smaller">This is an auto-generated message. To manage notifications, visit your <a href="https://127.0.0.1:5000/account/settings/notifications">account settings</a>.</td>
+    </tr>
+</table>
+--===============3757705763425513590==--
+--===============1725279676245439374==--
+=============================== warnings summary ===============================
+tests/resources/files/test_request_files_resources.py:84
+  /home/runner/work/itd-runner/itd-runner/workdir/tests/invenio-requests/original/tests/resources/files/test_request_files_resources.py:84: SyntaxWarning: "\w" is an invalid escape sequence. Such sequences will not work in the future. Did you mean "\\w"? A raw string is also an option
+    assert re.match(key_base + "-\w{5}-\w{5}" + key_ext, unique_key)
+    self.init_app(app)
+- generated xml file: /home/runner/work/itd-runner/itd-runner/workdir/artifacts/invenio-requests/original_junit.xml -
+================================ tests coverage ================================
+_______________ coverage: platform linux, python 3.14.10-final-0 _______________
+Name                                                                             Stmts   Miss  Cover   Missing
+invenio_requests/__init__.py                                                         5      0   100%
+invenio_requests/alembic/3ca07f2ee12b_change_datetime_types_addition.py             13      6    54%   21-23, 28-30
+invenio_requests/alembic/5cd30a3503c9_create_requests_branch.py                      8      2    75%   15, 20
+invenio_requests/alembic/74b23178bfbe_change_datetime_types.py                      15      8    47%   21-24, 29-32
+invenio_requests/alembic/1759321170_add_index_to_request_events_request_id_.py       9      2    78%   17, 27
+invenio_requests/alembic/1763728177_create_request_files_table.py                   24     14    42%   20-92, 104-116
+invenio_requests/alembic/a14fa442680f_create_tables.py                              18      8    56%   20-92, 106-109
+invenio_requests/config.py                                                          47      0   100%
+invenio_requests/customizations/__init__.py                                          5      0   100%
+invenio_requests/customizations/actions.py                                          64      1    98%   85
+invenio_requests/customizations/event_types.py                                      86      7    92%   23-24, 98-100, 105, 109
+invenio_requests/customizations/request_types.py                                    96      8    92%   127, 195-200, 252-253, 287
+invenio_requests/customizations/states.py                                            5      0   100%
+invenio_requests/customizations/user_moderation/__init__.py                          2      0   100%
+invenio_requests/customizations/user_moderation/user_moderation.py                  29      0   100%
+invenio_requests/errors.py                                                          41      5    88%   68, 88, 100-104
+invenio_requests/ext.py                                                             72      1    99%   135
+invenio_requests/notifications/__init__.py                                           0      0   100%
+invenio_requests/notifications/builders.py                                          21      0   100%
+invenio_requests/notifications/filters.py                                           14      1    93%   23
+invenio_requests/notifications/generators.py                                        59      3    95%   29, 127-129
+invenio_requests/proxies.py                                                         18      0   100%
+invenio_requests/records/__init__.py                                                 3      0   100%
+invenio_requests/records/api.py                                                     97      3    97%   102-105
+invenio_requests/records/dumpers/__init__.py                                         4      0   100%
+invenio_requests/records/dumpers/calculated.py                                      10      0   100%
+invenio_requests/records/dumpers/granttokens.py                                     20      2    90%   31-32
+invenio_requests/records/dumpers/parentchild.py                                      8      0   100%
+invenio_requests/records/jsonschemas/__init__.py                                     0      0   100%
+invenio_requests/records/mappings/__init__.py                                        0      0   100%
+invenio_requests/records/mappings/os-v1/__init__.py                                  0      0   100%
+invenio_requests/records/mappings/os-v2/__init__.py                                  0      0   100%
+invenio_requests/records/mappings/v7/__init__.py                                     0      0   100%
+invenio_requests/records/models.py                                                  53      0   100%
+invenio_requests/records/systemfields/__init__.py                                    9      0   100%
+invenio_requests/records/systemfields/computed.py                                   65      1    98%   119
+invenio_requests/records/systemfields/entity_reference.py                           15      0   100%
+invenio_requests/records/systemfields/event_type.py                                 48      2    96%   28, 58
+invenio_requests/records/systemfields/expired_state.py                              13      0   100%
+invenio_requests/records/systemfields/files.py                                       7      2    71%   21-23
+invenio_requests/records/systemfields/identity.py                                   11      2    82%   16-17
+invenio_requests/records/systemfields/relatedrecord.py                              96     20    79%   29, 33-35, 43-45, 53-54, 61-63, 132-133, 152-155, 166-167, 179
+invenio_requests/records/systemfields/request_state.py                              10      0   100%
+invenio_requests/records/systemfields/request_type.py                               30      1    97%   37
+invenio_requests/records/systemfields/status.py                                     11      0   100%
+invenio_requests/records/validators.py                                               6      4    33%   16-20
+invenio_requests/registry.py                                                        17      0   100%
+invenio_requests/resolvers/__init__.py                                               1      0   100%
+invenio_requests/resolvers/registry.py                                               6      0   100%
+invenio_requests/resolvers/requests.py                                              15      4    73%   23, 32, 42, 51
+invenio_requests/resources/__init__.py                                               4      0   100%
+invenio_requests/resources/events/__init__.py                                        3      0   100%
+invenio_requests/resources/events/config.py                                         15      0   100%
+invenio_requests/resources/events/resource.py                                       79      4    95%   167-174, 197-205
+invenio_requests/resources/files/__init__.py                                         3      0   100%
+invenio_requests/resources/files/config.py                                          11      0   100%
+invenio_requests/resources/files/resource.py                                        25      0   100%
+invenio_requests/resources/requests/__init__.py                                      3      0   100%
+invenio_requests/resources/requests/config.py                                       22      0   100%
+invenio_requests/resources/requests/fields.py                                       16      6    62%   25, 27, 36-41
+invenio_requests/resources/requests/resource.py                                     67      6    91%   81-87, 109-115, 121-125
+invenio_requests/services/__init__.py                                                5      0   100%
+invenio_requests/services/events/__init__.py                                         3      0   100%
+invenio_requests/services/events/config.py                                         142     11    92%   42, 76, 82, 107, 143-144, 147-152, 308
+invenio_requests/services/events/service.py                                        207     54    74%   119, 249, 348, 446-497, 630-687, 716, 729
+invenio_requests/services/files/__init__.py                                          3      0   100%
+invenio_requests/services/files/config.py                                           27      1    96%   25
+invenio_requests/services/files/errors.py                                           10      1    90%   30
+invenio_requests/services/files/service.py                                          61      2    97%   66, 94
+invenio_requests/services/generators.py                                             89      9    90%   44, 69, 107, 136, 167, 173, 180, 190, 194
+invenio_requests/services/links.py                                                  73      1    99%   86
+invenio_requests/services/permissions.py                                            25      0   100%
+invenio_requests/services/requests/__init__.py                                       5      0   100%
+invenio_requests/services/requests/components.py                                   125      5    96%   182-191
+invenio_requests/services/requests/config.py                                        37      0   100%
+invenio_requests/services/requests/facets.py                                         5      0   100%
+invenio_requests/services/requests/params.py                                        57     11    81%   29, 55, 76, 78, 105-119, 132-133
+invenio_requests/services/requests/results.py                                       84      8    90%   48, 58, 83-85, 92, 98, 113
+invenio_requests/services/requests/service.py                                      106      2    98%   44, 357
+invenio_requests/services/results.py                                                50     20    60%   28, 58-59, 63, 76-79, 84-86, 91-97, 101-103
+invenio_requests/services/schemas.py                                                59      0   100%
+invenio_requests/services/user_moderation/__init__.py                                2      0   100%
+invenio_requests/services/user_moderation/errors.py                                  5      0   100%
+invenio_requests/services/user_moderation/service.py                                36      1    97%   96
+invenio_requests/tasks.py                                                           25      7    72%   42-44, 56-61
+invenio_requests/views/__init__.py                                                   5      0   100%
+invenio_requests/views/api.py                                                        9      0   100%
+invenio_requests/views/decorators.py                                                13      9    31%   16-29
+invenio_requests/views/files/__init__.py                                             2      0   100%
+invenio_requests/views/files/requests.py                                             5      0   100%
+invenio_requests/views/files/ui.py                                                  11      1    91%   15
+invenio_requests/views/ui.py                                                        18      5    72%   18, 23, 28-31
+invenio_requests/webpack.py                                                          2      0   100%
+TOTAL                                                                             2760    271    90%
+=========================== short test summary info ============================
+FAILED tests/services/events/test_request_events_service.py::test_reply_request_event_notification - assert 1 == 2
+ +  where 1 = len([<flask_mail.Message object at 0x744452928910>])
+======= 1 failed, 518 passed, 1 skipped, 65 warnings in 83.22s (0:01:23) =======
+ Container docker_services_cli-postgresql-1 Stopping 
+ Container docker_services_cli-opensearch-1 Stopping 
+ Container docker_services_cli-redis-1 Stopping 
+ Container docker_services_cli-redis-1 Stopped 
+ Container docker_services_cli-redis-1 Removing 
+ Container docker_services_cli-redis-1 Removed 
+ Container docker_services_cli-postgresql-1 Stopped 
+ Container docker_services_cli-postgresql-1 Removing 
+ Container docker_services_cli-opensearch-1 Stopped 
+ Container docker_services_cli-opensearch-1 Removing 
+ Container docker_services_cli-opensearch-1 Removed 
+ Container docker_services_cli-postgresql-1 Removed 
+ Network docker_services_cli_default Removing 
+ Network docker_services_cli_default Removed 

@@ -1,0 +1,588 @@
+ Image postgres:18 Pulling 
+ Image opensearchproject/opensearch:3.9.0 Pulling 
+ Image redis:7 Pulling 
+ 37fb86c2a767 Pulling fs layer 0B
+ 1837bb99b431 Pulling fs layer 0B
+ 335cde62193e Pulling fs layer 0B
+ 62f716619e2e Pulling fs layer 0B
+ 8c4393616907 Pulling fs layer 0B
+ 7b5527ff7489 Pulling fs layer 0B
+ 9f5cf0b65151 Pulling fs layer 0B
+ 0fbd9729f0d0 Pulling fs layer 0B
+ 00f4238ff416 Pulling fs layer 0B
+ 3e6fbba58ab6 Pulling fs layer 0B
+ dad2840f1c78 Pulling fs layer 0B
+ 09b93095874b Pulling fs layer 0B
+ b978112db001 Pulling fs layer 0B
+ e68f2e5c8d50 Pulling fs layer 0B
+ dd051e1b8c92 Pulling fs layer 0B
+ 94e14de0ef29 Pulling fs layer 0B
+ 1af2d1c5b5d7 Pulling fs layer 0B
+ f43705d71c46 Pulling fs layer 0B
+ 4f4fb700ef54 Pulling fs layer 0B
+ 9d1f594c66dc Pulling fs layer 0B
+ b14c48cb507d Pulling fs layer 0B
+ 0189f02e683f Pulling fs layer 0B
+ 4f4fb700ef54 Pulling fs layer 0B
+ 46f4de2e4236 Pulling fs layer 0B
+ e5604524ac8c Pulling fs layer 0B
+ fe7bbed45059 Pulling fs layer 0B
+ 4f4fb700ef54 Already exists 0B
+ 4f4fb700ef54 Already exists 0B
+ 37fb86c2a767 Downloading 1.049MB
+ dd051e1b8c92 Downloading 5.243MB
+ 335cde62193e Download complete 0B
+ 0189f02e683f Downloading 4.194MB
+ 37fb86c2a767 Downloading 13.63MB
+ 7b5527ff7489 Downloading 1.049MB
+ 09b93095874b Downloading 3.146MB
+ b978112db001 Download complete 0B
+ e5604524ac8c Download complete 0B
+ e68f2e5c8d50 Download complete 0B
+ dd051e1b8c92 Downloading 17.83MB
+ 1837bb99b431 Download complete 0B
+ fe7bbed45059 Download complete 0B
+ 94e14de0ef29 Download complete 0B
+ 9d1f594c66dc Download complete 0B
+ b14c48cb507d Downloading 8.389MB
+ 9f5cf0b65151 Download complete 0B
+ 1af2d1c5b5d7 Download complete 0B
+ 0189f02e683f Download complete 0B
+ 00f4238ff416 Download complete 0B
+ 62f716619e2e Download complete 0B
+ 3e6fbba58ab6 Download complete 0B
+ 0fbd9729f0d0 Download complete 0B
+ 8c4393616907 Downloading 1.258MB
+ 37fb86c2a767 Downloading 22.02MB
+ 7b5527ff7489 Downloading 8.204MB
+ dad2840f1c78 Downloading 4.194MB
+ dd051e1b8c92 Downloading 26.21MB
+ f43705d71c46 Downloading 9.437MB
+ 09b93095874b Download complete 0B
+ b14c48cb507d Downloading 16.78MB
+ 46f4de2e4236 Downloading 7.34MB
+ 8c4393616907 Download complete 0B
+ 713b18672f38 Download complete 0B
+ 46f4de2e4236 Downloading 15.73MB
+ b14c48cb507d Downloading 27.26MB
+ 7b5527ff7489 Download complete 0B
+ dad2840f1c78 Downloading 11.53MB
+ ed4e4f8e1aa3 Downloading 2.097MB
+ dd051e1b8c92 Download complete 0B
+ f43705d71c46 Download complete 0B
+ 26d06a935726 Download complete 0B
+ 37fb86c2a767 Download complete 0B
+ dd051e1b8c92 Extracting 1B
+ 37fb86c2a767 Extracting 1B
+ dad2840f1c78 Downloading 20.97MB
+ 46f4de2e4236 Downloading 26.21MB
+ b14c48cb507d Downloading 36.7MB
+ 997e218b00c5 Download complete 0B
+ ed4e4f8e1aa3 Download complete 0B
+ dd051e1b8c92 Extracting 1B
+ 37fb86c2a767 Extracting 1B
+ dad2840f1c78 Downloading 33.55MB
+ b14c48cb507d Downloading 49.28MB
+ 46f4de2e4236 Downloading 37.75MB
+ dd051e1b8c92 Extracting 1B
+ 37fb86c2a767 Extracting 1B
+ 46f4de2e4236 Downloading 51.38MB
+ dad2840f1c78 Downloading 46.14MB
+ b14c48cb507d Download complete 0B
+ dd051e1b8c92 Extracting 1B
+ b14c48cb507d Extracting 1B
+ 37fb86c2a767 Extracting 1B
+ 46f4de2e4236 Downloading 65.01MB
+ dad2840f1c78 Downloading 61.87MB
+ b14c48cb507d Extracting 1B
+ dd051e1b8c92 Extracting 1B
+ 37fb86c2a767 Extracting 1B
+ dad2840f1c78 Downloading 72.35MB
+ 46f4de2e4236 Downloading 78.64MB
+ b14c48cb507d Extracting 1B
+ dd051e1b8c92 Extracting 1B
+ 37fb86c2a767 Extracting 1B
+ dad2840f1c78 Downloading 87.03MB
+ 46f4de2e4236 Downloading 93.32MB
+ b14c48cb507d Extracting 1B
+ dd051e1b8c92 Extracting 1B
+ 37fb86c2a767 Extracting 1B
+ 46f4de2e4236 Downloading 108MB
+ dad2840f1c78 Downloading 100.7MB
+ dd051e1b8c92 Extracting 1B
+ b14c48cb507d Extracting 1B
+ 37fb86c2a767 Extracting 1B
+ 46f4de2e4236 Downloading 123.7MB
+ dad2840f1c78 Downloading 115.3MB
+ b14c48cb507d Extracting 1B
+ dd051e1b8c92 Extracting 1B
+ 37fb86c2a767 Extracting 1B
+ 46f4de2e4236 Downloading 142.6MB
+ dad2840f1c78 Download complete 0B
+ b14c48cb507d Extracting 1B
+ dd051e1b8c92 Extracting 1B
+ 37fb86c2a767 Extracting 1B
+ 46f4de2e4236 Downloading 163.6MB
+ dd051e1b8c92 Extracting 1B
+ b14c48cb507d Extracting 1B
+ 37fb86c2a767 Extracting 1B
+ 46f4de2e4236 Downloading 185.6MB
+ b14c48cb507d Extracting 1B
+ dd051e1b8c92 Extracting 2B
+ 37fb86c2a767 Extracting 2B
+ 46f4de2e4236 Downloading 202.4MB
+ dd051e1b8c92 Extracting 2B
+ b14c48cb507d Extracting 1B
+ 37fb86c2a767 Extracting 2B
+ 46f4de2e4236 Downloading 219.2MB
+ dd051e1b8c92 Extracting 2B
+ b14c48cb507d Extracting 1B
+ 37fb86c2a767 Extracting 2B
+ 46f4de2e4236 Downloading 237MB
+ dd051e1b8c92 Extracting 2B
+ b14c48cb507d Extracting 2B
+ 37fb86c2a767 Extracting 2B
+ 46f4de2e4236 Downloading 255.9MB
+ dd051e1b8c92 Extracting 2B
+ b14c48cb507d Extracting 2B
+ 37fb86c2a767 Extracting 2B
+ 46f4de2e4236 Downloading 272.6MB
+ b14c48cb507d Extracting 2B
+ dd051e1b8c92 Extracting 2B
+ 37fb86c2a767 Extracting 2B
+ 46f4de2e4236 Downloading 292.6MB
+ b14c48cb507d Extracting 2B
+ dd051e1b8c92 Extracting 2B
+ 37fb86c2a767 Extracting 2B
+ 46f4de2e4236 Downloading 309.3MB
+ b14c48cb507d Extracting 2B
+ 0fbd9729f0d0 Pull complete 0B
+ dd051e1b8c92 Extracting 2B
+ 09b93095874b Extracting 1B
+ 37fb86c2a767 Pull complete 0B
+ 46f4de2e4236 Downloading 328.2MB
+ 94e14de0ef29 Pull complete 0B
+ dd051e1b8c92 Pull complete 0B
+ 09b93095874b Extracting 1B
+ b14c48cb507d Extracting 2B
+ 46f4de2e4236 Downloading 345MB
+ e68f2e5c8d50 Pull complete 0B
+ f43705d71c46 Extracting 1B
+ 09b93095874b Extracting 1B
+ b14c48cb507d Extracting 2B
+ 46f4de2e4236 Downloading 364.9MB
+ f43705d71c46 Extracting 1B
+ b14c48cb507d Extracting 2B
+ 09b93095874b Pull complete 0B
+ 8c4393616907 Extracting 1B
+ 46f4de2e4236 Downloading 383.8MB
+ f43705d71c46 Extracting 1B
+ b14c48cb507d Extracting 2B
+ 8c4393616907 Pull complete 0B
+ 7b5527ff7489 Extracting 1B
+ 46f4de2e4236 Downloading 401.6MB
+ f43705d71c46 Extracting 1B
+ b14c48cb507d Extracting 2B
+ 7b5527ff7489 Extracting 1B
+ 46f4de2e4236 Downloading 421.5MB
+ 1af2d1c5b5d7 Pull complete 0B
+ f43705d71c46 Pull complete 0B
+ b14c48cb507d Extracting 3B
+ 7b5527ff7489 Extracting 1B
+ 4f4fb700ef54 Pull complete 0B
+ b978112db001 Pull complete 0B
+ 46f4de2e4236 Downloading 437.3MB
+ Image redis:7 Pulled 
+ 7b5527ff7489 Extracting 1B
+ b14c48cb507d Extracting 3B
+ 46f4de2e4236 Downloading 455.1MB
+ 335cde62193e Extracting 1B
+ b14c48cb507d Extracting 3B
+ 7b5527ff7489 Pull complete 0B
+ 335cde62193e Pull complete 0B
+ 46f4de2e4236 Downloading 480.2MB
+ 9f5cf0b65151 Pull complete 0B
+ 3e6fbba58ab6 Pull complete 0B
+ dad2840f1c78 Extracting 1B
+ b14c48cb507d Extracting 3B
+ 46f4de2e4236 Downloading 503.3MB
+ dad2840f1c78 Extracting 1B
+ b14c48cb507d Extracting 3B
+ 46f4de2e4236 Downloading 526.4MB
+ dad2840f1c78 Extracting 1B
+ b14c48cb507d Extracting 3B
+ 46f4de2e4236 Downloading 550.5MB
+ dad2840f1c78 Extracting 1B
+ b14c48cb507d Extracting 3B
+ 46f4de2e4236 Downloading 574.6MB
+ dad2840f1c78 Extracting 1B
+ b14c48cb507d Extracting 3B
+ 46f4de2e4236 Downloading 596.6MB
+ dad2840f1c78 Extracting 1B
+ b14c48cb507d Extracting 3B
+ 46f4de2e4236 Downloading 622.9MB
+ dad2840f1c78 Extracting 1B
+ b14c48cb507d Extracting 3B
+ 46f4de2e4236 Downloading 649.1MB
+ dad2840f1c78 Extracting 1B
+ b14c48cb507d Extracting 4B
+ 46f4de2e4236 Downloading 667.9MB
+ dad2840f1c78 Extracting 1B
+ b14c48cb507d Extracting 4B
+ 46f4de2e4236 Downloading 690MB
+ dad2840f1c78 Extracting 1B
+ 0189f02e683f Extracting 1B
+ b14c48cb507d Pull complete 0B
+ 46f4de2e4236 Downloading 712MB
+ dad2840f1c78 Extracting 1B
+ 0189f02e683f Extracting 1B
+ 46f4de2e4236 Downloading 728.8MB
+ dad2840f1c78 Extracting 2B
+ 0189f02e683f Extracting 1B
+ 46f4de2e4236 Downloading 751.8MB
+ fe7bbed45059 Pull complete 0B
+ dad2840f1c78 Extracting 2B
+ 0189f02e683f Pull complete 0B
+ 46f4de2e4236 Downloading 775.9MB
+ dad2840f1c78 Extracting 2B
+ 46f4de2e4236 Downloading 804.3MB
+ dad2840f1c78 Extracting 2B
+ 46f4de2e4236 Downloading 831.5MB
+ dad2840f1c78 Extracting 2B
+ 46f4de2e4236 Downloading 858.8MB
+ dad2840f1c78 Extracting 2B
+ 46f4de2e4236 Downloading 886MB
+ dad2840f1c78 Extracting 2B
+ 46f4de2e4236 Downloading 912.3MB
+ dad2840f1c78 Extracting 2B
+ 46f4de2e4236 Downloading 939.5MB
+ dad2840f1c78 Extracting 2B
+ 46f4de2e4236 Downloading 964.7MB
+ dad2840f1c78 Extracting 2B
+ 46f4de2e4236 Downloading 992MB
+ dad2840f1c78 Extracting 3B
+ 46f4de2e4236 Downloading 1.02GB
+ dad2840f1c78 Extracting 3B
+ 46f4de2e4236 Downloading 1.048GB
+ dad2840f1c78 Extracting 3B
+ 46f4de2e4236 Downloading 1.071GB
+ dad2840f1c78 Extracting 3B
+ 46f4de2e4236 Downloading 1.091GB
+ dad2840f1c78 Extracting 3B
+ 46f4de2e4236 Downloading 1.1GB
+ dad2840f1c78 Extracting 3B
+ 46f4de2e4236 Downloading 1.1GB
+ dad2840f1c78 Extracting 3B
+ 46f4de2e4236 Downloading 1.1GB
+ dad2840f1c78 Extracting 3B
+ 46f4de2e4236 Downloading 1.1GB
+ dad2840f1c78 Extracting 3B
+ 46f4de2e4236 Downloading 1.1GB
+ dad2840f1c78 Extracting 3B
+ 46f4de2e4236 Downloading 1.1GB
+ dad2840f1c78 Extracting 4B
+ 46f4de2e4236 Downloading 1.1GB
+ dad2840f1c78 Extracting 4B
+ 46f4de2e4236 Downloading 1.1GB
+ 46f4de2e4236 Downloading 1.1GB
+ dad2840f1c78 Pull complete 0B
+ 46f4de2e4236 Downloading 1.1GB
+ 46f4de2e4236 Downloading 1.1GB
+ 46f4de2e4236 Downloading 1.1GB
+ 46f4de2e4236 Downloading 1.1GB
+ 1837bb99b431 Extracting 1B
+ 46f4de2e4236 Downloading 1.1GB
+ 1837bb99b431 Extracting 1B
+ 46f4de2e4236 Downloading 1.1GB
+ 1837bb99b431 Pull complete 0B
+ 46f4de2e4236 Downloading 1.1GB
+ 00f4238ff416 Extracting 1B
+ 46f4de2e4236 Downloading 1.1GB
+ 00f4238ff416 Extracting 1B
+ 46f4de2e4236 Downloading 1.1GB
+ 00f4238ff416 Pull complete 0B
+ 46f4de2e4236 Downloading 1.1GB
+ 62f716619e2e Pull complete 0B
+ 46f4de2e4236 Downloading 1.1GB
+ Image postgres:18 Pulled 
+ 46f4de2e4236 Download complete 0B
+ 46f4de2e4236 Extracting 1B
+ 46f4de2e4236 Extracting 1B
+ 46f4de2e4236 Extracting 1B
+ 46f4de2e4236 Extracting 1B
+ 46f4de2e4236 Extracting 1B
+ 46f4de2e4236 Extracting 1B
+ 46f4de2e4236 Extracting 1B
+ 46f4de2e4236 Extracting 1B
+ 46f4de2e4236 Extracting 1B
+ 46f4de2e4236 Extracting 1B
+ 46f4de2e4236 Extracting 1B
+ 46f4de2e4236 Extracting 2B
+ 46f4de2e4236 Extracting 2B
+ 46f4de2e4236 Extracting 2B
+ 46f4de2e4236 Extracting 2B
+ 46f4de2e4236 Extracting 2B
+ 46f4de2e4236 Extracting 2B
+ 46f4de2e4236 Extracting 2B
+ 46f4de2e4236 Extracting 2B
+ 46f4de2e4236 Extracting 2B
+ 46f4de2e4236 Extracting 2B
+ 46f4de2e4236 Extracting 3B
+ 46f4de2e4236 Extracting 3B
+ 46f4de2e4236 Extracting 3B
+ 46f4de2e4236 Extracting 3B
+ 46f4de2e4236 Extracting 3B
+ 46f4de2e4236 Extracting 3B
+ 46f4de2e4236 Extracting 3B
+ 46f4de2e4236 Extracting 3B
+ 46f4de2e4236 Extracting 3B
+ 46f4de2e4236 Extracting 3B
+ 46f4de2e4236 Extracting 4B
+ 46f4de2e4236 Extracting 4B
+ 46f4de2e4236 Extracting 4B
+ 46f4de2e4236 Extracting 4B
+ 46f4de2e4236 Extracting 4B
+ 46f4de2e4236 Extracting 4B
+ 46f4de2e4236 Extracting 4B
+ 46f4de2e4236 Extracting 4B
+ 46f4de2e4236 Extracting 4B
+ 46f4de2e4236 Extracting 4B
+ 46f4de2e4236 Extracting 5B
+ 46f4de2e4236 Extracting 5B
+ 46f4de2e4236 Extracting 5B
+ 46f4de2e4236 Extracting 5B
+ 46f4de2e4236 Extracting 5B
+ 46f4de2e4236 Extracting 5B
+ 46f4de2e4236 Extracting 5B
+ 46f4de2e4236 Extracting 5B
+ 46f4de2e4236 Extracting 5B
+ 46f4de2e4236 Extracting 5B
+ 46f4de2e4236 Extracting 6B
+ 46f4de2e4236 Extracting 6B
+ 46f4de2e4236 Extracting 6B
+ 46f4de2e4236 Extracting 6B
+ 46f4de2e4236 Extracting 6B
+ 46f4de2e4236 Extracting 6B
+ 46f4de2e4236 Extracting 6B
+ 46f4de2e4236 Extracting 6B
+ 46f4de2e4236 Extracting 6B
+ 46f4de2e4236 Extracting 6B
+ 46f4de2e4236 Extracting 7B
+ 46f4de2e4236 Extracting 7B
+ 46f4de2e4236 Extracting 7B
+ 46f4de2e4236 Extracting 7B
+ 46f4de2e4236 Extracting 7B
+ 4f4fb700ef54 Extracting 1B
+ 46f4de2e4236 Pull complete 0B
+ 4f4fb700ef54 Pull complete 0B
+ e5604524ac8c Pull complete 0B
+ 9d1f594c66dc Pull complete 0B
+ Image opensearchproject/opensearch:3.9.0 Pulled 
+ Network docker_services_cli_default Creating 
+ Network docker_services_cli_default Created 
+ Container docker_services_cli-postgresql-1 Creating 
+ Container docker_services_cli-opensearch-1 Creating 
+ Container docker_services_cli-redis-1 Creating 
+ Container docker_services_cli-opensearch-1 Created 
+ Container docker_services_cli-postgresql-1 Created 
+ Container docker_services_cli-redis-1 Created 
+ Container docker_services_cli-postgresql-1 Starting 
+ Container docker_services_cli-opensearch-1 Starting 
+ Container docker_services_cli-redis-1 Starting 
+ Container docker_services_cli-opensearch-1 Started 
+ Container docker_services_cli-redis-1 Started 
+ Container docker_services_cli-postgresql-1 Started 
+============================= test session starts ==============================
+platform linux -- Python 3.14.10, pytest-8.4.2, pluggy-1.7.0
+rootdir: /home/runner/work/itd-runner/itd-runner/workdir/tests/invenio-userprofiles/original
+configfile: pyproject.toml
+testpaths: tests, invenio_userprofiles
+plugins: github-actions-annotate-failures-0.4.2, black-0.6.0, isort-4.0.0, invenio-4.1.0, pydocstyle-2.4.0, cov-7.1.0, flask-1.3.0, platformdirs-4.14.8, pycodestyle-2.5.0
+collected 79 items
+::warning file=workdir/tests/invenio-userprofiles/original/invenio_userprofiles/api.py,line=24::current_userprofile is deprecated, use current_user instead
+::warning file=workdir/tests/invenio-userprofiles/original/invenio_userprofiles/api.py,line=24::current_userprofile is deprecated, use current_user instead
+::warning file=workdir/tests/invenio-userprofiles/original/invenio_userprofiles/api.py,line=24::current_userprofile is deprecated, use current_user instead
+::warning file=workdir/tests/invenio-userprofiles/original/invenio_userprofiles/api.py,line=24::current_userprofile is deprecated, use current_user instead
+::warning file=workdir/tests/invenio-userprofiles/original/invenio_userprofiles/api.py,line=24::current_userprofile is deprecated, use current_user instead
+::warning file=workdir/tests/invenio-userprofiles/original/invenio_userprofiles/api.py,line=24::current_userprofile is deprecated, use current_user instead
+::warning file=workdir/tests/invenio-userprofiles/original/invenio_userprofiles/api.py,line=24::current_userprofile is deprecated, use current_user instead
+::warning file=workdir/tests/invenio-userprofiles/original/invenio_userprofiles/api.py,line=24::current_userprofile is deprecated, use current_user instead
+::warning file=workdir/tests/invenio-userprofiles/original/invenio_userprofiles/api.py,line=24::current_userprofile is deprecated, use current_user instead
+::warning file=workdir/tests/invenio-userprofiles/original/invenio_userprofiles/api.py,line=24::current_userprofile is deprecated, use current_user instead
+::warning file=workdir/tests/invenio-userprofiles/original/invenio_userprofiles/api.py,line=24::current_userprofile is deprecated, use current_user instead
+::warning file=workdir/tests/invenio-userprofiles/original/invenio_userprofiles/api.py,line=24::current_userprofile is deprecated, use current_user instead
+::warning file=workdir/tests/invenio-userprofiles/original/invenio_userprofiles/api.py,line=24::current_userprofile is deprecated, use current_user instead
+::warning file=workdir/tests/invenio-userprofiles/original/invenio_userprofiles/api.py,line=24::current_userprofile is deprecated, use current_user instead
+::warning file=workdir/tests/invenio-userprofiles/original/invenio_userprofiles/api.py,line=24::current_userprofile is deprecated, use current_user instead
+::warning file=workdir/tests/invenio-userprofiles/original/invenio_userprofiles/api.py,line=24::current_userprofile is deprecated, use current_user instead
+::warning file=workdir/tests/invenio-userprofiles/original/invenio_userprofiles/api.py,line=24::current_userprofile is deprecated, use current_user instead
+::warning file=workdir/tests/invenio-userprofiles/original/invenio_userprofiles/api.py,line=24::current_userprofile is deprecated, use current_user instead
+::warning file=workdir/tests/invenio-userprofiles/original/invenio_userprofiles/api.py,line=24::current_userprofile is deprecated, use current_user instead
+::warning file=workdir/tests/invenio-userprofiles/original/invenio_userprofiles/api.py,line=24::current_userprofile is deprecated, use current_user instead
+::warning file=workdir/tests/invenio-userprofiles/original/invenio_userprofiles/api.py,line=24::current_userprofile is deprecated, use current_user instead
+::warning file=workdir/tests/invenio-userprofiles/original/invenio_userprofiles/api.py,line=24::current_userprofile is deprecated, use current_user instead
+::warning file=workdir/tests/invenio-userprofiles/original/invenio_userprofiles/api.py,line=24::current_userprofile is deprecated, use current_user instead
+::warning file=workdir/tests/invenio-userprofiles/original/invenio_userprofiles/api.py,line=24::current_userprofile is deprecated, use current_user instead
+::warning file=workdir/tests/invenio-userprofiles/original/invenio_userprofiles/api.py,line=24::current_userprofile is deprecated, use current_user instead
+::warning file=workdir/tests/invenio-userprofiles/original/invenio_userprofiles/api.py,line=24::current_userprofile is deprecated, use current_user instead
+::warning file=workdir/tests/invenio-userprofiles/original/invenio_userprofiles/api.py,line=24::current_userprofile is deprecated, use current_user instead
+::warning file=workdir/tests/invenio-userprofiles/original/invenio_userprofiles/api.py,line=24::current_userprofile is deprecated, use current_user instead
+::warning file=workdir/tests/invenio-userprofiles/original/invenio_userprofiles/api.py,line=24::current_userprofile is deprecated, use current_user instead
+::warning file=workdir/tests/invenio-userprofiles/original/invenio_userprofiles/api.py,line=24::current_userprofile is deprecated, use current_user instead
+::warning file=workdir/tests/invenio-userprofiles/original/invenio_userprofiles/api.py,line=24::current_userprofile is deprecated, use current_user instead
+::warning file=workdir/tests/invenio-userprofiles/original/invenio_userprofiles/api.py,line=24::current_userprofile is deprecated, use current_user instead
+::warning file=workdir/tests/invenio-userprofiles/original/invenio_userprofiles/api.py,line=24::current_userprofile is deprecated, use current_user instead
+::warning file=workdir/tests/invenio-userprofiles/original/invenio_userprofiles/api.py,line=24::current_userprofile is deprecated, use current_user instead
+::warning file=workdir/tests/invenio-userprofiles/original/invenio_userprofiles/api.py,line=24::current_userprofile is deprecated, use current_user instead
+::warning file=workdir/tests/invenio-userprofiles/original/invenio_userprofiles/api.py,line=24::current_userprofile is deprecated, use current_user instead
+::warning file=workdir/tests/invenio-userprofiles/original/invenio_userprofiles/api.py,line=24::current_userprofile is deprecated, use current_user instead
+::warning file=workdir/tests/invenio-userprofiles/original/invenio_userprofiles/api.py,line=24::current_userprofile is deprecated, use current_user instead
+::warning file=workdir/tests/invenio-userprofiles/original/invenio_userprofiles/api.py,line=24::current_userprofile is deprecated, use current_user instead
+::warning file=workdir/tests/invenio-userprofiles/original/invenio_userprofiles/api.py,line=24::current_userprofile is deprecated, use current_user instead
+::warning file=workdir/tests/invenio-userprofiles/original/invenio_userprofiles/api.py,line=24::current_userprofile is deprecated, use current_user instead
+::warning file=workdir/tests/invenio-userprofiles/original/invenio_userprofiles/api.py,line=24::current_userprofile is deprecated, use current_user instead
+::warning file=workdir/tests/invenio-userprofiles/original/invenio_userprofiles/api.py,line=24::current_userprofile is deprecated, use current_user instead
+::warning file=workdir/tests/invenio-userprofiles/original/invenio_userprofiles/api.py,line=24::current_userprofile is deprecated, use current_user instead
+::warning file=workdir/tests/invenio-userprofiles/original/invenio_userprofiles/api.py,line=24::current_userprofile is deprecated, use current_user instead
+::warning file=workdir/tests/invenio-userprofiles/original/invenio_userprofiles/api.py,line=24::current_userprofile is deprecated, use current_user instead
+::warning file=workdir/tests/invenio-userprofiles/original/invenio_userprofiles/api.py,line=24::current_userprofile is deprecated, use current_user instead
+::warning file=workdir/tests/invenio-userprofiles/original/invenio_userprofiles/api.py,line=24::current_userprofile is deprecated, use current_user instead
+::warning file=workdir/tests/invenio-userprofiles/original/invenio_userprofiles/api.py,line=24::current_userprofile is deprecated, use current_user instead
+::warning file=workdir/tests/invenio-userprofiles/original/invenio_userprofiles/api.py,line=24::current_userprofile is deprecated, use current_user instead
+::warning file=workdir/tests/invenio-userprofiles/original/invenio_userprofiles/api.py,line=24::current_userprofile is deprecated, use current_user instead
+
+tests/conftest.py ...                                                    [  3%]
+tests/helpers.py ...                                                     [  7%]
+tests/test_alembic_remove_table.py ...                                   [ 11%]
+tests/test_api.py ...::warning file=workdir/tests/invenio-userprofiles/original/invenio_userprofiles/api.py,line=24::current_userprofile is deprecated, use current_user instead
+.::warning file=workdir/tests/invenio-userprofiles/original/.venv/lib/python3.14/site-packages/wtforms/fields/choices.py,line=624::Passing SelectField choices as tuples is deprecated and will be removed in wtforms 3.4. Please use SelectChoice instead.
+::warning file=workdir/tests/invenio-userprofiles/original/.venv/lib/python3.14/site-packages/wtforms/fields/choices.py,line=624::Passing SelectField choices as tuples is deprecated and will be removed in wtforms 3.4. Please use SelectChoice instead.
+::warning file=workdir/tests/invenio-userprofiles/original/invenio_userprofiles/api.py,line=24::current_userprofile is deprecated, use current_user instead
+::warning file=workdir/tests/invenio-userprofiles/original/invenio_userprofiles/api.py,line=24::current_userprofile is deprecated, use current_user instead
+                                                   [ 16%]
+tests/test_forms.py .......::warning file=workdir/tests/invenio-userprofiles/original/.venv/lib/python3.14/site-packages/wtforms/fields/choices.py,line=624::Passing SelectField choices as tuples is deprecated and will be removed in wtforms 3.4. Please use SelectChoice instead.
+::warning file=workdir/tests/invenio-userprofiles/original/.venv/lib/python3.14/site-packages/wtforms/fields/choices.py,line=624::Passing SelectField choices as tuples is deprecated and will be removed in wtforms 3.4. Please use SelectChoice instead.
+..                                            [ 27%]
+tests/test_invenio_userprofile.py ....s                                  [ 34%]
+tests/test_models.py ......                                              [ 41%]
+tests/test_validators.py ...                                             [ 45%]
+tests/test_views.py .....::warning file=workdir/tests/invenio-userprofiles/original/.venv/lib/python3.14/site-packages/wtforms/fields/choices.py,line=624::Passing SelectField choices as tuples is deprecated and will be removed in wtforms 3.4. Please use SelectChoice instead.
+::warning file=workdir/tests/invenio-userprofiles/original/.venv/lib/python3.14/site-packages/wtforms/fields/choices.py,line=624::Passing SelectField choices as tuples is deprecated and will be removed in wtforms 3.4. Please use SelectChoice instead.
+::warning file=workdir/tests/invenio-userprofiles/original/.venv/lib/python3.14/site-packages/wtforms/fields/choices.py,line=624::Passing SelectField choices as tuples is deprecated and will be removed in wtforms 3.4. Please use SelectChoice instead.
+::warning file=workdir/tests/invenio-userprofiles/original/.venv/lib/python3.14/site-packages/wtforms/fields/choices.py,line=624::Passing SelectField choices as tuples is deprecated and will be removed in wtforms 3.4. Please use SelectChoice instead.
+::warning file=workdir/tests/invenio-userprofiles/original/.venv/lib/python3.14/site-packages/wtforms/fields/choices.py,line=624::Passing SelectField choices as tuples is deprecated and will be removed in wtforms 3.4. Please use SelectChoice instead.
+::warning file=workdir/tests/invenio-userprofiles/original/.venv/lib/python3.14/site-packages/wtforms/fields/choices.py,line=624::Passing SelectField choices as tuples is deprecated and will be removed in wtforms 3.4. Please use SelectChoice instead.
+::warning file=workdir/tests/invenio-userprofiles/original/.venv/lib/python3.14/site-packages/wtforms/fields/choices.py,line=624::Passing SelectField choices as tuples is deprecated and will be removed in wtforms 3.4. Please use SelectChoice instead.
+::warning file=workdir/tests/invenio-userprofiles/original/.venv/lib/python3.14/site-packages/wtforms/fields/choices.py,line=624::Passing SelectField choices as tuples is deprecated and will be removed in wtforms 3.4. Please use SelectChoice instead.
+::warning file=workdir/tests/invenio-userprofiles/original/.venv/lib/python3.14/site-packages/wtforms/fields/choices.py,line=624::Passing SelectField choices as tuples is deprecated and will be removed in wtforms 3.4. Please use SelectChoice instead.
+::warning file=workdir/tests/invenio-userprofiles/original/.venv/lib/python3.14/site-packages/wtforms/fields/choices.py,line=624::Passing SelectField choices as tuples is deprecated and will be removed in wtforms 3.4. Please use SelectChoice instead.
+::warning file=workdir/tests/invenio-userprofiles/original/.venv/lib/python3.14/site-packages/wtforms/fields/choices.py,line=624::Passing SelectField choices as tuples is deprecated and will be removed in wtforms 3.4. Please use SelectChoice instead.
+::warning file=workdir/tests/invenio-userprofiles/original/.venv/lib/python3.14/site-packages/wtforms/fields/choices.py,line=624::Passing SelectField choices as tuples is deprecated and will be removed in wtforms 3.4. Please use SelectChoice instead.
+::warning file=workdir/tests/invenio-userprofiles/original/.venv/lib/python3.14/site-packages/wtforms/fields/choices.py,line=624::Passing SelectField choices as tuples is deprecated and will be removed in wtforms 3.4. Please use SelectChoice instead.
+::warning file=workdir/tests/invenio-userprofiles/original/.venv/lib/python3.14/site-packages/wtforms/fields/choices.py,line=624::Passing SelectField choices as tuples is deprecated and will be removed in wtforms 3.4. Please use SelectChoice instead.
+::warning file=workdir/tests/invenio-userprofiles/original/.venv/lib/python3.14/site-packages/wtforms/fields/choices.py,line=624::Passing SelectField choices as tuples is deprecated and will be removed in wtforms 3.4. Please use SelectChoice instead.
+::warning file=workdir/tests/invenio-userprofiles/original/.venv/lib/python3.14/site-packages/wtforms/fields/choices.py,line=624::Passing SelectField choices as tuples is deprecated and will be removed in wtforms 3.4. Please use SelectChoice instead.
+.::warning file=workdir/tests/invenio-userprofiles/original/.venv/lib/python3.14/site-packages/wtforms/fields/choices.py,line=624::Passing SelectField choices as tuples is deprecated and will be removed in wtforms 3.4. Please use SelectChoice instead.
+::warning file=workdir/tests/invenio-userprofiles/original/.venv/lib/python3.14/site-packages/wtforms/fields/choices.py,line=624::Passing SelectField choices as tuples is deprecated and will be removed in wtforms 3.4. Please use SelectChoice instead.
+::warning file=workdir/tests/invenio-userprofiles/original/.venv/lib/python3.14/site-packages/wtforms/fields/choices.py,line=624::Passing SelectField choices as tuples is deprecated and will be removed in wtforms 3.4. Please use SelectChoice instead.
+::warning file=workdir/tests/invenio-userprofiles/original/.venv/lib/python3.14/site-packages/wtforms/fields/choices.py,line=624::Passing SelectField choices as tuples is deprecated and will be removed in wtforms 3.4. Please use SelectChoice instead.
+::warning file=workdir/tests/invenio-userprofiles/original/.venv/lib/python3.14/site-packages/wtforms/fields/choices.py,line=624::Passing SelectField choices as tuples is deprecated and will be removed in wtforms 3.4. Please use SelectChoice instead.
+::warning file=workdir/tests/invenio-userprofiles/original/.venv/lib/python3.14/site-packages/wtforms/fields/choices.py,line=624::Passing SelectField choices as tuples is deprecated and will be removed in wtforms 3.4. Please use SelectChoice instead.
+::warning file=workdir/tests/invenio-userprofiles/original/.venv/lib/python3.14/site-packages/wtforms/fields/choices.py,line=624::Passing SelectField choices as tuples is deprecated and will be removed in wtforms 3.4. Please use SelectChoice instead.
+::warning file=workdir/tests/invenio-userprofiles/original/.venv/lib/python3.14/site-packages/wtforms/fields/choices.py,line=624::Passing SelectField choices as tuples is deprecated and will be removed in wtforms 3.4. Please use SelectChoice instead.
+.::warning file=workdir/tests/invenio-userprofiles/original/.venv/lib/python3.14/site-packages/wtforms/fields/choices.py,line=624::Passing SelectField choices as tuples is deprecated and will be removed in wtforms 3.4. Please use SelectChoice instead.
+::warning file=workdir/tests/invenio-userprofiles/original/.venv/lib/python3.14/site-packages/wtforms/fields/choices.py,line=624::Passing SelectField choices as tuples is deprecated and will be removed in wtforms 3.4. Please use SelectChoice instead.
+::warning file=workdir/tests/invenio-userprofiles/original/.venv/lib/python3.14/site-packages/wtforms/fields/choices.py,line=624::Passing SelectField choices as tuples is deprecated and will be removed in wtforms 3.4. Please use SelectChoice instead.
+::warning file=workdir/tests/invenio-userprofiles/original/.venv/lib/python3.14/site-packages/wtforms/fields/choices.py,line=624::Passing SelectField choices as tuples is deprecated and will be removed in wtforms 3.4. Please use SelectChoice instead.
+::warning file=workdir/tests/invenio-userprofiles/original/.venv/lib/python3.14/site-packages/wtforms/fields/choices.py,line=624::Passing SelectField choices as tuples is deprecated and will be removed in wtforms 3.4. Please use SelectChoice instead.
+::warning file=workdir/tests/invenio-userprofiles/original/.venv/lib/python3.14/site-packages/wtforms/fields/choices.py,line=624::Passing SelectField choices as tuples is deprecated and will be removed in wtforms 3.4. Please use SelectChoice instead.
+::warning file=workdir/tests/invenio-userprofiles/original/.venv/lib/python3.14/site-packages/wtforms/fields/choices.py,line=624::Passing SelectField choices as tuples is deprecated and will be removed in wtforms 3.4. Please use SelectChoice instead.
+::warning file=workdir/tests/invenio-userprofiles/original/.venv/lib/python3.14/site-packages/wtforms/fields/choices.py,line=624::Passing SelectField choices as tuples is deprecated and will be removed in wtforms 3.4. Please use SelectChoice instead.
+::warning file=workdir/tests/invenio-userprofiles/original/.venv/lib/python3.14/site-packages/wtforms/fields/choices.py,line=624::Passing SelectField choices as tuples is deprecated and will be removed in wtforms 3.4. Please use SelectChoice instead.
+::warning file=workdir/tests/invenio-userprofiles/original/.venv/lib/python3.14/site-packages/wtforms/fields/choices.py,line=624::Passing SelectField choices as tuples is deprecated and will be removed in wtforms 3.4. Please use SelectChoice instead.
+::warning file=workdir/tests/invenio-userprofiles/original/.venv/lib/python3.14/site-packages/wtforms/fields/choices.py,line=624::Passing SelectField choices as tuples is deprecated and will be removed in wtforms 3.4. Please use SelectChoice instead.
+::warning file=workdir/tests/invenio-userprofiles/original/.venv/lib/python3.14/site-packages/wtforms/fields/choices.py,line=624::Passing SelectField choices as tuples is deprecated and will be removed in wtforms 3.4. Please use SelectChoice instead.
+::warning file=workdir/tests/invenio-userprofiles/original/.venv/lib/python3.14/site-packages/wtforms/fields/choices.py,line=624::Passing SelectField choices as tuples is deprecated and will be removed in wtforms 3.4. Please use SelectChoice instead.
+::warning file=workdir/tests/invenio-userprofiles/original/.venv/lib/python3.14/site-packages/wtforms/fields/choices.py,line=624::Passing SelectField choices as tuples is deprecated and will be removed in wtforms 3.4. Please use SelectChoice instead.
+.::warning file=workdir/tests/invenio-userprofiles/original/.venv/lib/python3.14/site-packages/wtforms/fields/choices.py,line=624::Passing SelectField choices as tuples is deprecated and will be removed in wtforms 3.4. Please use SelectChoice instead.
+::warning file=workdir/tests/invenio-userprofiles/original/.venv/lib/python3.14/site-packages/wtforms/fields/choices.py,line=624::Passing SelectField choices as tuples is deprecated and will be removed in wtforms 3.4. Please use SelectChoice instead.
+::warning file=workdir/tests/invenio-userprofiles/original/.venv/lib/python3.14/site-packages/wtforms/fields/choices.py,line=624::Passing SelectField choices as tuples is deprecated and will be removed in wtforms 3.4. Please use SelectChoice instead.
+::warning file=workdir/tests/invenio-userprofiles/original/.venv/lib/python3.14/site-packages/wtforms/fields/choices.py,line=624::Passing SelectField choices as tuples is deprecated and will be removed in wtforms 3.4. Please use SelectChoice instead.
+.::warning file=workdir/tests/invenio-userprofiles/original/.venv/lib/python3.14/site-packages/wtforms/fields/choices.py,line=624::Passing SelectField choices as tuples is deprecated and will be removed in wtforms 3.4. Please use SelectChoice instead.
+::warning file=workdir/tests/invenio-userprofiles/original/.venv/lib/python3.14/site-packages/wtforms/fields/choices.py,line=624::Passing SelectField choices as tuples is deprecated and will be removed in wtforms 3.4. Please use SelectChoice instead.
+::warning file=workdir/tests/invenio-userprofiles/original/.venv/lib/python3.14/site-packages/wtforms/fields/choices.py,line=624::Passing SelectField choices as tuples is deprecated and will be removed in wtforms 3.4. Please use SelectChoice instead.
+::warning file=workdir/tests/invenio-userprofiles/original/.venv/lib/python3.14/site-packages/wtforms/fields/choices.py,line=624::Passing SelectField choices as tuples is deprecated and will be removed in wtforms 3.4. Please use SelectChoice instead.
+::warning file=workdir/tests/invenio-userprofiles/original/.venv/lib/python3.14/site-packages/wtforms/fields/choices.py,line=624::Passing SelectField choices as tuples is deprecated and will be removed in wtforms 3.4. Please use SelectChoice instead.
+::warning file=workdir/tests/invenio-userprofiles/original/.venv/lib/python3.14/site-packages/wtforms/fields/choices.py,line=624::Passing SelectField choices as tuples is deprecated and will be removed in wtforms 3.4. Please use SelectChoice instead.
+::warning file=workdir/tests/invenio-userprofiles/original/.venv/lib/python3.14/site-packages/wtforms/fields/choices.py,line=624::Passing SelectField choices as tuples is deprecated and will be removed in wtforms 3.4. Please use SelectChoice instead.
+::warning file=workdir/tests/invenio-userprofiles/original/.venv/lib/python3.14/site-packages/wtforms/fields/choices.py,line=624::Passing SelectField choices as tuples is deprecated and will be removed in wtforms 3.4. Please use SelectChoice instead.
+::warning file=workdir/tests/invenio-userprofiles/original/.venv/lib/python3.14/site-packages/wtforms/fields/choices.py,line=624::Passing SelectField choices as tuples is deprecated and will be removed in wtforms 3.4. Please use SelectChoice instead.
+::warning file=workdir/tests/invenio-userprofiles/original/.venv/lib/python3.14/site-packages/wtforms/fields/choices.py,line=624::Passing SelectField choices as tuples is deprecated and will be removed in wtforms 3.4. Please use SelectChoice instead.
+::warning file=workdir/tests/invenio-userprofiles/original/.venv/lib/python3.14/site-packages/wtforms/fields/choices.py,line=624::Passing SelectField choices as tuples is deprecated and will be removed in wtforms 3.4. Please use SelectChoice instead.
+::warning file=workdir/tests/invenio-userprofiles/original/.venv/lib/python3.14/site-packages/wtforms/fields/choices.py,line=624::Passing SelectField choices as tuples is deprecated and will be removed in wtforms 3.4. Please use SelectChoice instead.
+.::warning file=workdir/tests/invenio-userprofiles/original/.venv/lib/python3.14/site-packages/wtforms/fields/choices.py,line=624::Passing SelectField choices as tuples is deprecated and will be removed in wtforms 3.4. Please use SelectChoice instead.
+::warning file=workdir/tests/invenio-userprofiles/original/.venv/lib/python3.14/site-packages/wtforms/fields/choices.py,line=624::Passing SelectField choices as tuples is deprecated and will be removed in wtforms 3.4. Please use SelectChoice instead.
+::warning file=workdir/tests/invenio-userprofiles/original/.venv/lib/python3.14/site-packages/wtforms/fields/choices.py,line=624::Passing SelectField choices as tuples is deprecated and will be removed in wtforms 3.4. Please use SelectChoice instead.
+::warning file=workdir/tests/invenio-userprofiles/original/.venv/lib/python3.14/site-packages/wtforms/fields/choices.py,line=624::Passing SelectField choices as tuples is deprecated and will be removed in wtforms 3.4. Please use SelectChoice instead.
+                                           [ 58%]
+invenio_userprofiles/__init__.py ...                                     [ 62%]
+invenio_userprofiles/alembic/41157f1933d6_remove_table.py ...            [ 65%]
+invenio_userprofiles/alembic/71634726ec7e_create_userprofiles_branch.py . [ 67%]
+..                                                                       [ 69%]
+invenio_userprofiles/alembic/c25ef2c50ffa_create_userprofiles_tables.py . [ 70%]
+..                                                                       [ 73%]
+invenio_userprofiles/api.py ...                                          [ 77%]
+invenio_userprofiles/config.py ...                                       [ 81%]
+invenio_userprofiles/ext.py ...                                          [ 84%]
+invenio_userprofiles/forms.py ...                                        [ 88%]
+invenio_userprofiles/models.py ...                                       [ 92%]
+invenio_userprofiles/validators.py ...                                   [ 96%]
+invenio_userprofiles/views.py ...                                        [100%]
+
+=============================== warnings summary ===============================
+invenio_userprofiles/api.py:24: 51 warnings
+tests/test_api.py: 3 warnings
+  /home/runner/work/itd-runner/itd-runner/workdir/tests/invenio-userprofiles/original/invenio_userprofiles/api.py:24: DeprecationWarning: current_userprofile is deprecated, use current_user instead
+    warn(
+
+tests/test_api.py: 2 warnings
+tests/test_forms.py: 2 warnings
+tests/test_views.py: 58 warnings
+  /home/runner/work/itd-runner/itd-runner/workdir/tests/invenio-userprofiles/original/.venv/lib/python3.14/site-packages/wtforms/fields/choices.py:624: DeprecationWarning: Passing SelectField choices as tuples is deprecated and will be removed in wtforms 3.4. Please use SelectChoice instead.
+    super().__init__(label, validators, **kwargs)
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+- generated xml file: /home/runner/work/itd-runner/itd-runner/workdir/artifacts/invenio-userprofiles/original_junit.xml -
+================================ tests coverage ================================
+_______________ coverage: platform linux, python 3.14.10-final-0 _______________
+
+Name                                                                      Stmts   Miss  Cover   Missing
+-------------------------------------------------------------------------------------------------------
+invenio_userprofiles/__init__.py                                             12      4    67%   18-24
+invenio_userprofiles/alembic/41157f1933d6_remove_table.py                    19      0   100%
+invenio_userprofiles/alembic/71634726ec7e_create_userprofiles_branch.py       8      0   100%
+invenio_userprofiles/alembic/c25ef2c50ffa_create_userprofiles_tables.py      10      2    80%   18, 35
+invenio_userprofiles/api.py                                                   9      0   100%
+invenio_userprofiles/config.py                                               16      0   100%
+invenio_userprofiles/ext.py                                                  38      1    97%   86
+invenio_userprofiles/forms.py                                               109     12    89%   43, 190-194, 255-256, 310-313
+invenio_userprofiles/models.py                                               46      8    83%   15, 52, 58-64
+invenio_userprofiles/validators.py                                           11      3    73%   37-43
+invenio_userprofiles/views.py                                                65      8    88%   40-41, 68-69, 144-148
+-------------------------------------------------------------------------------------------------------
+TOTAL                                                                       343     38    89%
+================= 78 passed, 1 skipped, 116 warnings in 13.55s =================
+ Container docker_services_cli-opensearch-1 Stopping 
+ Container docker_services_cli-redis-1 Stopping 
+ Container docker_services_cli-postgresql-1 Stopping 
+ Container docker_services_cli-postgresql-1 Stopped 
+ Container docker_services_cli-postgresql-1 Removing 
+ Container docker_services_cli-redis-1 Stopped 
+ Container docker_services_cli-redis-1 Removing 
+ Container docker_services_cli-postgresql-1 Removed 
+ Container docker_services_cli-redis-1 Removed 
+ Container docker_services_cli-opensearch-1 Stopped 
+ Container docker_services_cli-opensearch-1 Removing 
+ Container docker_services_cli-opensearch-1 Removed 
+ Network docker_services_cli_default Removing 
+ Network docker_services_cli_default Removed 

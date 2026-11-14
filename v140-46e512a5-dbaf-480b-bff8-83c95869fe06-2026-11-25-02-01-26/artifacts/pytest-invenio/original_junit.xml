@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites name="pytest tests"><testsuite name="pytest" errors="0" failures="1" skipped="1" tests="48" time="44.303" timestamp="2026-11-25T02:09:42.245392+00:00" hostname="runnervm0hi8g"><testcase classname="tests.conftest" name="PYDOCSTYLE" time="0.005" /><testcase classname="tests.conftest" name="ISORT" time="0.009" /><testcase classname="tests.conftest" name="black" time="0.312" /><testcase classname="tests.test_fixtures" name="ISORT" time="0.004" /><testcase classname="tests.test_fixtures" name="black" time="0.201" /><testcase classname="tests.test_fixtures" name="test_version" time="0.001" /><testcase classname="tests.test_fixtures" name="test_instance_path" time="0.409" /><testcase classname="tests.test_fixtures" name="test_db_uri" time="0.388" /><testcase classname="tests.test_fixtures" name="test_db_uri_env" time="0.391" /><testcase classname="tests.test_fixtures" name="test_broker_uri" time="0.395" /><testcase classname="tests.test_fixtures" name="test_broker_uri_env" time="0.390" /><testcase classname="tests.test_fixtures" name="test_search_hosts" time="0.383" /><testcase classname="tests.test_fixtures" name="test_search_hosts_env" time="0.394" /><testcase classname="tests.test_fixtures" name="test_app_config" time="1.091" /><testcase classname="tests.test_fixtures" name="test_base_app" time="4.382" /><testcase classname="tests.test_fixtures" name="test_base_client_jsonresponse" time="1.744" /><testcase classname="tests.test_fixtures" name="test_appctx" time="1.744" /><testcase classname="tests.test_fixtures" name="test_script_info" time="1.745" /><testcase classname="tests.test_fixtures" name="test_clirunner" time="1.786" /><testcase classname="tests.test_fixtures" name="test_clirunner_output" time="1.749" /><testcase classname="tests.test_fixtures" name="test_search" time="1.959" /><testcase classname="tests.test_fixtures" name="test_search_clear" time="2.055" /><testcase classname="tests.test_fixtures" name="test_search_index_names" time="1.864"><failure message="AssertionError: assert {'errors': 0,...pped': 0, ...} == {'errors': 0,...pped': 0, ...}&#10;  &#10;  Omitting 4 identical items, use -vv to show&#10;  Differing items:&#10;  {'passed': 0} != {'passed': 1}&#10;  {'failed': 1} != {'failed': 0}&#10;  &#10;  Full diff:&#10;    {&#10;        'errors': 0,&#10;  -     'failed': 0,&#10;  ?               ^&#10;  +     'failed': 1,&#10;  ?               ^&#10;  -     'passed': 1,&#10;  ?               ^&#10;  +     'passed': 0,&#10;  ?               ^&#10;        'skipped': 0,&#10;        'xfailed': 0,&#10;        'xpassed': 0,&#10;    }">conftest_testdir = &lt;Testdir local('/tmp/pytest-of-runner/pytest-0/test_search_index_names0')&gt;
+
+    def test_search_index_names(conftest_testdir):
+        """Test search index names."""
+        conftest_testdir.makepyfile(
+            """
+            def test_index_names(search, search_index_names):
+                assert search_index_names() == set()
+                search.indices.create(index='demo')
+                try:
+                    assert search_index_names() == {'demo'}
+                finally:
+                    search.indices.delete(index='demo')
+        """
+        )
+&gt;       conftest_testdir.runpytest().assert_outcomes(passed=1)
+E       AssertionError: assert {'errors': 0,...pped': 0, ...} == {'errors': 0,...pped': 0, ...}
+E         
+E         Omitting 4 identical items, use -vv to show
+E         Differing items:
+E         {'passed': 0} != {'passed': 1}
+E         {'failed': 1} != {'failed': 0}
+E         
+E         Full diff:
+E           {
+E               'errors': 0,
+E         -     'failed': 0,
+E         ?               ^
+E         +     'failed': 1,
+E         ?               ^
+E         -     'passed': 1,
+E         ?               ^
+E         +     'passed': 0,
+E         ?               ^
+E               'skipped': 0,
+E               'xfailed': 0,
+E               'xpassed': 0,
+E           }
+
+/home/runner/work/itd-runner/itd-runner/workdir/tests/pytest-invenio/original/tests/test_fixtures.py:346: AssertionError</failure></testcase><testcase classname="tests.test_fixtures" name="test_database" time="1.775" /><testcase classname="tests.test_fixtures" name="test_db" time="1.910" /><testcase classname="tests.test_fixtures" name="test_db_commit" time="1.846" /><testcase classname="tests.test_fixtures" name="test_app" time="1.821" /><testcase classname="tests.test_fixtures" name="test_mailbox" time="1.880" /><testcase classname="tests.test_fixtures" name="test_browser_skipped" time="1.310" /><testcase classname="tests.test_fixtures" name="test_browser" time="0.000"><skipped type="pytest.skip" message="outdated library">/home/runner/work/itd-runner/itd-runner/workdir/tests/pytest-invenio/original/tests/test_fixtures.py:473: outdated library</skipped></testcase><testcase classname="tests.test_fixtures" name="test_celery_config_ext" time="0.394" /><testcase classname="tests.test_fixtures" name="test_default_location" time="1.790" /><testcase classname="tests.test_fixtures" name="test_bucket_from_dir" time="1.829" /><testcase classname="tests.test_fixtures" name="test_entrypoint_invenio_base" time="1.707" /><testcase classname="tests.test_fixtures" name="test_entrypoint_importlib" time="1.672" /><testcase classname="tests.test_fixtures" name="test_set_app_config_fn_scoped" time="1.763" /><testcase classname="pytest_invenio.__init__" name="PYDOCSTYLE" time="0.005" /><testcase classname="pytest_invenio.__init__" name="ISORT" time="0.002" /><testcase classname="pytest_invenio.__init__" name="black" time="0.171" /><testcase classname="pytest_invenio.fixtures" name="PYDOCSTYLE" time="0.040" /><testcase classname="pytest_invenio.fixtures" name="ISORT" time="0.022" /><testcase classname="pytest_invenio.fixtures" name="black" time="0.256" /><testcase classname="pytest_invenio.plugin" name="PYDOCSTYLE" time="0.004" /><testcase classname="pytest_invenio.plugin" name="ISORT" time="0.003" /><testcase classname="pytest_invenio.plugin" name="black" time="0.179" /><testcase classname="pytest_invenio.user" name="PYDOCSTYLE" time="0.010" /><testcase classname="pytest_invenio.user" name="ISORT" time="0.008" /><testcase classname="pytest_invenio.user" name="black" time="0.187" /></testsuite></testsuites>

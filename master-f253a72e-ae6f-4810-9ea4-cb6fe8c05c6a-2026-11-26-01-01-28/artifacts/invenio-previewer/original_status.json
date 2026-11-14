@@ -1,0 +1,76 @@
+{
+  "dependencies": [],
+  "package": {
+    "github_entry": {
+      "_extra": {},
+      "default_branch": null,
+      "exclude": [
+        "invenio-xrootd",
+        "invenio-swh"
+      ],
+      "extras": [
+        "tests",
+        "opensearch2",
+        "s3",
+        "devs",
+        "s3fs",
+        "oaipmh",
+        "rdf",
+        "sparql",
+        "postgresql",
+        "admin"
+      ],
+      "freeze": [
+        "setuptools<82.0.0"
+      ],
+      "include": [
+        "invenio-.*",
+        "pytest-invenio",
+        "citeproc-py-styles"
+      ],
+      "install": [],
+      "org": "inveniosoftware",
+      "package_map": {},
+      "slow_packages": {
+        "invenio-rdm-records": [
+          "tests/resources/test_iiif_image_api.py",
+          "tests/resources/test_resources_review.py",
+          "tests/services/test_rdm_service.py"
+        ]
+      },
+      "test": [
+        "./run-tests.sh"
+      ]
+    },
+    "patched_reference": null,
+    "patches": [],
+    "reference": {
+      "actual_version": "6.2.1",
+      "base": null,
+      "branch": "v6.2.1",
+      "commit": "c5972a60d04c35945e0f8ef242b81b7a8d99d279",
+      "commits_from_version": [],
+      "org": "inveniosoftware",
+      "package": "invenio-previewer",
+      "pr": null,
+      "pr_info": null,
+      "repo": "invenio-previewer"
+    },
+    "unpatched_reference": {
+      "actual_version": "7.0.0",
+      "base": null,
+      "branch": null,
+      "commit": "645dd42ff97fc14d66cb86b070dc4c08a96c85ed",
+      "commits_from_version": [
+        "e1143418f7ca8719c2ddf36d82943e19b16fd80c",
+        "645dd42ff97fc14d66cb86b070dc4c08a96c85ed"
+      ],
+      "org": "inveniosoftware",
+      "package": "invenio-previewer",
+      "pr": null,
+      "pr_info": null,
+      "repo": "invenio-previewer"
+    }
+  },
+  "status": "success"
+}

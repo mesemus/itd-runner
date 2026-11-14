@@ -1,0 +1,73 @@
+{
+  "dependencies": [],
+  "package": {
+    "github_entry": {
+      "_extra": {},
+      "default_branch": null,
+      "exclude": [
+        "invenio-xrootd",
+        "invenio-swh"
+      ],
+      "extras": [
+        "tests",
+        "opensearch2",
+        "s3",
+        "devs",
+        "s3fs",
+        "oaipmh",
+        "rdf",
+        "sparql",
+        "postgresql",
+        "admin"
+      ],
+      "freeze": [
+        "setuptools<82.0.0"
+      ],
+      "include": [
+        "invenio-.*",
+        "pytest-invenio",
+        "citeproc-py-styles"
+      ],
+      "install": [],
+      "org": "inveniosoftware",
+      "package_map": {},
+      "slow_packages": {
+        "invenio-rdm-records": [
+          "tests/resources/test_iiif_image_api.py",
+          "tests/resources/test_resources_review.py",
+          "tests/services/test_rdm_service.py"
+        ]
+      },
+      "test": [
+        "./run-tests.sh"
+      ]
+    },
+    "patched_reference": null,
+    "patches": [],
+    "reference": {
+      "actual_version": "12.1.2",
+      "base": null,
+      "branch": "v12.1.2",
+      "commit": "b183641643220a0d7b28279e9817dc36af166ee9",
+      "commits_from_version": [],
+      "org": "inveniosoftware",
+      "package": "invenio-users-resources",
+      "pr": null,
+      "pr_info": null,
+      "repo": "invenio-users-resources"
+    },
+    "unpatched_reference": {
+      "actual_version": "12.1.2",
+      "base": null,
+      "branch": null,
+      "commit": "b183641643220a0d7b28279e9817dc36af166ee9",
+      "commits_from_version": [],
+      "org": "inveniosoftware",
+      "package": "invenio-users-resources",
+      "pr": null,
+      "pr_info": null,
+      "repo": "invenio-users-resources"
+    }
+  },
+  "status": "skipped"
+}

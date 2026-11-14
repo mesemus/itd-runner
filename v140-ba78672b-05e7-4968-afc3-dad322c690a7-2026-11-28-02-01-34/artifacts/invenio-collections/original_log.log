@@ -1,0 +1,572 @@
+ Image rabbitmq:3-management Pulling 
+ Image postgres:18 Pulling 
+ Image opensearchproject/opensearch:2.19.7 Pulling 
+ Image redis:7 Pulling 
+ 7763bb854b64 Pulling fs layer 0B
+ b45ac39da3c5 Pulling fs layer 0B
+ 11c592228529 Pulling fs layer 0B
+ f777f604962b Pulling fs layer 0B
+ 4f4fb700ef54 Pulling fs layer 0B
+ b14c48cb507d Pulling fs layer 0B
+ ba911e142be4 Pulling fs layer 0B
+ 817018563f08 Pulling fs layer 0B
+ fb36845717af Pulling fs layer 0B
+ a13218a43344 Pulling fs layer 0B
+ 4f4fb700ef54 Pulling fs layer 0B
+ b1dd3d113aab Pulling fs layer 0B
+ dcadfd589ed7 Pulling fs layer 0B
+ 3ed90300cc1a Pulling fs layer 0B
+ 7cb67b3b537a Pulling fs layer 0B
+ 84a852dae169 Pulling fs layer 0B
+ 7fe3468bf416 Pulling fs layer 0B
+ 40748add9f4f Pulling fs layer 0B
+ a1361b767ece Pulling fs layer 0B
+ 0afa8bd0fe3a Pulling fs layer 0B
+ edf2405c6afe Pulling fs layer 0B
+ 1c59edd7eb40 Pulling fs layer 0B
+ 8e4857f35fce Pulling fs layer 0B
+ c1436cf65049 Pulling fs layer 0B
+ 61061a425fb0 Pulling fs layer 0B
+ 0f12a37b90bb Pulling fs layer 0B
+ d686b50ce172 Pulling fs layer 0B
+ 14e6209d5fa8 Pulling fs layer 0B
+ f4e7f62f4b80 Pulling fs layer 0B
+ 5e1c03b67a78 Pulling fs layer 0B
+ d63c4408fdb7 Pulling fs layer 0B
+ efa05c660812 Pulling fs layer 0B
+ 20043066d3d5 Pulling fs layer 0B
+ 3fadc669ef11 Pulling fs layer 0B
+ 7084ac8f4ab6 Pulling fs layer 0B
+ beb0d870d438 Pulling fs layer 0B
+ 4f4fb700ef54 Already exists 0B
+ 4f4fb700ef54 Already exists 0B
+ 817018563f08 Download complete 0B
+ b45ac39da3c5 Download complete 0B
+ ba911e142be4 Download complete 0B
+ 7763bb854b64 Download complete 0B
+ 11c592228529 Downloading 2.097MB
+ 7cb67b3b537a Download complete 0B
+ dcadfd589ed7 Download complete 0B
+ efa05c660812 Download complete 0B
+ d686b50ce172 Downloading 12.47MB
+ 14e6209d5fa8 Download complete 0B
+ fb36845717af Download complete 0B
+ 0f12a37b90bb Download complete 0B
+ a1361b767ece Downloading 3.146MB
+ 3ed90300cc1a Download complete 0B
+ a13218a43344 Downloading 13.63MB
+ 5e1c03b67a78 Download complete 0B
+ 0afa8bd0fe3a Download complete 0B
+ 1c59edd7eb40 Download complete 0B
+ 61061a425fb0 Download complete 0B
+ 7fe3468bf416 Download complete 0B
+ b14c48cb507d Downloading 7.34MB
+ 11c592228529 Download complete 0B
+ f777f604962b Downloading 6.291MB
+ beb0d870d438 Download complete 0B
+ a13218a43344 Download complete 0B
+ b1dd3d113aab Downloading 2.097MB
+ 40748add9f4f Downloading 5.243MB
+ a1361b767ece Download complete 0B
+ edf2405c6afe Downloading 4.194MB
+ f4e7f62f4b80 Download complete 0B
+ 3fadc669ef11 Downloading 4.194MB
+ 7084ac8f4ab6 Downloading 5.243MB
+ 84a852dae169 Download complete 0B
+ d686b50ce172 Download complete 0B
+ d63c4408fdb7 Downloading 4.194MB
+ 20043066d3d5 Downloading 3.146MB
+ c1436cf65049 Download complete 0B
+ 8e4857f35fce Download complete 0B
+ b14c48cb507d Downloading 14.68MB
+ f777f604962b Downloading 14.68MB
+ b1dd3d113aab Downloading 5.243MB
+ 3fadc669ef11 Downloading 12.58MB
+ 971ecd1c75ec Download complete 0B
+ 7084ac8f4ab6 Download complete 0B
+ d63c4408fdb7 Downloading 12.58MB
+ 20043066d3d5 Downloading 11.53MB
+ 40748add9f4f Downloading 13.63MB
+ edf2405c6afe Downloading 12.58MB
+ b1dd3d113aab Downloading 9.437MB
+ b14c48cb507d Downloading 22.02MB
+ f777f604962b Downloading 23.07MB
+ 40748add9f4f Downloading 20.97MB
+ edf2405c6afe Downloading 20.97MB
+ d63c4408fdb7 Downloading 19.92MB
+ 20043066d3d5 Downloading 19.92MB
+ 59e8b6ceb028 Download complete 0B
+ 592e13125349 Download complete 0B
+ 16ef6b12768c Download complete 0B
+ 7ec4c696b8bb Download complete 0B
+ 3fadc669ef11 Downloading 20.97MB
+ b14c48cb507d Downloading 31.46MB
+ f777f604962b Downloading 31.46MB
+ d63c4408fdb7 Download complete 0B
+ 20043066d3d5 Downloading 28.31MB
+ 3fadc669ef11 Downloading 30.41MB
+ b1dd3d113aab Downloading 16.78MB
+ edf2405c6afe Downloading 29.36MB
+ 3c65b9afb00e Downloading 6.319MB
+ 40748add9f4f Downloading 29.84MB
+ b1dd3d113aab Downloading 23.07MB
+ b14c48cb507d Downloading 38.8MB
+ f777f604962b Downloading 39.85MB
+ 3c65b9afb00e Download complete 0B
+ 20043066d3d5 Download complete 0B
+ 3fadc669ef11 Downloading 37.75MB
+ 40748add9f4f Download complete 0B
+ edf2405c6afe Downloading 35.65MB
+ 40748add9f4f Extracting 1B
+ 20043066d3d5 Extracting 1B
+ edf2405c6afe Downloading 46.14MB
+ b14c48cb507d Downloading 47.19MB
+ f777f604962b Downloading 49.28MB
+ b1dd3d113aab Download complete 0B
+ 3fadc669ef11 Downloading 43.48MB
+ b1dd3d113aab Extracting 1B
+ 20043066d3d5 Extracting 1B
+ 40748add9f4f Extracting 1B
+ edf2405c6afe Downloading 58.72MB
+ b14c48cb507d Downloading 54.57MB
+ f777f604962b Downloading 61.87MB
+ 3fadc669ef11 Download complete 0B
+ b1dd3d113aab Extracting 1B
+ 20043066d3d5 Extracting 1B
+ 40748add9f4f Extracting 1B
+ edf2405c6afe Downloading 72.35MB
+ b14c48cb507d Download complete 0B
+ f777f604962b Downloading 75.5MB
+ b1dd3d113aab Extracting 1B
+ b14c48cb507d Extracting 1B
+ 20043066d3d5 Extracting 1B
+ 40748add9f4f Extracting 1B
+ f777f604962b Downloading 89.13MB
+ edf2405c6afe Downloading 87.03MB
+ b1dd3d113aab Extracting 1B
+ b14c48cb507d Extracting 1B
+ 20043066d3d5 Extracting 1B
+ 40748add9f4f Extracting 1B
+ edf2405c6afe Downloading 99.61MB
+ f777f604962b Downloading 103.8MB
+ b14c48cb507d Extracting 1B
+ b1dd3d113aab Extracting 1B
+ 20043066d3d5 Extracting 1B
+ 40748add9f4f Extracting 1B
+ f777f604962b Downloading 119.5MB
+ edf2405c6afe Downloading 115.3MB
+ b14c48cb507d Extracting 1B
+ b1dd3d113aab Extracting 1B
+ 20043066d3d5 Extracting 1B
+ 40748add9f4f Extracting 1B
+ f777f604962b Downloading 137.4MB
+ edf2405c6afe Download complete 0B
+ b14c48cb507d Extracting 1B
+ b1dd3d113aab Extracting 1B
+ 20043066d3d5 Extracting 1B
+ 40748add9f4f Extracting 1B
+ f777f604962b Downloading 158.3MB
+ b14c48cb507d Extracting 1B
+ b1dd3d113aab Extracting 1B
+ 40748add9f4f Extracting 1B
+ 20043066d3d5 Extracting 1B
+ f777f604962b Downloading 176.2MB
+ b1dd3d113aab Extracting 1B
+ b14c48cb507d Extracting 1B
+ 40748add9f4f Extracting 1B
+ 20043066d3d5 Extracting 1B
+ f777f604962b Downloading 195MB
+ b1dd3d113aab Extracting 1B
+ b14c48cb507d Extracting 1B
+ 20043066d3d5 Extracting 1B
+ 40748add9f4f Extracting 1B
+ f777f604962b Downloading 220.2MB
+ b14c48cb507d Extracting 1B
+ b1dd3d113aab Extracting 1B
+ 20043066d3d5 Extracting 2B
+ 40748add9f4f Extracting 2B
+ f777f604962b Downloading 239.1MB
+ b14c48cb507d Extracting 1B
+ b1dd3d113aab Extracting 2B
+ 40748add9f4f Extracting 2B
+ 20043066d3d5 Extracting 2B
+ f777f604962b Downloading 262.1MB
+ b1dd3d113aab Extracting 2B
+ b14c48cb507d Extracting 1B
+ 20043066d3d5 Extracting 2B
+ 40748add9f4f Extracting 2B
+ f777f604962b Downloading 277.9MB
+ b14c48cb507d Extracting 2B
+ b1dd3d113aab Extracting 2B
+ 20043066d3d5 Pull complete 0B
+ 3fadc669ef11 Extracting 1B
+ 8e4857f35fce Pull complete 0B
+ 40748add9f4f Pull complete 0B
+ f777f604962b Downloading 294.6MB
+ 0f12a37b90bb Extracting 1B
+ dcadfd589ed7 Pull complete 0B
+ fb36845717af Pull complete 0B
+ a13218a43344 Extracting 1B
+ b14c48cb507d Extracting 2B
+ b1dd3d113aab Pull complete 0B
+ 3fadc669ef11 Extracting 1B
+ f777f604962b Downloading 314.6MB
+ 0f12a37b90bb Extracting 1B
+ a13218a43344 Extracting 1B
+ b14c48cb507d Extracting 2B
+ 3fadc669ef11 Extracting 1B
+ f777f604962b Downloading 334.5MB
+ 0f12a37b90bb Pull complete 0B
+ a13218a43344 Extracting 1B
+ a1361b767ece Extracting 1B
+ b14c48cb507d Extracting 2B
+ c1436cf65049 Pull complete 0B
+ 3fadc669ef11 Extracting 1B
+ f777f604962b Downloading 352.3MB
+ b14c48cb507d Extracting 2B
+ a13218a43344 Extracting 1B
+ a1361b767ece Extracting 1B
+ 3fadc669ef11 Extracting 1B
+ f777f604962b Downloading 371.2MB
+ a13218a43344 Extracting 1B
+ a1361b767ece Extracting 1B
+ b14c48cb507d Extracting 2B
+ 3fadc669ef11 Extracting 1B
+ f777f604962b Downloading 390.1MB
+ 4f4fb700ef54 Pull complete 0B
+ 817018563f08 Pull complete 0B
+ 3ed90300cc1a Pull complete 0B
+ b14c48cb507d Extracting 2B
+ a13218a43344 Pull complete 0B
+ a1361b767ece Pull complete 0B
+ 84a852dae169 Extracting 1B
+ 3fadc669ef11 Extracting 1B
+ Image redis:7 Pulled 
+ f777f604962b Downloading 408.9MB
+ 0afa8bd0fe3a Pull complete 0B
+ 7fe3468bf416 Pull complete 0B
+ b14c48cb507d Extracting 2B
+ 84a852dae169 Pull complete 0B
+ edf2405c6afe Extracting 1B
+ 3fadc669ef11 Extracting 1B
+ f777f604962b Downloading 431MB
+ edf2405c6afe Extracting 1B
+ b14c48cb507d Extracting 2B
+ 3fadc669ef11 Extracting 1B
+ f777f604962b Downloading 454MB
+ b14c48cb507d Extracting 2B
+ edf2405c6afe Extracting 1B
+ 3fadc669ef11 Extracting 1B
+ f777f604962b Downloading 477.1MB
+ edf2405c6afe Extracting 1B
+ 7084ac8f4ab6 Extracting 1B
+ b14c48cb507d Extracting 3B
+ 3fadc669ef11 Pull complete 0B
+ f777f604962b Downloading 499.1MB
+ edf2405c6afe Extracting 1B
+ b14c48cb507d Extracting 3B
+ 7084ac8f4ab6 Extracting 1B
+ f777f604962b Downloading 519MB
+ edf2405c6afe Extracting 1B
+ 11c592228529 Extracting 1B
+ b14c48cb507d Pull complete 0B
+ 7084ac8f4ab6 Extracting 1B
+ f777f604962b Downloading 539MB
+ beb0d870d438 Pull complete 0B
+ edf2405c6afe Extracting 1B
+ 11c592228529 Extracting 1B
+ 7084ac8f4ab6 Pull complete 0B
+ d63c4408fdb7 Extracting 1B
+ f777f604962b Downloading 557.8MB
+ b45ac39da3c5 Pull complete 0B
+ edf2405c6afe Extracting 1B
+ 11c592228529 Pull complete 0B
+ d63c4408fdb7 Extracting 1B
+ f777f604962b Downloading 586.2MB
+ edf2405c6afe Extracting 1B
+ d63c4408fdb7 Extracting 1B
+ f777f604962b Downloading 610.3MB
+ edf2405c6afe Extracting 1B
+ d63c4408fdb7 Extracting 1B
+ f777f604962b Downloading 635.4MB
+ edf2405c6afe Extracting 1B
+ d63c4408fdb7 Extracting 1B
+ f777f604962b Downloading 662.7MB
+ efa05c660812 Pull complete 0B
+ 14e6209d5fa8 Pull complete 0B
+ edf2405c6afe Extracting 2B
+ 5e1c03b67a78 Pull complete 0B
+ f4e7f62f4b80 Pull complete 0B
+ d686b50ce172 Extracting 1B
+ d63c4408fdb7 Pull complete 0B
+ f777f604962b Downloading 690MB
+ d686b50ce172 Extracting 1B
+ edf2405c6afe Extracting 2B
+ f777f604962b Downloading 715.1MB
+ d686b50ce172 Extracting 1B
+ edf2405c6afe Extracting 2B
+ f777f604962b Downloading 740.3MB
+ d686b50ce172 Extracting 1B
+ edf2405c6afe Extracting 2B
+ d686b50ce172 Pull complete 0B
+ Image rabbitmq:3-management Pulled 
+ f777f604962b Downloading 767.6MB
+ edf2405c6afe Extracting 2B
+ f777f604962b Downloading 799MB
+ edf2405c6afe Extracting 2B
+ f777f604962b Downloading 830.5MB
+ edf2405c6afe Extracting 2B
+ f777f604962b Downloading 861.9MB
+ edf2405c6afe Extracting 2B
+ f777f604962b Downloading 891.3MB
+ edf2405c6afe Extracting 2B
+ f777f604962b Downloading 920.6MB
+ edf2405c6afe Extracting 2B
+ f777f604962b Downloading 953.2MB
+ edf2405c6afe Extracting 3B
+ f777f604962b Downloading 981.2MB
+ edf2405c6afe Extracting 3B
+ f777f604962b Downloading 981.2MB
+ edf2405c6afe Extracting 3B
+ f777f604962b Downloading 981.2MB
+ edf2405c6afe Extracting 3B
+ f777f604962b Downloading 981.2MB
+ edf2405c6afe Pull complete 0B
+ f777f604962b Downloading 981.2MB
+ 1c59edd7eb40 Pull complete 0B
+ f777f604962b Downloading 981.2MB
+ f777f604962b Downloading 981.2MB
+ 7cb67b3b537a Extracting 1B
+ 61061a425fb0 Pull complete 0B
+ f777f604962b Downloading 981.2MB
+ 7cb67b3b537a Pull complete 0B
+ Image postgres:18 Pulled 
+ f777f604962b Downloading 981.2MB
+ f777f604962b Downloading 981.2MB
+ f777f604962b Downloading 981.2MB
+ f777f604962b Downloading 981.2MB
+ f777f604962b Downloading 981.2MB
+ f777f604962b Downloading 981.2MB
+ f777f604962b Downloading 981.2MB
+ f777f604962b Downloading 981.2MB
+ f777f604962b Downloading 981.2MB
+ f777f604962b Downloading 981.2MB
+ f777f604962b Downloading 981.2MB
+ f777f604962b Downloading 981.2MB
+ f777f604962b Downloading 981.2MB
+ f777f604962b Downloading 981.2MB
+ f777f604962b Downloading 981.2MB
+ f777f604962b Downloading 981.2MB
+ f777f604962b Downloading 981.2MB
+ f777f604962b Downloading 981.2MB
+ f777f604962b Downloading 981.2MB
+ f777f604962b Downloading 981.2MB
+ f777f604962b Downloading 981.2MB
+ f777f604962b Downloading 981.2MB
+ f777f604962b Downloading 981.2MB
+ f777f604962b Downloading 981.2MB
+ f777f604962b Downloading 981.2MB
+ f777f604962b Downloading 981.2MB
+ f777f604962b Downloading 981.2MB
+ f777f604962b Downloading 981.2MB
+ f777f604962b Downloading 981.2MB
+ f777f604962b Downloading 981.2MB
+ f777f604962b Downloading 981.2MB
+ f777f604962b Downloading 981.2MB
+ f777f604962b Downloading 981.2MB
+ f777f604962b Downloading 981.2MB
+ f777f604962b Downloading 981.2MB
+ f777f604962b Downloading 981.2MB
+ f777f604962b Downloading 981.2MB
+ f777f604962b Downloading 981.2MB
+ f777f604962b Download complete 0B
+ f777f604962b Extracting 1B
+ f777f604962b Extracting 1B
+ f777f604962b Extracting 1B
+ f777f604962b Extracting 1B
+ f777f604962b Extracting 1B
+ f777f604962b Extracting 1B
+ f777f604962b Extracting 1B
+ f777f604962b Extracting 1B
+ f777f604962b Extracting 1B
+ f777f604962b Extracting 1B
+ f777f604962b Extracting 1B
+ f777f604962b Extracting 2B
+ f777f604962b Extracting 2B
+ f777f604962b Extracting 2B
+ f777f604962b Extracting 2B
+ f777f604962b Extracting 2B
+ f777f604962b Extracting 2B
+ f777f604962b Extracting 2B
+ f777f604962b Extracting 2B
+ f777f604962b Extracting 2B
+ f777f604962b Extracting 2B
+ f777f604962b Extracting 3B
+ f777f604962b Extracting 3B
+ f777f604962b Extracting 3B
+ f777f604962b Extracting 3B
+ f777f604962b Extracting 3B
+ f777f604962b Extracting 3B
+ f777f604962b Extracting 3B
+ f777f604962b Extracting 3B
+ f777f604962b Extracting 3B
+ f777f604962b Extracting 4B
+ f777f604962b Extracting 4B
+ f777f604962b Extracting 4B
+ f777f604962b Extracting 4B
+ f777f604962b Extracting 4B
+ f777f604962b Extracting 4B
+ f777f604962b Extracting 4B
+ f777f604962b Extracting 4B
+ f777f604962b Extracting 4B
+ f777f604962b Extracting 4B
+ f777f604962b Extracting 4B
+ f777f604962b Extracting 5B
+ f777f604962b Extracting 5B
+ f777f604962b Extracting 5B
+ f777f604962b Extracting 5B
+ f777f604962b Pull complete 0B
+ 4f4fb700ef54 Pull complete 0B
+ ba911e142be4 Pull complete 0B
+ 7763bb854b64 Pull complete 0B
+ Image opensearchproject/opensearch:2.19.7 Pulled 
+ Network docker_services_cli_default Creating 
+ Network docker_services_cli_default Created 
+ Container docker_services_cli-rabbitmq-1 Creating 
+ Container docker_services_cli-redis-1 Creating 
+ Container docker_services_cli-opensearch-1 Creating 
+ Container docker_services_cli-postgresql-1 Creating 
+ Container docker_services_cli-opensearch-1 Created 
+ Container docker_services_cli-redis-1 Created 
+ Container docker_services_cli-postgresql-1 Created 
+ Container docker_services_cli-rabbitmq-1 Created 
+ Container docker_services_cli-redis-1 Starting 
+ Container docker_services_cli-postgresql-1 Starting 
+ Container docker_services_cli-rabbitmq-1 Starting 
+ Container docker_services_cli-opensearch-1 Starting 
+ Container docker_services_cli-postgresql-1 Started 
+ Container docker_services_cli-opensearch-1 Started 
+ Container docker_services_cli-rabbitmq-1 Started 
+ Container docker_services_cli-redis-1 Started 
+============================= test session starts ==============================
+platform linux -- Python 3.14.10, pytest-8.4.2, pluggy-1.7.0
+rootdir: /home/runner/work/itd-runner/itd-runner/workdir/tests/invenio-collections/original
+configfile: pyproject.toml
+testpaths: docs, tests, invenio_collections
+plugins: github-actions-annotate-failures-0.4.2, platformdirs-4.14.9, invenio-4.1.0, pycodestyle-2.5.0, pydocstyle-2.4.0, flask-1.3.0, cov-7.1.0, black-0.6.0, isort-4.0.0
+collected 124 items
+
+docs/conf.py ...                                                         [  2%]
+tests/__init__.py ...                                                    [  4%]
+tests/conftest.py ...                                                    [  7%]
+tests/mock_module/blueprint.py ...                                       [  9%]
+tests/mock_module/ext.py ...                                             [ 12%]
+tests/test_alembic.py ...                                                [ 14%]
+tests/test_api.py ...::warning file=workdir/tests/invenio-collections/original/.venv/lib/python3.14/site-packages/invenio_rest/ext.py,line=24::CSRF validation will be enabled by default in the version 1.3.x
+::warning file=workdir/tests/invenio-collections/original/invenio_collections/models.py,line=193::The Query.get() method is considered legacy as of the 1.x series of SQLAlchemy and becomes a legacy construct in 2.0. The method is now available as Session.get() (deprecated since: 2.0) (Background on SQLAlchemy 2.0 at: https://sqlalche.me/e/b8d9)
+.::warning file=workdir/tests/invenio-collections/original/invenio_collections/models.py,line=193::The Query.get() method is considered legacy as of the 1.x series of SQLAlchemy and becomes a legacy construct in 2.0. The method is now available as Session.get() (deprecated since: 2.0) (Background on SQLAlchemy 2.0 at: https://sqlalche.me/e/b8d9)
+..                                                 [ 19%]
+tests/test_invenio_collections.py ....                                   [ 22%]
+tests/test_service.py ...::warning file=workdir/tests/invenio-collections/original/.venv/lib/python3.14/site-packages/invenio_rest/ext.py,line=24::CSRF validation will be enabled by default in the version 1.3.x
+::warning file=workdir/tests/invenio-collections/original/invenio_collections/models.py,line=193::The Query.get() method is considered legacy as of the 1.x series of SQLAlchemy and becomes a legacy construct in 2.0. The method is now available as Session.get() (deprecated since: 2.0) (Background on SQLAlchemy 2.0 at: https://sqlalche.me/e/b8d9)
+.::warning file=workdir/tests/invenio-collections/original/invenio_collections/models.py,line=193::The Query.get() method is considered legacy as of the 1.x series of SQLAlchemy and becomes a legacy construct in 2.0. The method is now available as Session.get() (deprecated since: 2.0) (Background on SQLAlchemy 2.0 at: https://sqlalche.me/e/b8d9)
+.::warning file=workdir/tests/invenio-collections/original/invenio_collections/models.py,line=193::The Query.get() method is considered legacy as of the 1.x series of SQLAlchemy and becomes a legacy construct in 2.0. The method is now available as Session.get() (deprecated since: 2.0) (Background on SQLAlchemy 2.0 at: https://sqlalche.me/e/b8d9)
+::warning file=workdir/tests/invenio-collections/original/invenio_collections/models.py,line=193::The Query.get() method is considered legacy as of the 1.x series of SQLAlchemy and becomes a legacy construct in 2.0. The method is now available as Session.get() (deprecated since: 2.0) (Background on SQLAlchemy 2.0 at: https://sqlalche.me/e/b8d9)
+.::warning file=workdir/tests/invenio-collections/original/invenio_collections/models.py,line=193::The Query.get() method is considered legacy as of the 1.x series of SQLAlchemy and becomes a legacy construct in 2.0. The method is now available as Session.get() (deprecated since: 2.0) (Background on SQLAlchemy 2.0 at: https://sqlalche.me/e/b8d9)
+::warning file=workdir/tests/invenio-collections/original/invenio_collections/models.py,line=193::The Query.get() method is considered legacy as of the 1.x series of SQLAlchemy and becomes a legacy construct in 2.0. The method is now available as Session.get() (deprecated since: 2.0) (Background on SQLAlchemy 2.0 at: https://sqlalche.me/e/b8d9)
+.::warning file=workdir/tests/invenio-collections/original/invenio_collections/models.py,line=193::The Query.get() method is considered legacy as of the 1.x series of SQLAlchemy and becomes a legacy construct in 2.0. The method is now available as Session.get() (deprecated since: 2.0) (Background on SQLAlchemy 2.0 at: https://sqlalche.me/e/b8d9)
+::warning file=workdir/tests/invenio-collections/original/invenio_collections/models.py,line=193::The Query.get() method is considered legacy as of the 1.x series of SQLAlchemy and becomes a legacy construct in 2.0. The method is now available as Session.get() (deprecated since: 2.0) (Background on SQLAlchemy 2.0 at: https://sqlalche.me/e/b8d9)
+::warning file=workdir/tests/invenio-collections/original/invenio_collections/models.py,line=193::The Query.get() method is considered legacy as of the 1.x series of SQLAlchemy and becomes a legacy construct in 2.0. The method is now available as Session.get() (deprecated since: 2.0) (Background on SQLAlchemy 2.0 at: https://sqlalche.me/e/b8d9)
+........::warning file=workdir/tests/invenio-collections/original/invenio_collections/models.py,line=193::The Query.get() method is considered legacy as of the 1.x series of SQLAlchemy and becomes a legacy construct in 2.0. The method is now available as Session.get() (deprecated since: 2.0) (Background on SQLAlchemy 2.0 at: https://sqlalche.me/e/b8d9)
+.......::warning file=workdir/tests/invenio-collections/original/invenio_collections/models.py,line=193::The Query.get() method is considered legacy as of the 1.x series of SQLAlchemy and becomes a legacy construct in 2.0. The method is now available as Session.get() (deprecated since: 2.0) (Background on SQLAlchemy 2.0 at: https://sqlalche.me/e/b8d9)
+::warning file=workdir/tests/invenio-collections/original/invenio_collections/models.py,line=193::The Query.get() method is considered legacy as of the 1.x series of SQLAlchemy and becomes a legacy construct in 2.0. The method is now available as Session.get() (deprecated since: 2.0) (Background on SQLAlchemy 2.0 at: https://sqlalche.me/e/b8d9)
+                             [ 40%]
+tests/test_service_limits.py ...::warning file=workdir/tests/invenio-collections/original/.venv/lib/python3.14/site-packages/invenio_rest/ext.py,line=24::CSRF validation will be enabled by default in the version 1.3.x
+.....                                    [ 46%]
+invenio_collections/__init__.py ...                                      [ 49%]
+invenio_collections/alembic/1748509182_create_collections_branch.py ...  [ 51%]
+invenio_collections/alembic/1777139066_remove_nullable.py ...            [ 54%]
+invenio_collections/alembic/3c1b8d0e7f52_rename_community_id_to_namespace_id.py . [ 54%]
+..                                                                       [ 56%]
+invenio_collections/alembic/425b691f768b_create_collections_tables.py .. [ 58%]
+.                                                                        [ 58%]
+invenio_collections/alembic/d2f434c0ac92_change_datetime_types.py ...    [ 61%]
+invenio_collections/api.py ...                                           [ 63%]
+invenio_collections/config.py ...                                        [ 66%]
+invenio_collections/errors.py ...                                        [ 68%]
+invenio_collections/ext.py ...                                           [ 70%]
+invenio_collections/models.py ...                                        [ 73%]
+invenio_collections/proxies.py ...                                       [ 75%]
+invenio_collections/resources/__init__.py ...                            [ 78%]
+invenio_collections/resources/config.py ...                              [ 80%]
+invenio_collections/resources/resource.py ...                            [ 83%]
+invenio_collections/searchapp.py ...                                     [ 85%]
+invenio_collections/services/__init__.py ...                             [ 87%]
+invenio_collections/services/config.py ...                               [ 90%]
+invenio_collections/services/results.py ...                              [ 92%]
+invenio_collections/services/schema.py ...                               [ 95%]
+invenio_collections/services/service.py ...                              [ 97%]
+invenio_collections/webpack.py ...                                       [100%]
+
+=============================== warnings summary ===============================
+tests/test_api.py::test_create
+tests/test_service.py::test_collections_read
+tests/test_service_limits.py::test_max_trees_limit
+  /home/runner/work/itd-runner/itd-runner/workdir/tests/invenio-collections/original/.venv/lib/python3.14/site-packages/invenio_rest/ext.py:24: FutureWarning: CSRF validation will be enabled by default in the version 1.3.x
+    self.init_app(app)
+
+tests/test_api.py: 2 warnings
+tests/test_service.py: 12 warnings
+  /home/runner/work/itd-runner/itd-runner/workdir/tests/invenio-collections/original/invenio_collections/models.py:193: LegacyAPIWarning: The Query.get() method is considered legacy as of the 1.x series of SQLAlchemy and becomes a legacy construct in 2.0. The method is now available as Session.get() (deprecated since: 2.0) (Background on SQLAlchemy 2.0 at: https://sqlalche.me/e/b8d9)
+    return cls.query.get(id_)
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+- generated xml file: /home/runner/work/itd-runner/itd-runner/workdir/artifacts/invenio-collections/original_junit.xml -
+================================ tests coverage ================================
+_______________ coverage: platform linux, python 3.14.10-final-0 _______________
+
+Name                                                                              Stmts   Miss  Cover   Missing
+---------------------------------------------------------------------------------------------------------------
+invenio_collections/__init__.py                                                       3      0   100%
+invenio_collections/alembic/3c1b8d0e7f52_rename_community_id_to_namespace_id.py      18      5    72%   62-84
+invenio_collections/alembic/425b691f768b_create_collections_tables.py                17      4    76%   91-99
+invenio_collections/alembic/1748509182_create_collections_branch.py                   8      1    88%   21
+invenio_collections/alembic/1777139066_remove_nullable.py                            12      2    83%   35-41
+invenio_collections/alembic/d2f434c0ac92_change_datetime_types.py                    13      3    77%   28-30
+invenio_collections/api.py                                                          142     13    91%   48, 74, 99, 103, 150, 162, 171, 181, 188-191, 229, 233
+invenio_collections/config.py                                                         6      0   100%
+invenio_collections/errors.py                                                        24      3    88%   46-48
+invenio_collections/ext.py                                                           14      0   100%
+invenio_collections/models.py                                                       107     12    89%   63, 69, 97-107, 173, 187, 223-233
+invenio_collections/proxies.py                                                        3      0   100%
+invenio_collections/resources/__init__.py                                             0      0   100%
+invenio_collections/resources/config.py                                              16      0   100%
+invenio_collections/resources/resource.py                                           106     34    68%   54-60, 68-75, 82-90, 98-106, 113-120, 126-134, 141-150, 159-170, 177-182, 189-196, 204-211, 217-224, 231-236, 242-247, 253-259
+invenio_collections/searchapp.py                                                      5      1    80%   13
+invenio_collections/services/__init__.py                                              0      0   100%
+invenio_collections/services/config.py                                               21      0   100%
+invenio_collections/services/results.py                                              84     11    87%   116, 142, 188, 193, 197-208, 238
+invenio_collections/services/schema.py                                               33      2    94%   18-19
+invenio_collections/services/service.py                                             264     83    69%   62, 143, 236, 260, 282, 325-331, 397-401, 408, 411, 428-450, 462-511, 526, 542, 586, 643-673, 690-724
+invenio_collections/webpack.py                                                        2      0   100%
+---------------------------------------------------------------------------------------------------------------
+TOTAL                                                                               898    174    81%
+======================= 124 passed, 17 warnings in 8.58s =======================
+ Container docker_services_cli-redis-1 Stopping 
+ Container docker_services_cli-opensearch-1 Stopping 
+ Container docker_services_cli-postgresql-1 Stopping 
+ Container docker_services_cli-rabbitmq-1 Stopping 
+ Container docker_services_cli-postgresql-1 Stopped 
+ Container docker_services_cli-postgresql-1 Removing 
+ Container docker_services_cli-redis-1 Stopped 
+ Container docker_services_cli-redis-1 Removing 
+ Container docker_services_cli-redis-1 Removed 
+ Container docker_services_cli-postgresql-1 Removed 
+ Container docker_services_cli-opensearch-1 Stopped 
+ Container docker_services_cli-opensearch-1 Removing 
+ Container docker_services_cli-opensearch-1 Removed 
+ Container docker_services_cli-rabbitmq-1 Stopped 
+ Container docker_services_cli-rabbitmq-1 Removing 
+ Container docker_services_cli-rabbitmq-1 Removed 
+ Network docker_services_cli_default Removing 
+ Network docker_services_cli_default Removed 
