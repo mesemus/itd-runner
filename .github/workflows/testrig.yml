@@ -98,7 +98,7 @@ env:
 
 jobs:
   verify-patches:
-    uses: "oarepo/invenio-testrig/.github/workflows/verify-patches.yml@master"
+    uses: "oarepo/invenio-testrig/.github/workflows/verify-patches.yml@db1081cfcd17df19900a13a3db201836572f96cc"
     with:
       name: ${{ inputs.name || 'Invenio Testrig' }}
       python-version: ${{ inputs.python-version }}
