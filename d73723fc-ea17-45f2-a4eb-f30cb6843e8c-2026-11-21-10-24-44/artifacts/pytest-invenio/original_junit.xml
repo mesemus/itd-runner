@@ -1,0 +1,960 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites name="pytest tests"><testsuite name="pytest" errors="0" failures="19" skipped="1" tests="48" time="29.253" timestamp="2026-11-21T10:32:02.708215+00:00" hostname="runnervm0hi8g"><testcase classname="tests.conftest" name="PYDOCSTYLE" time="0.003" /><testcase classname="tests.conftest" name="ISORT" time="0.005" /><testcase classname="tests.conftest" name="black" time="0.201" /><testcase classname="tests.test_fixtures" name="ISORT" time="0.003" /><testcase classname="tests.test_fixtures" name="black" time="0.126" /><testcase classname="tests.test_fixtures" name="test_version" time="0.001" /><testcase classname="tests.test_fixtures" name="test_instance_path" time="0.273" /><testcase classname="tests.test_fixtures" name="test_db_uri" time="0.249" /><testcase classname="tests.test_fixtures" name="test_db_uri_env" time="0.241" /><testcase classname="tests.test_fixtures" name="test_broker_uri" time="0.245" /><testcase classname="tests.test_fixtures" name="test_broker_uri_env" time="0.251" /><testcase classname="tests.test_fixtures" name="test_search_hosts" time="0.255" /><testcase classname="tests.test_fixtures" name="test_search_hosts_env" time="0.241" /><testcase classname="tests.test_fixtures" name="test_app_config" time="0.675" /><testcase classname="tests.test_fixtures" name="test_base_app" time="2.876"><failure message="AssertionError: assert {'errors': 1,...pped': 0, ...} == {'errors': 0,...pped': 0, ...}&#10;  &#10;  Omitting 4 identical items, use -vv to show&#10;  Differing items:&#10;  {'passed': 0} != {'passed': 1}&#10;  {'errors': 1} != {'errors': 0}&#10;  &#10;  Full diff:&#10;    {&#10;  -     'errors': 0,&#10;  ?               ^&#10;  +     'errors': 1,&#10;  ?               ^&#10;        'failed': 0,&#10;  -     'passed': 1,&#10;  ?               ^&#10;  +     'passed': 0,&#10;  ?               ^&#10;        'skipped': 0,&#10;        'xfailed': 0,&#10;        'xpassed': 0,&#10;    }">conftest_testdir = &lt;Testdir local('/tmp/pytest-of-runner/pytest-0/test_base_app0')&gt;
+
+    def test_base_app(conftest_testdir):
+        """Test application factories."""
+        # `conftest_testdir` defines a create_app fixture which are used by
+        # base_app fixture to create a Flask application and inject the
+        # configuration into the application.
+        conftest_testdir.makepyfile(
+            """
+            def test_base_app(base_app, db_uri):
+                assert base_app.config['SQLALCHEMY_DATABASE_URI'] == db_uri
+        """
+        )
+&gt;       conftest_testdir.runpytest().assert_outcomes(passed=1)
+E       AssertionError: assert {'errors': 1,...pped': 0, ...} == {'errors': 0,...pped': 0, ...}
+E         
+E         Omitting 4 identical items, use -vv to show
+E         Differing items:
+E         {'passed': 0} != {'passed': 1}
+E         {'errors': 1} != {'errors': 0}
+E         
+E         Full diff:
+E           {
+E         -     'errors': 0,
+E         ?               ^
+E         +     'errors': 1,
+E         ?               ^
+E               'failed': 0,
+E         -     'passed': 1,
+E         ?               ^
+E         +     'passed': 0,
+E         ?               ^
+E               'skipped': 0,
+E               'xfailed': 0,
+E               'xpassed': 0,
+E           }
+
+/home/runner/work/itd-runner/itd-runner/workdir/tests/pytest-invenio/original/tests/test_fixtures.py:158: AssertionError</failure></testcase><testcase classname="tests.test_fixtures" name="test_base_client_jsonresponse" time="1.248"><failure message="AssertionError: assert {'errors': 1,...pped': 0, ...} == {'errors': 0,...pped': 0, ...}&#10;  &#10;  Omitting 4 identical items, use -vv to show&#10;  Differing items:&#10;  {'passed': 0} != {'passed': 1}&#10;  {'errors': 1} != {'errors': 0}&#10;  &#10;  Full diff:&#10;    {&#10;  -     'errors': 0,&#10;  ?               ^&#10;  +     'errors': 1,&#10;  ?               ^&#10;        'failed': 0,&#10;  -     'passed': 1,&#10;  ?               ^&#10;  +     'passed': 0,&#10;  ?               ^&#10;        'skipped': 0,&#10;        'xfailed': 0,&#10;        'xpassed': 0,&#10;    }">conftest_testdir = &lt;Testdir local('/tmp/pytest-of-runner/pytest-0/test_base_client_jsonresponse0')&gt;
+
+    def test_base_client_jsonresponse(conftest_testdir):
+        """Test the test client and json attribute on response object."""
+        conftest_testdir.makepyfile(
+            """
+            def test_base_app(base_app, base_client):
+                res = base_client.get('/api/')
+                res.json == {'app_name': base_app.name}
+        """
+        )
+&gt;       conftest_testdir.runpytest().assert_outcomes(passed=1)
+E       AssertionError: assert {'errors': 1,...pped': 0, ...} == {'errors': 0,...pped': 0, ...}
+E         
+E         Omitting 4 identical items, use -vv to show
+E         Differing items:
+E         {'passed': 0} != {'passed': 1}
+E         {'errors': 1} != {'errors': 0}
+E         
+E         Full diff:
+E           {
+E         -     'errors': 0,
+E         ?               ^
+E         +     'errors': 1,
+E         ?               ^
+E               'failed': 0,
+E         -     'passed': 1,
+E         ?               ^
+E         +     'passed': 0,
+E         ?               ^
+E               'skipped': 0,
+E               'xfailed': 0,
+E               'xpassed': 0,
+E           }
+
+/home/runner/work/itd-runner/itd-runner/workdir/tests/pytest-invenio/original/tests/test_fixtures.py:170: AssertionError</failure></testcase><testcase classname="tests.test_fixtures" name="test_appctx" time="1.177"><failure message="AssertionError: assert {'errors': 1,...pped': 0, ...} == {'errors': 0,...pped': 0, ...}&#10;  &#10;  Omitting 4 identical items, use -vv to show&#10;  Differing items:&#10;  {'passed': 0} != {'passed': 1}&#10;  {'errors': 1} != {'errors': 0}&#10;  &#10;  Full diff:&#10;    {&#10;  -     'errors': 0,&#10;  ?               ^&#10;  +     'errors': 1,&#10;  ?               ^&#10;        'failed': 0,&#10;  -     'passed': 1,&#10;  ?               ^&#10;  +     'passed': 0,&#10;  ?               ^&#10;        'skipped': 0,&#10;        'xfailed': 0,&#10;        'xpassed': 0,&#10;    }">conftest_testdir = &lt;Testdir local('/tmp/pytest-of-runner/pytest-0/test_appctx0')&gt;
+
+    def test_appctx(conftest_testdir):
+        """Test application factories."""
+        conftest_testdir.makepyfile(
+            """
+            from flask import current_app
+    
+            def test_appctx(base_app, appctx):
+                assert base_app.name == current_app.name
+        """
+        )
+&gt;       conftest_testdir.runpytest().assert_outcomes(passed=1)
+E       AssertionError: assert {'errors': 1,...pped': 0, ...} == {'errors': 0,...pped': 0, ...}
+E         
+E         Omitting 4 identical items, use -vv to show
+E         Differing items:
+E         {'passed': 0} != {'passed': 1}
+E         {'errors': 1} != {'errors': 0}
+E         
+E         Full diff:
+E           {
+E         -     'errors': 0,
+E         ?               ^
+E         +     'errors': 1,
+E         ?               ^
+E               'failed': 0,
+E         -     'passed': 1,
+E         ?               ^
+E         +     'passed': 0,
+E         ?               ^
+E               'skipped': 0,
+E               'xfailed': 0,
+E               'xpassed': 0,
+E           }
+
+/home/runner/work/itd-runner/itd-runner/workdir/tests/pytest-invenio/original/tests/test_fixtures.py:183: AssertionError</failure></testcase><testcase classname="tests.test_fixtures" name="test_script_info" time="1.123"><failure message="AssertionError: assert {'errors': 1,...pped': 0, ...} == {'errors': 0,...pped': 0, ...}&#10;  &#10;  Omitting 4 identical items, use -vv to show&#10;  Differing items:&#10;  {'passed': 0} != {'passed': 1}&#10;  {'errors': 1} != {'errors': 0}&#10;  &#10;  Full diff:&#10;    {&#10;  -     'errors': 0,&#10;  ?               ^&#10;  +     'errors': 1,&#10;  ?               ^&#10;        'failed': 0,&#10;  -     'passed': 1,&#10;  ?               ^&#10;  +     'passed': 0,&#10;  ?               ^&#10;        'skipped': 0,&#10;        'xfailed': 0,&#10;        'xpassed': 0,&#10;    }">conftest_testdir = &lt;Testdir local('/tmp/pytest-of-runner/pytest-0/test_script_info0')&gt;
+
+    def test_script_info(conftest_testdir):
+        """Test script info command."""
+        conftest_testdir.makepyfile(
+            """
+            import click
+            from click.testing import CliRunner
+            from flask import current_app
+            from flask.cli import with_appcontext
+    
+            # Define a command which requires app context
+            @click.command()
+            @with_appcontext
+            def mycmd():
+                click.echo(current_app.name)
+    
+            # Run test on just defined CLI command.
+            def test_cli(script_info, base_app):
+                runner = CliRunner()
+                result = runner.invoke(mycmd, obj=script_info)
+                assert result.exit_code == 0
+                assert result.output.startswith(base_app.name)
+        """
+        )
+&gt;       conftest_testdir.runpytest().assert_outcomes(passed=1)
+E       AssertionError: assert {'errors': 1,...pped': 0, ...} == {'errors': 0,...pped': 0, ...}
+E         
+E         Omitting 4 identical items, use -vv to show
+E         Differing items:
+E         {'passed': 0} != {'passed': 1}
+E         {'errors': 1} != {'errors': 0}
+E         
+E         Full diff:
+E           {
+E         -     'errors': 0,
+E         ?               ^
+E         +     'errors': 1,
+E         ?               ^
+E               'failed': 0,
+E         -     'passed': 1,
+E         ?               ^
+E         +     'passed': 0,
+E         ?               ^
+E               'skipped': 0,
+E               'xfailed': 0,
+E               'xpassed': 0,
+E           }
+
+/home/runner/work/itd-runner/itd-runner/workdir/tests/pytest-invenio/original/tests/test_fixtures.py:209: AssertionError</failure></testcase><testcase classname="tests.test_fixtures" name="test_clirunner" time="1.143"><failure message="AssertionError: assert {'errors': 1,...pped': 0, ...} == {'errors': 0,...pped': 0, ...}&#10;  &#10;  Omitting 4 identical items, use -vv to show&#10;  Differing items:&#10;  {'passed': 0} != {'passed': 1}&#10;  {'errors': 1} != {'errors': 0}&#10;  &#10;  Full diff:&#10;    {&#10;  -     'errors': 0,&#10;  ?               ^&#10;  +     'errors': 1,&#10;  ?               ^&#10;        'failed': 0,&#10;  -     'passed': 1,&#10;  ?               ^&#10;  +     'passed': 0,&#10;  ?               ^&#10;        'skipped': 0,&#10;        'xfailed': 0,&#10;        'xpassed': 0,&#10;    }">conftest_testdir = &lt;Testdir local('/tmp/pytest-of-runner/pytest-0/test_clirunner0')&gt;
+
+    def test_clirunner(conftest_testdir):
+        """Test script info command."""
+        conftest_testdir.makepyfile(
+            """
+            import click
+            from flask import current_app
+            from flask.cli import with_appcontext
+    
+            # Define a command which requires app context
+            @click.command()
+            @with_appcontext
+            def mycmd():
+                click.echo(current_app.name)
+    
+            # Run test on just defined CLI command.
+            def test_cli(cli_runner):
+                assert cli_runner(mycmd).exit_code == 0
+        """
+        )
+&gt;       conftest_testdir.runpytest().assert_outcomes(passed=1)
+E       AssertionError: assert {'errors': 1,...pped': 0, ...} == {'errors': 0,...pped': 0, ...}
+E         
+E         Omitting 4 identical items, use -vv to show
+E         Differing items:
+E         {'passed': 0} != {'passed': 1}
+E         {'errors': 1} != {'errors': 0}
+E         
+E         Full diff:
+E           {
+E         -     'errors': 0,
+E         ?               ^
+E         +     'errors': 1,
+E         ?               ^
+E               'failed': 0,
+E         -     'passed': 1,
+E         ?               ^
+E         +     'passed': 0,
+E         ?               ^
+E               'skipped': 0,
+E               'xfailed': 0,
+E               'xpassed': 0,
+E           }
+
+/home/runner/work/itd-runner/itd-runner/workdir/tests/pytest-invenio/original/tests/test_fixtures.py:231: AssertionError</failure></testcase><testcase classname="tests.test_fixtures" name="test_clirunner_output" time="1.241"><failure message="AssertionError: assert {'errors': 1,...pped': 0, ...} == {'errors': 0,...pped': 0, ...}&#10;  &#10;  Omitting 4 identical items, use -vv to show&#10;  Differing items:&#10;  {'passed': 0} != {'passed': 1}&#10;  {'errors': 1} != {'errors': 0}&#10;  &#10;  Full diff:&#10;    {&#10;  -     'errors': 0,&#10;  ?               ^&#10;  +     'errors': 1,&#10;  ?               ^&#10;        'failed': 0,&#10;  -     'passed': 1,&#10;  ?               ^&#10;  +     'passed': 0,&#10;  ?               ^&#10;        'skipped': 0,&#10;        'xfailed': 0,&#10;        'xpassed': 0,&#10;    }">conftest_testdir = &lt;Testdir local('/tmp/pytest-of-runner/pytest-0/test_clirunner_output0')&gt;
+
+    def test_clirunner_output(conftest_testdir):
+        """Test script info command."""
+        conftest_testdir.makepyfile(
+            """
+            import click
+            from flask import current_app
+            from flask.cli import with_appcontext
+    
+            # Define a command which logs to the application logger
+            @click.command()
+            @with_appcontext
+            def mycmd():
+                current_app.logger.error('My error')
+    
+            # Run test that output is captured
+            def test_cli(cli_runner):
+                res = cli_runner(mycmd)
+                assert 'My error' in res.output
+        """
+        )
+&gt;       conftest_testdir.runpytest().assert_outcomes(passed=1)
+E       AssertionError: assert {'errors': 1,...pped': 0, ...} == {'errors': 0,...pped': 0, ...}
+E         
+E         Omitting 4 identical items, use -vv to show
+E         Differing items:
+E         {'passed': 0} != {'passed': 1}
+E         {'errors': 1} != {'errors': 0}
+E         
+E         Full diff:
+E           {
+E         -     'errors': 0,
+E         ?               ^
+E         +     'errors': 1,
+E         ?               ^
+E               'failed': 0,
+E         -     'passed': 1,
+E         ?               ^
+E         +     'passed': 0,
+E         ?               ^
+E               'skipped': 0,
+E               'xfailed': 0,
+E               'xpassed': 0,
+E           }
+
+/home/runner/work/itd-runner/itd-runner/workdir/tests/pytest-invenio/original/tests/test_fixtures.py:254: AssertionError</failure></testcase><testcase classname="tests.test_fixtures" name="test_search" time="1.520"><failure message="AssertionError: assert {'errors': 1,...pped': 0, ...} == {'errors': 0,...pped': 0, ...}&#10;  &#10;  Omitting 4 identical items, use -vv to show&#10;  Differing items:&#10;  {'passed': 0} != {'passed': 1}&#10;  {'errors': 1} != {'errors': 0}&#10;  &#10;  Full diff:&#10;    {&#10;  -     'errors': 0,&#10;  ?               ^&#10;  +     'errors': 1,&#10;  ?               ^&#10;        'failed': 0,&#10;  -     'passed': 1,&#10;  ?               ^&#10;  +     'passed': 0,&#10;  ?               ^&#10;        'skipped': 0,&#10;        'xfailed': 0,&#10;        'xpassed': 0,&#10;    }">conftest_testdir = &lt;Testdir local('/tmp/pytest-of-runner/pytest-0/test_search0')&gt;
+
+    def test_search(conftest_testdir):
+        """Test search initialization."""
+        conftest_testdir.makepyfile(
+            """
+            def test_search(search):
+                assert search.ping()
+        """
+        )
+&gt;       conftest_testdir.runpytest().assert_outcomes(passed=1)
+E       AssertionError: assert {'errors': 1,...pped': 0, ...} == {'errors': 0,...pped': 0, ...}
+E         
+E         Omitting 4 identical items, use -vv to show
+E         Differing items:
+E         {'passed': 0} != {'passed': 1}
+E         {'errors': 1} != {'errors': 0}
+E         
+E         Full diff:
+E           {
+E         -     'errors': 0,
+E         ?               ^
+E         +     'errors': 1,
+E         ?               ^
+E               'failed': 0,
+E         -     'passed': 1,
+E         ?               ^
+E         +     'passed': 0,
+E         ?               ^
+E               'skipped': 0,
+E               'xfailed': 0,
+E               'xpassed': 0,
+E           }
+
+/home/runner/work/itd-runner/itd-runner/workdir/tests/pytest-invenio/original/tests/test_fixtures.py:265: AssertionError</failure></testcase><testcase classname="tests.test_fixtures" name="test_search_clear" time="1.184"><failure message="AssertionError: assert {'errors': 2,...pped': 0, ...} == {'errors': 0,...pped': 0, ...}&#10;  &#10;  Omitting 4 identical items, use -vv to show&#10;  Differing items:&#10;  {'passed': 0} != {'passed': 2}&#10;  {'errors': 2} != {'errors': 0}&#10;  &#10;  Full diff:&#10;    {&#10;  -     'errors': 0,&#10;  ?               ^&#10;  +     'errors': 2,&#10;  ?               ^&#10;        'failed': 0,&#10;  -     'passed': 2,&#10;  ?               ^&#10;  +     'passed': 0,&#10;  ?               ^&#10;        'skipped': 0,&#10;        'xfailed': 0,&#10;        'xpassed': 0,&#10;    }">conftest_testdir = &lt;Testdir local('/tmp/pytest-of-runner/pytest-0/test_search_clear0')&gt;
+
+    def test_search_clear(conftest_testdir):
+        """Test search clearing."""
+        # Create an search mapping for Invenio-Search
+        conftest_testdir.mkpydir("data")
+        conftest_testdir.mkpydir("data/v7")
+        conftest_testdir.mkdir("data/v7/demo")
+        with open("data/v7/demo/default-v1.0.0.json", "w") as fp:
+            fp.write(
+                json.dumps(
+                    {
+                        "mappings": {
+                            "properties": {"title": {"type": "text", "fielddata": True}}
+                        }
+                    }
+                )
+            )
+        # Create test
+        conftest_testdir.makepyfile(
+            """
+            import pytest
+            from invenio_search import current_search_client, current_search
+            from invenio_search.engine import search as search_engine
+    
+            # Just a UUID
+            doc_id = 'deadbeef-dae9-4c19-9b7c-49056374bc6c'
+    
+            @pytest.fixture(scope='module')
+            def base_app(base_app):
+                # Registers the search mapping on the application
+                invenio_search = base_app.extensions['invenio-search']
+                invenio_search.register_mappings('demo', 'data')
+                return base_app
+    
+            def test_search1(search, search_clear):
+                # Index a document
+                current_search_client.index(
+                    index='demo-default-v1.0.0',
+                    id=doc_id,
+                    body={'title': 'Test'},
+                    op_type='create',
+                )
+                # Wait for document to be available
+                current_search.flush_and_refresh('demo-default-v1.0.0')
+                # Get the document (will raise exception if not found)
+                current_search_client.get(
+                    index='demo-default-v1.0.0',
+                    id=doc_id,
+                )
+    
+            def test_search2(search):
+                # Get the document create in test above (should not be possible)
+                pytest.raises(
+                    search_engine.NotFoundError,
+                    current_search_client.get,
+                    index='demo-default-v1.0.0',
+                    id=doc_id,
+                )
+                # But the index should exist
+                assert current_search_client.indices.exists(
+                    index='demo-default-v1.0.0')
+        """
+        )
+&gt;       conftest_testdir.runpytest().assert_outcomes(passed=2)
+E       AssertionError: assert {'errors': 2,...pped': 0, ...} == {'errors': 0,...pped': 0, ...}
+E         
+E         Omitting 4 identical items, use -vv to show
+E         Differing items:
+E         {'passed': 0} != {'passed': 2}
+E         {'errors': 2} != {'errors': 0}
+E         
+E         Full diff:
+E           {
+E         -     'errors': 0,
+E         ?               ^
+E         +     'errors': 2,
+E         ?               ^
+E               'failed': 0,
+E         -     'passed': 2,
+E         ?               ^
+E         +     'passed': 0,
+E         ?               ^
+E               'skipped': 0,
+E               'xfailed': 0,
+E               'xpassed': 0,
+E           }
+
+/home/runner/work/itd-runner/itd-runner/workdir/tests/pytest-invenio/original/tests/test_fixtures.py:330: AssertionError</failure></testcase><testcase classname="tests.test_fixtures" name="test_search_index_names" time="1.125"><failure message="AssertionError: assert {'errors': 1,...pped': 0, ...} == {'errors': 0,...pped': 0, ...}&#10;  &#10;  Omitting 4 identical items, use -vv to show&#10;  Differing items:&#10;  {'passed': 0} != {'passed': 1}&#10;  {'errors': 1} != {'errors': 0}&#10;  &#10;  Full diff:&#10;    {&#10;  -     'errors': 0,&#10;  ?               ^&#10;  +     'errors': 1,&#10;  ?               ^&#10;        'failed': 0,&#10;  -     'passed': 1,&#10;  ?               ^&#10;  +     'passed': 0,&#10;  ?               ^&#10;        'skipped': 0,&#10;        'xfailed': 0,&#10;        'xpassed': 0,&#10;    }">conftest_testdir = &lt;Testdir local('/tmp/pytest-of-runner/pytest-0/test_search_index_names0')&gt;
+
+    def test_search_index_names(conftest_testdir):
+        """Test search index names."""
+        conftest_testdir.makepyfile(
+            """
+            def test_index_names(search, search_index_names):
+                assert search_index_names() == set()
+                search.indices.create(index='demo')
+                try:
+                    assert search_index_names() == {'demo'}
+                finally:
+                    search.indices.delete(index='demo')
+        """
+        )
+&gt;       conftest_testdir.runpytest().assert_outcomes(passed=1)
+E       AssertionError: assert {'errors': 1,...pped': 0, ...} == {'errors': 0,...pped': 0, ...}
+E         
+E         Omitting 4 identical items, use -vv to show
+E         Differing items:
+E         {'passed': 0} != {'passed': 1}
+E         {'errors': 1} != {'errors': 0}
+E         
+E         Full diff:
+E           {
+E         -     'errors': 0,
+E         ?               ^
+E         +     'errors': 1,
+E         ?               ^
+E               'failed': 0,
+E         -     'passed': 1,
+E         ?               ^
+E         +     'passed': 0,
+E         ?               ^
+E               'skipped': 0,
+E               'xfailed': 0,
+E               'xpassed': 0,
+E           }
+
+/home/runner/work/itd-runner/itd-runner/workdir/tests/pytest-invenio/original/tests/test_fixtures.py:346: AssertionError</failure></testcase><testcase classname="tests.test_fixtures" name="test_database" time="1.193"><failure message="AssertionError: assert {'errors': 1,...pped': 0, ...} == {'errors': 0,...pped': 0, ...}&#10;  &#10;  Omitting 4 identical items, use -vv to show&#10;  Differing items:&#10;  {'passed': 0} != {'passed': 1}&#10;  {'errors': 1} != {'errors': 0}&#10;  &#10;  Full diff:&#10;    {&#10;  -     'errors': 0,&#10;  ?               ^&#10;  +     'errors': 1,&#10;  ?               ^&#10;        'failed': 0,&#10;  -     'passed': 1,&#10;  ?               ^&#10;  +     'passed': 0,&#10;  ?               ^&#10;        'skipped': 0,&#10;        'xfailed': 0,&#10;        'xpassed': 0,&#10;    }">conftest_testdir = &lt;Testdir local('/tmp/pytest-of-runner/pytest-0/test_database0')&gt;
+
+    def test_database(conftest_testdir):
+        """Test database creation and initialization."""
+        conftest_testdir.makepyfile(
+            """
+            def test_database(database, db_uri):
+                assert str(database.engine.url.render_as_string(hide_password=False)) == db_uri
+        """
+        )
+&gt;       conftest_testdir.runpytest().assert_outcomes(passed=1)
+E       AssertionError: assert {'errors': 1,...pped': 0, ...} == {'errors': 0,...pped': 0, ...}
+E         
+E         Omitting 4 identical items, use -vv to show
+E         Differing items:
+E         {'passed': 0} != {'passed': 1}
+E         {'errors': 1} != {'errors': 0}
+E         
+E         Full diff:
+E           {
+E         -     'errors': 0,
+E         ?               ^
+E         +     'errors': 1,
+E         ?               ^
+E               'failed': 0,
+E         -     'passed': 1,
+E         ?               ^
+E         +     'passed': 0,
+E         ?               ^
+E               'skipped': 0,
+E               'xfailed': 0,
+E               'xpassed': 0,
+E           }
+
+/home/runner/work/itd-runner/itd-runner/workdir/tests/pytest-invenio/original/tests/test_fixtures.py:357: AssertionError</failure></testcase><testcase classname="tests.test_fixtures" name="test_db" time="1.333"><failure message="AssertionError: assert {'errors': 2,...pped': 0, ...} == {'errors': 0,...pped': 0, ...}&#10;  &#10;  Omitting 4 identical items, use -vv to show&#10;  Differing items:&#10;  {'passed': 0} != {'passed': 2}&#10;  {'errors': 2} != {'errors': 0}&#10;  &#10;  Full diff:&#10;    {&#10;  -     'errors': 0,&#10;  ?               ^&#10;  +     'errors': 2,&#10;  ?               ^&#10;        'failed': 0,&#10;  -     'passed': 2,&#10;  ?               ^&#10;  +     'passed': 0,&#10;  ?               ^&#10;        'skipped': 0,&#10;        'xfailed': 0,&#10;        'xpassed': 0,&#10;    }">conftest_testdir = &lt;Testdir local('/tmp/pytest-of-runner/pytest-0/test_db0')&gt;
+
+    def test_db(conftest_testdir):
+        """Test database creation and initialization."""
+        conftest_testdir.makepyfile(
+            """
+            from invenio_db import db
+    
+            class UserA(db.Model):
+                id = db.Column(db.Integer, primary_key=True)
+                username = db.Column(db.String(80), unique=True)
+    
+            def test_db1(db):
+                assert db.session.query(UserA).count() == 0
+                db.session.add(UserA(username='alice'))
+                assert db.session.query(UserA).count() == 1
+    
+            def test_db2(db):
+                # test that db fixture rolled back changes from
+                # the previous test
+                assert db.session.query(UserA).count() == 0
+                db.session.add(UserA(username='alice'))
+                db.session.add(UserA(username='bob'))
+                assert db.session.query(UserA).count() == 2
+        """
+        )
+&gt;       conftest_testdir.runpytest().assert_outcomes(passed=2)
+E       AssertionError: assert {'errors': 2,...pped': 0, ...} == {'errors': 0,...pped': 0, ...}
+E         
+E         Omitting 4 identical items, use -vv to show
+E         Differing items:
+E         {'passed': 0} != {'passed': 2}
+E         {'errors': 2} != {'errors': 0}
+E         
+E         Full diff:
+E           {
+E         -     'errors': 0,
+E         ?               ^
+E         +     'errors': 2,
+E         ?               ^
+E               'failed': 0,
+E         -     'passed': 2,
+E         ?               ^
+E         +     'passed': 0,
+E         ?               ^
+E               'skipped': 0,
+E               'xfailed': 0,
+E               'xpassed': 0,
+E           }
+
+/home/runner/work/itd-runner/itd-runner/workdir/tests/pytest-invenio/original/tests/test_fixtures.py:384: AssertionError</failure></testcase><testcase classname="tests.test_fixtures" name="test_db_commit" time="1.107"><failure message="AssertionError: assert {'errors': 1,...pped': 0, ...} == {'errors': 0,...pped': 0, ...}&#10;  &#10;  Omitting 4 identical items, use -vv to show&#10;  Differing items:&#10;  {'passed': 0} != {'passed': 1}&#10;  {'errors': 1} != {'errors': 0}&#10;  &#10;  Full diff:&#10;    {&#10;  -     'errors': 0,&#10;  ?               ^&#10;  +     'errors': 1,&#10;  ?               ^&#10;        'failed': 0,&#10;  -     'passed': 1,&#10;  ?               ^&#10;  +     'passed': 0,&#10;  ?               ^&#10;        'skipped': 0,&#10;        'xfailed': 0,&#10;        'xpassed': 0,&#10;    }">conftest_testdir = &lt;Testdir local('/tmp/pytest-of-runner/pytest-0/test_db_commit0')&gt;
+
+    def test_db_commit(conftest_testdir):
+        """Test database creation and initialization."""
+        conftest_testdir.makepyfile(
+            """
+            from invenio_db import db
+    
+            class UserA(db.Model):
+                id = db.Column(db.Integer, primary_key=True)
+                username = db.Column(db.String(80), unique=True)
+    
+            def test_db_commit(db):
+                assert db.session.query(UserA).count() == 0
+                db.session.add(UserA(username='alice'))
+                db.session.commit()
+                assert db.session.query(UserA).count() == 1
+    
+                # test that previously committed changes
+                # are not rolled back
+                db.session.add(UserA(username='bob'))
+                db.session.rollback()
+                assert db.session.query(UserA).count() == 1
+        """
+        )
+&gt;       conftest_testdir.runpytest().assert_outcomes(passed=1)
+E       AssertionError: assert {'errors': 1,...pped': 0, ...} == {'errors': 0,...pped': 0, ...}
+E         
+E         Omitting 4 identical items, use -vv to show
+E         Differing items:
+E         {'passed': 0} != {'passed': 1}
+E         {'errors': 1} != {'errors': 0}
+E         
+E         Full diff:
+E           {
+E         -     'errors': 0,
+E         ?               ^
+E         +     'errors': 1,
+E         ?               ^
+E               'failed': 0,
+E         -     'passed': 1,
+E         ?               ^
+E         +     'passed': 0,
+E         ?               ^
+E               'skipped': 0,
+E               'xfailed': 0,
+E               'xpassed': 0,
+E           }
+
+/home/runner/work/itd-runner/itd-runner/workdir/tests/pytest-invenio/original/tests/test_fixtures.py:410: AssertionError</failure></testcase><testcase classname="tests.test_fixtures" name="test_app" time="1.126"><failure message="AssertionError: assert {'errors': 1,...pped': 0, ...} == {'errors': 0,...pped': 0, ...}&#10;  &#10;  Omitting 4 identical items, use -vv to show&#10;  Differing items:&#10;  {'passed': 0} != {'passed': 1}&#10;  {'errors': 1} != {'errors': 0}&#10;  &#10;  Full diff:&#10;    {&#10;  -     'errors': 0,&#10;  ?               ^&#10;  +     'errors': 1,&#10;  ?               ^&#10;        'failed': 0,&#10;  -     'passed': 1,&#10;  ?               ^&#10;  +     'passed': 0,&#10;  ?               ^&#10;        'skipped': 0,&#10;        'xfailed': 0,&#10;        'xpassed': 0,&#10;    }">conftest_testdir = &lt;Testdir local('/tmp/pytest-of-runner/pytest-0/test_app0')&gt;
+
+    def test_app(conftest_testdir):
+        """Test database creation and initialization."""
+        conftest_testdir.makepyfile(
+            """
+            from invenio_db import db
+            from invenio_search import current_search_client
+    
+            class Place(db.Model):
+                id = db.Column(db.Integer, primary_key=True)
+    
+            def test_app(app):
+                assert db.session.query(Place).count() == 0
+                assert current_search_client.ping()
+        """
+        )
+&gt;       conftest_testdir.runpytest().assert_outcomes(passed=1)
+E       AssertionError: assert {'errors': 1,...pped': 0, ...} == {'errors': 0,...pped': 0, ...}
+E         
+E         Omitting 4 identical items, use -vv to show
+E         Differing items:
+E         {'passed': 0} != {'passed': 1}
+E         {'errors': 1} != {'errors': 0}
+E         
+E         Full diff:
+E           {
+E         -     'errors': 0,
+E         ?               ^
+E         +     'errors': 1,
+E         ?               ^
+E               'failed': 0,
+E         -     'passed': 1,
+E         ?               ^
+E         +     'passed': 0,
+E         ?               ^
+E               'skipped': 0,
+E               'xfailed': 0,
+E               'xpassed': 0,
+E           }
+
+/home/runner/work/itd-runner/itd-runner/workdir/tests/pytest-invenio/original/tests/test_fixtures.py:428: AssertionError</failure></testcase><testcase classname="tests.test_fixtures" name="test_mailbox" time="1.127"><failure message="AssertionError: assert {'errors': 2,...pped': 0, ...} == {'errors': 1,...pped': 0, ...}&#10;  &#10;  Omitting 4 identical items, use -vv to show&#10;  Differing items:&#10;  {'passed': 0} != {'passed': 1}&#10;  {'errors': 2} != {'errors': 1}&#10;  &#10;  Full diff:&#10;    {&#10;  -     'errors': 1,&#10;  ?               ^&#10;  +     'errors': 2,&#10;  ?               ^&#10;        'failed': 0,&#10;  -     'passed': 1,&#10;  ?               ^&#10;  +     'passed': 0,&#10;  ?               ^&#10;        'skipped': 0,&#10;        'xfailed': 0,&#10;        'xpassed': 0,&#10;    }">conftest_testdir = &lt;Testdir local('/tmp/pytest-of-runner/pytest-0/test_mailbox0')&gt;
+
+    def test_mailbox(conftest_testdir):
+        """Test database creation and initialization."""
+        conftest_testdir.makepyfile(
+            test_mailbox="""
+            def test_mailbox(appctx, mailbox):
+                assert len(mailbox) == 0
+                appctx.extensions['mail'].send_message(
+                    sender='no-reply@localhost',
+                    subject='testing',
+                    body='test',
+                    recipients=['no-reply@localhost'],)
+                assert len(mailbox) == 1
+        """
+        )
+        # Test what happens if Invenio-Mail is not installed.
+        conftest_testdir.makepyfile(
+            test_mailbox_fail="""
+            import pytest
+    
+            @pytest.fixture(scope='module')
+            def base_app(base_app):
+                del base_app.extensions['mail']
+                return base_app
+    
+            def test_mailbox(appctx, mailbox):
+                pass  # Will never reach here.
+        """
+        )
+&gt;       conftest_testdir.runpytest().assert_outcomes(passed=1, errors=1)
+E       AssertionError: assert {'errors': 2,...pped': 0, ...} == {'errors': 1,...pped': 0, ...}
+E         
+E         Omitting 4 identical items, use -vv to show
+E         Differing items:
+E         {'passed': 0} != {'passed': 1}
+E         {'errors': 2} != {'errors': 1}
+E         
+E         Full diff:
+E           {
+E         -     'errors': 1,
+E         ?               ^
+E         +     'errors': 2,
+E         ?               ^
+E               'failed': 0,
+E         -     'passed': 1,
+E         ?               ^
+E         +     'passed': 0,
+E         ?               ^
+E               'skipped': 0,
+E               'xfailed': 0,
+E               'xpassed': 0,
+E           }
+
+/home/runner/work/itd-runner/itd-runner/workdir/tests/pytest-invenio/original/tests/test_fixtures.py:459: AssertionError</failure></testcase><testcase classname="tests.test_fixtures" name="test_browser_skipped" time="0.966" /><testcase classname="tests.test_fixtures" name="test_browser" time="0.000"><skipped type="pytest.skip" message="outdated library">/home/runner/work/itd-runner/itd-runner/workdir/tests/pytest-invenio/original/tests/test_fixtures.py:473: outdated library</skipped></testcase><testcase classname="tests.test_fixtures" name="test_celery_config_ext" time="0.258" /><testcase classname="tests.test_fixtures" name="test_default_location" time="1.336"><failure message="AssertionError: assert {'errors': 1,...pped': 0, ...} == {'errors': 0,...pped': 0, ...}&#10;  &#10;  Omitting 4 identical items, use -vv to show&#10;  Differing items:&#10;  {'passed': 0} != {'passed': 1}&#10;  {'errors': 1} != {'errors': 0}&#10;  &#10;  Full diff:&#10;    {&#10;  -     'errors': 0,&#10;  ?               ^&#10;  +     'errors': 1,&#10;  ?               ^&#10;        'failed': 0,&#10;  -     'passed': 1,&#10;  ?               ^&#10;  +     'passed': 0,&#10;  ?               ^&#10;        'skipped': 0,&#10;        'xfailed': 0,&#10;        'xpassed': 0,&#10;    }">conftest_testdir = &lt;Testdir local('/tmp/pytest-of-runner/pytest-0/test_default_location0')&gt;
+
+    def test_default_location(conftest_testdir):
+        conftest_testdir.makepyfile(
+            """
+            from invenio_files_rest.models import Bucket
+    
+            def test_default_location_create(location):
+                new_bucket = Bucket.create(location)
+                assert location.name == "pytest-location"
+                assert location.uri is not None
+                assert new_bucket.location == location
+        """
+        )
+&gt;       conftest_testdir.runpytest().assert_outcomes(passed=1)
+E       AssertionError: assert {'errors': 1,...pped': 0, ...} == {'errors': 0,...pped': 0, ...}
+E         
+E         Omitting 4 identical items, use -vv to show
+E         Differing items:
+E         {'passed': 0} != {'passed': 1}
+E         {'errors': 1} != {'errors': 0}
+E         
+E         Full diff:
+E           {
+E         -     'errors': 0,
+E         ?               ^
+E         +     'errors': 1,
+E         ?               ^
+E               'failed': 0,
+E         -     'passed': 1,
+E         ?               ^
+E         +     'passed': 0,
+E         ?               ^
+E               'skipped': 0,
+E               'xfailed': 0,
+E               'xpassed': 0,
+E           }
+
+/home/runner/work/itd-runner/itd-runner/workdir/tests/pytest-invenio/original/tests/test_fixtures.py:525: AssertionError</failure></testcase><testcase classname="tests.test_fixtures" name="test_bucket_from_dir" time="1.429"><failure message="AssertionError: assert {'errors': 1,...pped': 0, ...} == {'errors': 0,...pped': 0, ...}&#10;  &#10;  Omitting 4 identical items, use -vv to show&#10;  Differing items:&#10;  {'passed': 0} != {'passed': 1}&#10;  {'errors': 1} != {'errors': 0}&#10;  &#10;  Full diff:&#10;    {&#10;  -     'errors': 0,&#10;  ?               ^&#10;  +     'errors': 1,&#10;  ?               ^&#10;        'failed': 0,&#10;  -     'passed': 1,&#10;  ?               ^&#10;  +     'passed': 0,&#10;  ?               ^&#10;        'skipped': 0,&#10;        'xfailed': 0,&#10;        'xpassed': 0,&#10;    }">conftest_testdir = &lt;Testdir local('/tmp/pytest-of-runner/pytest-0/test_bucket_from_dir0')&gt;
+
+    def test_bucket_from_dir(conftest_testdir):
+        conftest_testdir.makepyfile(
+            """
+            import tempfile, os
+            from invenio_files_rest.models import ObjectVersion
+    
+            def test_creating_location_and_use_bucket_from_dir(bucket_from_dir):
+                # Create dir with a file
+                dir_for_files = tempfile.mkdtemp()
+                with open(
+                    os.path.join(dir_for_files, 'output_file'),
+                    'wb'
+                ) as file_out:
+                    file_out.write(('a'*1024).encode('utf8'))
+                # load file to bucket
+                bucket = bucket_from_dir(dir_for_files)
+    
+                # Get all files from bucket
+                files_from_bucket = ObjectVersion.get_by_bucket(bucket)
+                # Check if there is only one file
+                assert files_from_bucket.count() == 1
+                # And check if this file has proper key
+                assert files_from_bucket.one().key == "output_file"
+        """
+        )
+&gt;       conftest_testdir.runpytest().assert_outcomes(passed=1)
+E       AssertionError: assert {'errors': 1,...pped': 0, ...} == {'errors': 0,...pped': 0, ...}
+E         
+E         Omitting 4 identical items, use -vv to show
+E         Differing items:
+E         {'passed': 0} != {'passed': 1}
+E         {'errors': 1} != {'errors': 0}
+E         
+E         Full diff:
+E           {
+E         -     'errors': 0,
+E         ?               ^
+E         +     'errors': 1,
+E         ?               ^
+E               'failed': 0,
+E         -     'passed': 1,
+E         ?               ^
+E         +     'passed': 0,
+E         ?               ^
+E               'skipped': 0,
+E               'xfailed': 0,
+E               'xpassed': 0,
+E           }
+
+/home/runner/work/itd-runner/itd-runner/workdir/tests/pytest-invenio/original/tests/test_fixtures.py:553: AssertionError</failure></testcase><testcase classname="tests.test_fixtures" name="test_entrypoint_invenio_base" time="1.025"><failure message="AssertionError: assert {'errors': 2,...pped': 0, ...} == {'errors': 0,...pped': 0, ...}&#10;  &#10;  Omitting 4 identical items, use -vv to show&#10;  Differing items:&#10;  {'passed': 0} != {'passed': 2}&#10;  {'errors': 2} != {'errors': 0}&#10;  &#10;  Full diff:&#10;    {&#10;  -     'errors': 0,&#10;  ?               ^&#10;  +     'errors': 2,&#10;  ?               ^&#10;        'failed': 0,&#10;  -     'passed': 2,&#10;  ?               ^&#10;  +     'passed': 0,&#10;  ?               ^&#10;        'skipped': 0,&#10;        'xfailed': 0,&#10;        'xpassed': 0,&#10;    }">testdir = &lt;Testdir local('/tmp/pytest-of-runner/pytest-0/test_entrypoint_invenio_base0')&gt;
+
+    def test_entrypoint_invenio_base(testdir):
+        """Test database creation and initialization."""
+        testdir.makeconftest(
+            """
+            import pytest
+    
+            from flask import Flask
+            from functools import partial
+            from invenio_db import InvenioDB
+    
+            def _factory(name, **config):
+                app_ = Flask(name)
+                app_.config.update(**config)
+                InvenioDB(app_)
+                return app_
+    
+            @pytest.fixture(scope='module')
+            def create_app(entry_points):
+                return partial(_factory, 'app')
+        """
+        )
+        testdir.makepyfile(
+            mock_module="""
+            from invenio_db import db
+            from invenio_base.utils import entry_points
+    
+            class Place(db.Model):
+                id = db.Column(db.Integer, primary_key=True)
+    
+            def db_entry_points():
+                return entry_points('invenio_db.models')
+        """
+        )
+        testdir.makepyfile(
+            test_ep="""
+            import pytest
+            # By importing we get a reference to iter_entry_points before it
+            # has been mocked (to test that this case also works).
+            from mock_module import db_entry_points
+    
+    
+            @pytest.fixture(scope='module')
+            def extra_entry_points():
+                return {
+                    'invenio_db.models': [
+                        'mock_module = mock_module',
+                    ],
+                }
+    
+            def test_app(base_app, db):
+                from mock_module import Place
+                assert db.session.query(Place).count() == 0
+    
+            def test_extras(base_app, db):
+                for ep in db_entry_points():
+                    if ep.name == 'mock_module':
+                        return
+                assert False, "mock_module not found in entry points"
+        """
+        )
+&gt;       testdir.runpytest("-s").assert_outcomes(passed=2)
+E       AssertionError: assert {'errors': 2,...pped': 0, ...} == {'errors': 0,...pped': 0, ...}
+E         
+E         Omitting 4 identical items, use -vv to show
+E         Differing items:
+E         {'passed': 0} != {'passed': 2}
+E         {'errors': 2} != {'errors': 0}
+E         
+E         Full diff:
+E           {
+E         -     'errors': 0,
+E         ?               ^
+E         +     'errors': 2,
+E         ?               ^
+E               'failed': 0,
+E         -     'passed': 2,
+E         ?               ^
+E         +     'passed': 0,
+E         ?               ^
+E               'skipped': 0,
+E               'xfailed': 0,
+E               'xpassed': 0,
+E           }
+
+/home/runner/work/itd-runner/itd-runner/workdir/tests/pytest-invenio/original/tests/test_fixtures.py:616: AssertionError</failure></testcase><testcase classname="tests.test_fixtures" name="test_entrypoint_importlib" time="0.940"><failure message="AssertionError: assert {'errors': 2,...pped': 0, ...} == {'errors': 0,...pped': 0, ...}&#10;  &#10;  Omitting 4 identical items, use -vv to show&#10;  Differing items:&#10;  {'passed': 0} != {'passed': 2}&#10;  {'errors': 2} != {'errors': 0}&#10;  &#10;  Full diff:&#10;    {&#10;  -     'errors': 0,&#10;  ?               ^&#10;  +     'errors': 2,&#10;  ?               ^&#10;        'failed': 0,&#10;  -     'passed': 2,&#10;  ?               ^&#10;  +     'passed': 0,&#10;  ?               ^&#10;        'skipped': 0,&#10;        'xfailed': 0,&#10;        'xpassed': 0,&#10;    }">testdir = &lt;Testdir local('/tmp/pytest-of-runner/pytest-0/test_entrypoint_importlib0')&gt;
+
+    def test_entrypoint_importlib(testdir):
+        """Test database creation and initialization."""
+        testdir.makeconftest(
+            """
+            import pytest
+    
+            from flask import Flask
+            from functools import partial
+            from invenio_db import InvenioDB
+    
+            def _factory(name, **config):
+                app_ = Flask(name)
+                app_.config.update(**config)
+                InvenioDB(app_)
+                return app_
+    
+            @pytest.fixture(scope='module')
+            def create_app(entry_points):
+                return partial(_factory, 'app')
+        """
+        )
+        testdir.makepyfile(
+            mock_module="""
+            from invenio_db import db
+            from invenio_base.utils import entry_points
+    
+            class Place(db.Model):
+                id = db.Column(db.Integer, primary_key=True)
+    
+            def db_entry_points():
+                return entry_points(group='invenio_db.models')
+        """
+        )
+        testdir.makepyfile(
+            test_ep="""
+            import pytest
+            # By importing we get a reference to entry_points before it
+            # has been mocked (to test that this case also works).
+            from mock_module import db_entry_points
+    
+    
+            @pytest.fixture(scope='module')
+            def extra_entry_points():
+                return {
+                    'invenio_db.models': [
+                        'mock_module = mock_module',
+                    ],
+                }
+    
+            def test_app(base_app, db):
+                from mock_module import Place
+                assert db.session.query(Place).count() == 0
+    
+            def test_extras(base_app, db):
+                for ep in db_entry_points():
+                    if ep.name == 'mock_module':
+                        return
+                assert False, "mock_module not found in entry points"
+        """
+        )
+&gt;       testdir.runpytest("-s").assert_outcomes(passed=2)
+E       AssertionError: assert {'errors': 2,...pped': 0, ...} == {'errors': 0,...pped': 0, ...}
+E         
+E         Omitting 4 identical items, use -vv to show
+E         Differing items:
+E         {'passed': 0} != {'passed': 2}
+E         {'errors': 2} != {'errors': 0}
+E         
+E         Full diff:
+E           {
+E         -     'errors': 0,
+E         ?               ^
+E         +     'errors': 2,
+E         ?               ^
+E               'failed': 0,
+E         -     'passed': 2,
+E         ?               ^
+E         +     'passed': 0,
+E         ?               ^
+E               'skipped': 0,
+E               'xfailed': 0,
+E               'xpassed': 0,
+E           }
+
+/home/runner/work/itd-runner/itd-runner/workdir/tests/pytest-invenio/original/tests/test_fixtures.py:679: AssertionError</failure></testcase><testcase classname="tests.test_fixtures" name="test_set_app_config_fn_scoped" time="1.239"><failure message="AssertionError: assert {'errors': 2,...pped': 0, ...} == {'errors': 0,...pped': 0, ...}&#10;  &#10;  Omitting 4 identical items, use -vv to show&#10;  Differing items:&#10;  {'passed': 0} != {'passed': 2}&#10;  {'errors': 2} != {'errors': 0}&#10;  &#10;  Full diff:&#10;    {&#10;  -     'errors': 0,&#10;  ?               ^&#10;  +     'errors': 2,&#10;  ?               ^&#10;        'failed': 0,&#10;  -     'passed': 2,&#10;  ?               ^&#10;  +     'passed': 0,&#10;  ?               ^&#10;        'skipped': 0,&#10;        'xfailed': 0,&#10;        'xpassed': 0,&#10;    }">conftest_testdir = &lt;Testdir local('/tmp/pytest-of-runner/pytest-0/test_set_app_config_fn_scoped0')&gt;
+
+    def test_set_app_config_fn_scoped(conftest_testdir):
+        """Test temporary config settings."""
+        conftest_testdir.makepyfile(
+            """
+            import pytest
+    
+            @pytest.fixture(scope='module')
+            def app_config(app_config):
+                app_config.update({
+                    'MYSTUFF': "foo"
+                })
+                return app_config
+    
+    
+            def test_set_tmp_config_one(base_app, set_app_config_fn_scoped):
+                # no interference from other test
+                assert "foo" == base_app.config["MYSTUFF"]
+                assert "MYSTUFF2" not in base_app.config
+    
+                set_app_config_fn_scoped({"MYSTUFF": "bar"})
+    
+                assert "bar" == base_app.config["MYSTUFF"]
+    
+    
+            def test_set_tmp_config_two(base_app, set_app_config_fn_scoped):
+                # no interference from other test
+                assert "foo" == base_app.config["MYSTUFF"]
+                assert "MYSTUFF2" not in base_app.config
+    
+                set_app_config_fn_scoped({"MYSTUFF": "baz", "MYSTUFF2": "foo"})
+    
+                assert "baz" == base_app.config["MYSTUFF"]
+                assert "foo" == base_app.config["MYSTUFF2"]
+        """
+        )
+&gt;       conftest_testdir.runpytest().assert_outcomes(passed=2)
+E       AssertionError: assert {'errors': 2,...pped': 0, ...} == {'errors': 0,...pped': 0, ...}
+E         
+E         Omitting 4 identical items, use -vv to show
+E         Differing items:
+E         {'passed': 0} != {'passed': 2}
+E         {'errors': 2} != {'errors': 0}
+E         
+E         Full diff:
+E           {
+E         -     'errors': 0,
+E         ?               ^
+E         +     'errors': 2,
+E         ?               ^
+E               'failed': 0,
+E         -     'passed': 2,
+E         ?               ^
+E         +     'passed': 0,
+E         ?               ^
+E               'skipped': 0,
+E               'xfailed': 0,
+E               'xpassed': 0,
+E           }
+
+/home/runner/work/itd-runner/itd-runner/workdir/tests/pytest-invenio/original/tests/test_fixtures.py:717: AssertionError</failure></testcase><testcase classname="pytest_invenio.__init__" name="PYDOCSTYLE" time="0.003" /><testcase classname="pytest_invenio.__init__" name="ISORT" time="0.001" /><testcase classname="pytest_invenio.__init__" name="black" time="0.113" /><testcase classname="pytest_invenio.fixtures" name="PYDOCSTYLE" time="0.025" /><testcase classname="pytest_invenio.fixtures" name="ISORT" time="0.012" /><testcase classname="pytest_invenio.fixtures" name="black" time="0.153" /><testcase classname="pytest_invenio.plugin" name="PYDOCSTYLE" time="0.003" /><testcase classname="pytest_invenio.plugin" name="ISORT" time="0.003" /><testcase classname="pytest_invenio.plugin" name="black" time="0.105" /><testcase classname="pytest_invenio.user" name="PYDOCSTYLE" time="0.006" /><testcase classname="pytest_invenio.user" name="ISORT" time="0.005" /><testcase classname="pytest_invenio.user" name="black" time="0.113" /></testsuite></testsuites>

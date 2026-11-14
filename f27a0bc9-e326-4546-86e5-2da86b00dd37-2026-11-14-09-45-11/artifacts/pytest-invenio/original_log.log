@@ -1,0 +1,202 @@
+ Image opensearchproject/opensearch:2.19.7 Pulling 
+ 5d1a2e57c29a Pulling fs layer 0B
+ 4f4fb700ef54 Pulling fs layer 0B
+ 9e1d405cec2a Pulling fs layer 0B
+ 2c1dff678bee Pulling fs layer 0B
+ e47ffd8ce2ce Pulling fs layer 0B
+ 6bd28022010b Pulling fs layer 0B
+ 95bf5ad82bc9 Pulling fs layer 0B
+ 4f4fb700ef54 Already exists 0B
+ 95bf5ad82bc9 Download complete 0B
+ 2c1dff678bee Downloading 4.194MB
+ 5d1a2e57c29a Downloading 4.194MB
+ 9e1d405cec2a Downloading 33.55MB
+ 6bd28022010b Download complete 0B
+ e47ffd8ce2ce Download complete 0B
+ 2c1dff678bee Download complete 0B
+ 5d1a2e57c29a Downloading 41.94MB
+ 9e1d405cec2a Downloading 72.35MB
+ 5d1a2e57c29a Downloading 54.64MB
+ 9e1d405cec2a Downloading 117.4MB
+ 5d1a2e57c29a Downloading 54.64MB
+ 9e1d405cec2a Downloading 156.2MB
+ 5d1a2e57c29a Downloading 54.64MB
+ 9e1d405cec2a Downloading 194MB
+ 5d1a2e57c29a Download complete 0B
+ 9e1d405cec2a Downloading 237MB
+ 5d1a2e57c29a Extracting 1B
+ 9e1d405cec2a Downloading 281MB
+ 5d1a2e57c29a Extracting 1B
+ 9e1d405cec2a Downloading 326.1MB
+ 5d1a2e57c29a Extracting 1B
+ 9e1d405cec2a Downloading 370.1MB
+ 5d1a2e57c29a Extracting 1B
+ 9e1d405cec2a Downloading 412.1MB
+ 5d1a2e57c29a Extracting 1B
+ 9e1d405cec2a Downloading 453MB
+ 5d1a2e57c29a Extracting 1B
+ 9e1d405cec2a Downloading 500.2MB
+ 5d1a2e57c29a Extracting 1B
+ 9e1d405cec2a Downloading 537.9MB
+ 5d1a2e57c29a Extracting 1B
+ 9e1d405cec2a Downloading 576.7MB
+ 5d1a2e57c29a Extracting 1B
+ 9e1d405cec2a Downloading 616.6MB
+ 5d1a2e57c29a Extracting 1B
+ 9e1d405cec2a Downloading 654.3MB
+ 5d1a2e57c29a Extracting 1B
+ 9e1d405cec2a Downloading 688.9MB
+ 5d1a2e57c29a Extracting 2B
+ 9e1d405cec2a Downloading 726.7MB
+ 5d1a2e57c29a Extracting 2B
+ 9e1d405cec2a Downloading 764.4MB
+ 5d1a2e57c29a Extracting 2B
+ 9e1d405cec2a Downloading 802.2MB
+ 9e1d405cec2a Downloading 841MB
+ 5d1a2e57c29a Pull complete 0B
+ 9e1d405cec2a Downloading 881.9MB
+ 2c1dff678bee Extracting 1B
+ 9e1d405cec2a Downloading 913.3MB
+ 9e1d405cec2a Downloading 958.4MB
+ 2c1dff678bee Pull complete 0B
+ 9e1d405cec2a Downloading 981.2MB
+ 9e1d405cec2a Downloading 981.2MB
+ 9e1d405cec2a Downloading 981.2MB
+ 9e1d405cec2a Downloading 981.2MB
+ 9e1d405cec2a Downloading 981.2MB
+ 9e1d405cec2a Downloading 981.2MB
+ 9e1d405cec2a Downloading 981.2MB
+ 9e1d405cec2a Downloading 981.2MB
+ 9e1d405cec2a Downloading 981.2MB
+ 6bd28022010b Extracting 1B
+ 9e1d405cec2a Downloading 981.2MB
+ 6bd28022010b Extracting 1B
+ 9e1d405cec2a Downloading 981.2MB
+ 6bd28022010b Pull complete 0B
+ 9e1d405cec2a Downloading 981.2MB
+ 9e1d405cec2a Downloading 981.2MB
+ 9e1d405cec2a Downloading 981.2MB
+ 9e1d405cec2a Downloading 981.2MB
+ 9e1d405cec2a Downloading 981.2MB
+ 9e1d405cec2a Downloading 981.2MB
+ 9e1d405cec2a Downloading 981.2MB
+ 9e1d405cec2a Downloading 981.2MB
+ 9e1d405cec2a Downloading 981.2MB
+ 9e1d405cec2a Downloading 981.2MB
+ 9e1d405cec2a Downloading 981.2MB
+ 9e1d405cec2a Downloading 981.2MB
+ 9e1d405cec2a Downloading 981.2MB
+ 9e1d405cec2a Downloading 981.2MB
+ 9e1d405cec2a Downloading 981.2MB
+ 9e1d405cec2a Downloading 981.2MB
+ 9e1d405cec2a Downloading 981.2MB
+ 9e1d405cec2a Downloading 981.2MB
+ 9e1d405cec2a Downloading 981.2MB
+ 9e1d405cec2a Downloading 981.2MB
+ 9e1d405cec2a Downloading 981.2MB
+ 9e1d405cec2a Downloading 981.2MB
+ 9e1d405cec2a Downloading 981.2MB
+ 9e1d405cec2a Downloading 981.2MB
+ 9e1d405cec2a Downloading 981.2MB
+ 9e1d405cec2a Downloading 981.2MB
+ 9e1d405cec2a Downloading 981.2MB
+ 9e1d405cec2a Downloading 981.2MB
+ 9e1d405cec2a Downloading 981.2MB
+ 9e1d405cec2a Downloading 981.2MB
+ 9e1d405cec2a Downloading 981.2MB
+ 9e1d405cec2a Downloading 981.2MB
+ 9e1d405cec2a Downloading 981.2MB
+ 9e1d405cec2a Downloading 981.2MB
+ 9e1d405cec2a Downloading 981.2MB
+ 9e1d405cec2a Downloading 981.2MB
+ 9e1d405cec2a Downloading 981.2MB
+ 9e1d405cec2a Downloading 981.2MB
+ 9e1d405cec2a Downloading 981.2MB
+ 9e1d405cec2a Downloading 981.2MB
+ 9e1d405cec2a Downloading 981.2MB
+ 9e1d405cec2a Downloading 981.2MB
+ 9e1d405cec2a Download complete 0B
+ 9e1d405cec2a Extracting 1B
+ 9e1d405cec2a Extracting 1B
+ 9e1d405cec2a Extracting 1B
+ 9e1d405cec2a Extracting 1B
+ 9e1d405cec2a Extracting 1B
+ 9e1d405cec2a Extracting 1B
+ 9e1d405cec2a Extracting 1B
+ 9e1d405cec2a Extracting 1B
+ 9e1d405cec2a Extracting 1B
+ 9e1d405cec2a Extracting 1B
+ 9e1d405cec2a Extracting 2B
+ 9e1d405cec2a Extracting 2B
+ 9e1d405cec2a Extracting 2B
+ 9e1d405cec2a Extracting 2B
+ 9e1d405cec2a Extracting 2B
+ 9e1d405cec2a Extracting 2B
+ 9e1d405cec2a Extracting 2B
+ 9e1d405cec2a Extracting 2B
+ 9e1d405cec2a Extracting 2B
+ 9e1d405cec2a Extracting 2B
+ 9e1d405cec2a Extracting 2B
+ 9e1d405cec2a Extracting 3B
+ 9e1d405cec2a Extracting 3B
+ 9e1d405cec2a Extracting 3B
+ 9e1d405cec2a Extracting 3B
+ 9e1d405cec2a Extracting 3B
+ 9e1d405cec2a Extracting 3B
+ 9e1d405cec2a Extracting 3B
+ 9e1d405cec2a Extracting 3B
+ 9e1d405cec2a Extracting 3B
+ 9e1d405cec2a Extracting 3B
+ 9e1d405cec2a Extracting 4B
+ 9e1d405cec2a Extracting 4B
+ 9e1d405cec2a Extracting 4B
+ 9e1d405cec2a Extracting 4B
+ 9e1d405cec2a Extracting 4B
+ 9e1d405cec2a Pull complete 0B
+ 4f4fb700ef54 Extracting 1B
+ 4f4fb700ef54 Extracting 1B
+ 4f4fb700ef54 Pull complete 0B
+ e47ffd8ce2ce Extracting 1B
+ 95bf5ad82bc9 Pull complete 0B
+ e47ffd8ce2ce Pull complete 0B
+ Image opensearchproject/opensearch:2.19.7 Pulled 
+ Network docker_services_cli_default Creating 
+ Network docker_services_cli_default Created 
+ Container docker_services_cli-opensearch-1 Creating 
+ Container docker_services_cli-opensearch-1 Created 
+ Container docker_services_cli-opensearch-1 Starting 
+ Container docker_services_cli-opensearch-1 Started 
+============================= test session starts ==============================
+platform linux -- Python 3.14.10, pytest-8.4.2, pluggy-1.7.0
+rootdir: /home/runner/work/itd-runner/itd-runner/workdir/tests/pytest-invenio/original
+configfile: pyproject.toml
+testpaths: tests, pytest_invenio
+plugins: cov-7.1.0, platformdirs-4.14.5, isort-4.0.0, flask-1.3.0, pycodestyle-2.5.0, github-actions-annotate-failures-0.4.2, pydocstyle-2.4.0, black-0.6.0, invenio-4.0.3
+collected 47 items
+
+tests/conftest.py ...                                                    [  6%]
+tests/test_fixtures.py .........................s......                  [ 74%]
+pytest_invenio/__init__.py ...                                           [ 80%]
+pytest_invenio/fixtures.py ...                                           [ 87%]
+pytest_invenio/plugin.py ...                                             [ 93%]
+pytest_invenio/user.py ...                                               [100%]
+
+- generated xml file: /home/runner/work/itd-runner/itd-runner/workdir/artifacts/pytest-invenio/original_junit.xml -
+================================ tests coverage ================================
+_______________ coverage: platform linux, python 3.14.10-final-0 _______________
+
+Name                         Stmts   Miss  Cover   Missing
+----------------------------------------------------------
+pytest_invenio/__init__.py       2      2     0%   498-500
+pytest_invenio/fixtures.py     324    322     1%   8-367, 381-1068
+pytest_invenio/plugin.py        14     10    29%   16-56, 73-85
+pytest_invenio/user.py          91     91     0%   8-178
+----------------------------------------------------------
+TOTAL                          431    425     1%
+======================== 46 passed, 1 skipped in 28.27s ========================
+ Container docker_services_cli-opensearch-1 Stopping 
+ Container docker_services_cli-opensearch-1 Stopped 
+ Container docker_services_cli-opensearch-1 Removing 
+ Container docker_services_cli-opensearch-1 Removed 
+ Network docker_services_cli_default Removing 
+ Network docker_services_cli_default Removed 

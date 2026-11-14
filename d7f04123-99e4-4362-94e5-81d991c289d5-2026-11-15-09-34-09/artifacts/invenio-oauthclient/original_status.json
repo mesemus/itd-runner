@@ -1,0 +1,77 @@
+{
+  "dependencies": [],
+  "package": {
+    "github_entry": {
+      "_extra": {},
+      "default_branch": null,
+      "exclude": [
+        "invenio-xrootd",
+        "invenio-swh"
+      ],
+      "extras": [
+        "tests",
+        "opensearch2",
+        "s3",
+        "devs",
+        "s3fs",
+        "oaipmh",
+        "rdf",
+        "sparql",
+        "postgresql",
+        "admin"
+      ],
+      "freeze": [
+        "setuptools<82.0.0"
+      ],
+      "include": [
+        "invenio-.*",
+        "pytest-invenio",
+        "citeproc-py-styles"
+      ],
+      "install": [],
+      "org": "inveniosoftware",
+      "package_map": {},
+      "slow_packages": {
+        "invenio-rdm-records": [
+          "tests/resources/test_iiif_image_api.py",
+          "tests/resources/test_resources_review.py",
+          "tests/services/test_rdm_service.py"
+        ]
+      },
+      "test": [
+        "./run-tests.sh"
+      ]
+    },
+    "patched_reference": null,
+    "patches": [],
+    "reference": {
+      "actual_version": "9.1.2",
+      "base": null,
+      "branch": "v9.1.2",
+      "commit": "0ebd50be9d4ad6289ca8a94a250fc0364854c9f2",
+      "commits_from_version": [],
+      "org": "inveniosoftware",
+      "package": "invenio-oauthclient",
+      "pr": null,
+      "pr_info": null,
+      "repo": "invenio-oauthclient"
+    },
+    "unpatched_reference": {
+      "actual_version": "9.1.2",
+      "base": null,
+      "branch": null,
+      "commit": "6357ab1756c345cde6b4c72e78b55851968f092d",
+      "commits_from_version": [
+        "50930dd38b0a9387b7ab4ec79a104a106ff272d6",
+        "2746a1c3318322a00a5f54da1d0dea67d7c16768",
+        "6357ab1756c345cde6b4c72e78b55851968f092d"
+      ],
+      "org": "inveniosoftware",
+      "package": "invenio-oauthclient",
+      "pr": null,
+      "pr_info": null,
+      "repo": "invenio-oauthclient"
+    }
+  },
+  "status": "success"
+}

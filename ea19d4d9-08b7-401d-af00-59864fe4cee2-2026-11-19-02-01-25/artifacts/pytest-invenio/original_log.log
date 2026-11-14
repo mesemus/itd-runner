@@ -1,0 +1,224 @@
+ Image opensearchproject/opensearch:2.19.7 Pulling 
+ 11c592228529 Pulling fs layer 0B
+ 7763bb854b64 Pulling fs layer 0B
+ f777f604962b Pulling fs layer 0B
+ 4f4fb700ef54 Pulling fs layer 0B
+ b45ac39da3c5 Pulling fs layer 0B
+ ba911e142be4 Pulling fs layer 0B
+ b14c48cb507d Pulling fs layer 0B
+ 4f4fb700ef54 Already exists 0B
+ 11c592228529 Download complete 0B
+ 7763bb854b64 Download complete 0B
+ b14c48cb507d Downloading 8.389MB
+ f777f604962b Downloading 6.291MB
+ b45ac39da3c5 Download complete 0B
+ ba911e142be4 Download complete 0B
+ b14c48cb507d Downloading 32.51MB
+ f777f604962b Downloading 12.58MB
+ f777f604962b Downloading 37.75MB
+ b14c48cb507d Downloading 52.43MB
+ f777f604962b Downloading 69.21MB
+ b14c48cb507d Downloading 54.57MB
+ f777f604962b Downloading 105.9MB
+ b14c48cb507d Downloading 54.57MB
+ f777f604962b Downloading 143.7MB
+ b14c48cb507d Download complete 0B
+ b14c48cb507d Extracting 1B
+ f777f604962b Downloading 177.2MB
+ b14c48cb507d Extracting 1B
+ f777f604962b Downloading 215MB
+ b14c48cb507d Extracting 1B
+ f777f604962b Downloading 250.6MB
+ b14c48cb507d Extracting 1B
+ f777f604962b Downloading 280MB
+ b14c48cb507d Extracting 1B
+ f777f604962b Downloading 314.6MB
+ b14c48cb507d Extracting 1B
+ f777f604962b Downloading 350.2MB
+ b14c48cb507d Extracting 1B
+ f777f604962b Downloading 385.9MB
+ b14c48cb507d Extracting 1B
+ f777f604962b Downloading 421.5MB
+ b14c48cb507d Extracting 1B
+ f777f604962b Downloading 457.2MB
+ b14c48cb507d Extracting 1B
+ f777f604962b Downloading 491.8MB
+ b14c48cb507d Extracting 1B
+ f777f604962b Downloading 518MB
+ b14c48cb507d Extracting 2B
+ f777f604962b Downloading 542.1MB
+ b14c48cb507d Extracting 2B
+ f777f604962b Downloading 567.3MB
+ b14c48cb507d Extracting 2B
+ f777f604962b Downloading 586.2MB
+ b14c48cb507d Extracting 2B
+ f777f604962b Downloading 611.3MB
+ 11c592228529 Extracting 1B
+ b14c48cb507d Pull complete 0B
+ f777f604962b Downloading 623.9MB
+ 11c592228529 Extracting 1B
+ f777f604962b Downloading 623.9MB
+ 11c592228529 Extracting 1B
+ f777f604962b Downloading 623.9MB
+ 11c592228529 Extracting 1B
+ f777f604962b Downloading 652.2MB
+ 11c592228529 Pull complete 0B
+ b45ac39da3c5 Pull complete 0B
+ f777f604962b Downloading 667.9MB
+ f777f604962b Downloading 692.1MB
+ f777f604962b Downloading 721.4MB
+ f777f604962b Downloading 747.6MB
+ f777f604962b Downloading 781.2MB
+ f777f604962b Downloading 812.6MB
+ f777f604962b Downloading 845.2MB
+ f777f604962b Downloading 882.9MB
+ f777f604962b Downloading 919.6MB
+ f777f604962b Downloading 957.3MB
+ f777f604962b Downloading 981.2MB
+ f777f604962b Downloading 981.2MB
+ f777f604962b Downloading 981.2MB
+ f777f604962b Downloading 981.2MB
+ f777f604962b Downloading 981.2MB
+ f777f604962b Downloading 981.2MB
+ f777f604962b Downloading 981.2MB
+ f777f604962b Downloading 981.2MB
+ f777f604962b Downloading 981.2MB
+ f777f604962b Downloading 981.2MB
+ f777f604962b Downloading 981.2MB
+ f777f604962b Downloading 981.2MB
+ f777f604962b Downloading 981.2MB
+ f777f604962b Downloading 981.2MB
+ f777f604962b Downloading 981.2MB
+ f777f604962b Downloading 981.2MB
+ f777f604962b Downloading 981.2MB
+ f777f604962b Downloading 981.2MB
+ f777f604962b Downloading 981.2MB
+ f777f604962b Downloading 981.2MB
+ f777f604962b Downloading 981.2MB
+ f777f604962b Downloading 981.2MB
+ f777f604962b Downloading 981.2MB
+ f777f604962b Downloading 981.2MB
+ f777f604962b Downloading 981.2MB
+ f777f604962b Downloading 981.2MB
+ f777f604962b Downloading 981.2MB
+ f777f604962b Downloading 981.2MB
+ f777f604962b Downloading 981.2MB
+ f777f604962b Downloading 981.2MB
+ f777f604962b Downloading 981.2MB
+ f777f604962b Downloading 981.2MB
+ f777f604962b Downloading 981.2MB
+ f777f604962b Downloading 981.2MB
+ f777f604962b Downloading 981.2MB
+ f777f604962b Downloading 981.2MB
+ f777f604962b Downloading 981.2MB
+ f777f604962b Downloading 981.2MB
+ f777f604962b Downloading 981.2MB
+ f777f604962b Downloading 981.2MB
+ f777f604962b Downloading 981.2MB
+ f777f604962b Downloading 981.2MB
+ f777f604962b Downloading 981.2MB
+ f777f604962b Downloading 981.2MB
+ f777f604962b Downloading 981.2MB
+ f777f604962b Downloading 981.2MB
+ f777f604962b Downloading 981.2MB
+ f777f604962b Downloading 981.2MB
+ f777f604962b Downloading 981.2MB
+ f777f604962b Downloading 981.2MB
+ f777f604962b Downloading 981.2MB
+ f777f604962b Downloading 981.2MB
+ f777f604962b Downloading 981.2MB
+ f777f604962b Downloading 981.2MB
+ f777f604962b Downloading 981.2MB
+ f777f604962b Downloading 981.2MB
+ f777f604962b Downloading 981.2MB
+ f777f604962b Download complete 0B
+ f777f604962b Extracting 1B
+ f777f604962b Extracting 1B
+ f777f604962b Extracting 1B
+ f777f604962b Extracting 1B
+ f777f604962b Extracting 1B
+ f777f604962b Extracting 1B
+ f777f604962b Extracting 1B
+ f777f604962b Extracting 1B
+ f777f604962b Extracting 1B
+ f777f604962b Extracting 1B
+ f777f604962b Extracting 2B
+ f777f604962b Extracting 2B
+ f777f604962b Extracting 2B
+ f777f604962b Extracting 2B
+ f777f604962b Extracting 2B
+ f777f604962b Extracting 2B
+ f777f604962b Extracting 2B
+ f777f604962b Extracting 2B
+ f777f604962b Extracting 2B
+ f777f604962b Extracting 2B
+ f777f604962b Extracting 3B
+ f777f604962b Extracting 3B
+ f777f604962b Extracting 3B
+ f777f604962b Extracting 3B
+ f777f604962b Extracting 3B
+ f777f604962b Extracting 3B
+ f777f604962b Extracting 3B
+ f777f604962b Extracting 3B
+ f777f604962b Extracting 3B
+ f777f604962b Extracting 3B
+ f777f604962b Extracting 3B
+ f777f604962b Extracting 4B
+ f777f604962b Extracting 4B
+ f777f604962b Extracting 4B
+ f777f604962b Extracting 4B
+ f777f604962b Extracting 4B
+ f777f604962b Extracting 4B
+ f777f604962b Extracting 4B
+ f777f604962b Extracting 4B
+ f777f604962b Extracting 4B
+ f777f604962b Extracting 5B
+ f777f604962b Extracting 5B
+ f777f604962b Extracting 5B
+ f777f604962b Extracting 5B
+ f777f604962b Extracting 5B
+ 4f4fb700ef54 Pull complete 0B
+ ba911e142be4 Pull complete 0B
+ f777f604962b Pull complete 0B
+ 7763bb854b64 Pull complete 0B
+ Image opensearchproject/opensearch:2.19.7 Pulled 
+ Network docker_services_cli_default Creating 
+ Network docker_services_cli_default Created 
+ Container docker_services_cli-opensearch-1 Creating 
+ Container docker_services_cli-opensearch-1 Created 
+ Container docker_services_cli-opensearch-1 Starting 
+ Container docker_services_cli-opensearch-1 Started 
+============================= test session starts ==============================
+platform linux -- Python 3.14.10, pytest-8.4.2, pluggy-1.7.0
+rootdir: /home/runner/work/itd-runner/itd-runner/workdir/tests/pytest-invenio/original
+configfile: pyproject.toml
+testpaths: tests, pytest_invenio
+plugins: cov-7.1.0, isort-4.0.0, platformdirs-4.14.7, flask-1.3.0, pycodestyle-2.5.0, github-actions-annotate-failures-0.4.2, pydocstyle-2.4.0, black-0.6.0, invenio-4.0.3
+collected 47 items
+
+tests/conftest.py ...                                                    [  6%]
+tests/test_fixtures.py .........................s......                  [ 74%]
+pytest_invenio/__init__.py ...                                           [ 80%]
+pytest_invenio/fixtures.py ...                                           [ 87%]
+pytest_invenio/plugin.py ...                                             [ 93%]
+pytest_invenio/user.py ...                                               [100%]
+
+- generated xml file: /home/runner/work/itd-runner/itd-runner/workdir/artifacts/pytest-invenio/original_junit.xml -
+================================ tests coverage ================================
+_______________ coverage: platform linux, python 3.14.10-final-0 _______________
+
+Name                         Stmts   Miss  Cover   Missing
+----------------------------------------------------------
+pytest_invenio/__init__.py       2      2     0%   498-500
+pytest_invenio/fixtures.py     324    322     1%   8-367, 381-1068
+pytest_invenio/plugin.py        14     10    29%   16-56, 73-85
+pytest_invenio/user.py          91     91     0%   8-178
+----------------------------------------------------------
+TOTAL                          431    425     1%
+======================== 46 passed, 1 skipped in 38.37s ========================
+ Container docker_services_cli-opensearch-1 Stopping 
+ Container docker_services_cli-opensearch-1 Stopped 
+ Container docker_services_cli-opensearch-1 Removing 
+ Container docker_services_cli-opensearch-1 Removed 
+ Network docker_services_cli_default Removing 
+ Network docker_services_cli_default Removed 

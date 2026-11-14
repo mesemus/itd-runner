@@ -1,0 +1,2171 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites name="pytest tests"><testsuite name="pytest" errors="31" failures="0" skipped="1" tests="151" time="9.214" timestamp="2026-11-21T10:27:33.349376+00:00" hostname="runnervm0hi8g"><testcase classname="tests.conftest" name="PYDOCSTYLE" time="0.007" /><testcase classname="tests.conftest" name="ISORT" time="0.012" /><testcase classname="tests.conftest" name="black" time="0.271" /><testcase classname="tests.data.__init__" name="PYDOCSTYLE" time="0.001" /><testcase classname="tests.data.__init__" name="ISORT" time="0.002" /><testcase classname="tests.data.__init__" name="black" time="0.132" /><testcase classname="tests.data.os-v1.__init__" name="PYDOCSTYLE" time="0.001" /><testcase classname="tests.data.os-v1.__init__" name="ISORT" time="0.002" /><testcase classname="tests.data.os-v1.__init__" name="black" time="0.135" /><testcase classname="tests.data.os-v2.__init__" name="PYDOCSTYLE" time="0.001" /><testcase classname="tests.data.os-v2.__init__" name="ISORT" time="0.002" /><testcase classname="tests.data.os-v2.__init__" name="black" time="0.137" /><testcase classname="tests.data.v7.__init__" name="PYDOCSTYLE" time="0.001" /><testcase classname="tests.data.v7.__init__" name="ISORT" time="0.002" /><testcase classname="tests.data.v7.__init__" name="black" time="0.137" /><testcase classname="tests.helpers" name="PYDOCSTYLE" time="0.004" /><testcase classname="tests.helpers" name="ISORT" time="0.006" /><testcase classname="tests.helpers" name="black" time="0.152" /><testcase classname="tests.test_admin" name="ISORT" time="0.004" /><testcase classname="tests.test_admin" name="black" time="0.145" /><testcase classname="tests.test_admin" name="test_admin" time="0.169"><error message="failed on setup with &quot;ModuleNotFoundError: No module named 'altcha'&quot;">request = &lt;SubRequest '_monkeypatch_response_class' for &lt;Function test_admin&gt;&gt;
+monkeypatch = &lt;_pytest.monkeypatch.MonkeyPatch object at 0x7db6342129e0&gt;
+
+    @pytest.fixture(autouse=True)
+    def _monkeypatch_response_class(request, monkeypatch):
+        """Set custom response class before test suite and restore the original
+        after. Custom response has `json` property to easily test JSON responses::
+    
+            @app.route('/ping')
+            def ping():
+                return jsonify(ping='pong')
+    
+            def test_json(client):
+                res = client.get(url_for('ping'))
+                assert res.json == {'ping': 'pong'}
+    
+        """
+    
+        if "app" not in request.fixturenames:
+            return
+    
+&gt;       app = getfixturevalue(request, "app")
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.venv/lib/python3.14/site-packages/pytest_flask/plugin.py:75: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+.venv/lib/python3.14/site-packages/pytest_flask/pytest_compat.py:3: in getfixturevalue
+    return request.getfixturevalue(value)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+tests/conftest.py:60: in app
+    InvenioDB(app)
+.venv/lib/python3.14/site-packages/invenio_db/ext.py:102: in __init__
+    self.init_app(app, **kwargs)
+.venv/lib/python3.14/site-packages/invenio_db/ext.py:106: in init_app
+    self.init_db(app, **kwargs)
+.venv/lib/python3.14/site-packages/invenio_db/ext.py:199: in init_db
+    base_entry.load()
+/opt/hostedtoolcache/Python/3.14.10/x64/lib/python3.14/importlib/metadata/__init__.py:179: in load
+    module = import_module(match.group('module'))
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+/opt/hostedtoolcache/Python/3.14.10/x64/lib/python3.14/importlib/__init__.py:88: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.venv/lib/python3.14/site-packages/invenio_accounts/__init__.py:52: in &lt;module&gt;
+    from .ext import InvenioAccounts, InvenioAccountsREST, InvenioAccountsUI
+.venv/lib/python3.14/site-packages/invenio_accounts/ext.py:24: in &lt;module&gt;
+    from invenio_accounts.forms import (
+.venv/lib/python3.14/site-packages/invenio_accounts/forms.py:16: in &lt;module&gt;
+    from .captcha import AltchaField, has_legacy_recaptcha_config, is_altcha_enabled
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+    # SPDX-FileCopyrightText: 2026 CERN.
+    # SPDX-License-Identifier: MIT
+    
+    """ALTCHA proof-of-work captcha support.
+    
+    ALTCHA (https://altcha.org) is a privacy-friendly, self-hosted captcha: the
+    browser solves a small proof-of-work challenge issued and signed by this
+    server, and the server verifies the solution on submission. No third-party
+    service is contacted.
+    """
+    
+    import hashlib
+    import hmac
+    import warnings
+    from datetime import datetime, timezone
+    
+&gt;   from altcha import Payload, create_challenge, verify_solution
+E   ModuleNotFoundError: No module named 'altcha'
+
+.venv/lib/python3.14/site-packages/invenio_accounts/captcha.py:17: ModuleNotFoundError</error></testcase><testcase classname="tests.test_alembic" name="ISORT" time="0.003" /><testcase classname="tests.test_alembic" name="black" time="0.143" /><testcase classname="tests.test_alembic" name="test_alembic" time="0.013"><error message="failed on setup with &quot;ModuleNotFoundError: No module named 'altcha'&quot;">request = &lt;SubRequest '_monkeypatch_response_class' for &lt;Function test_alembic&gt;&gt;
+monkeypatch = &lt;_pytest.monkeypatch.MonkeyPatch object at 0x7db6343dc050&gt;
+
+    @pytest.fixture(autouse=True)
+    def _monkeypatch_response_class(request, monkeypatch):
+        """Set custom response class before test suite and restore the original
+        after. Custom response has `json` property to easily test JSON responses::
+    
+            @app.route('/ping')
+            def ping():
+                return jsonify(ping='pong')
+    
+            def test_json(client):
+                res = client.get(url_for('ping'))
+                assert res.json == {'ping': 'pong'}
+    
+        """
+    
+        if "app" not in request.fixturenames:
+            return
+    
+&gt;       app = getfixturevalue(request, "app")
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.venv/lib/python3.14/site-packages/pytest_flask/plugin.py:75: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+.venv/lib/python3.14/site-packages/pytest_flask/pytest_compat.py:3: in getfixturevalue
+    return request.getfixturevalue(value)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+tests/conftest.py:60: in app
+    InvenioDB(app)
+.venv/lib/python3.14/site-packages/invenio_db/ext.py:102: in __init__
+    self.init_app(app, **kwargs)
+.venv/lib/python3.14/site-packages/invenio_db/ext.py:106: in init_app
+    self.init_db(app, **kwargs)
+.venv/lib/python3.14/site-packages/invenio_db/ext.py:199: in init_db
+    base_entry.load()
+/opt/hostedtoolcache/Python/3.14.10/x64/lib/python3.14/importlib/metadata/__init__.py:179: in load
+    module = import_module(match.group('module'))
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+/opt/hostedtoolcache/Python/3.14.10/x64/lib/python3.14/importlib/__init__.py:88: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.venv/lib/python3.14/site-packages/invenio_accounts/__init__.py:52: in &lt;module&gt;
+    from .ext import InvenioAccounts, InvenioAccountsREST, InvenioAccountsUI
+.venv/lib/python3.14/site-packages/invenio_accounts/ext.py:24: in &lt;module&gt;
+    from invenio_accounts.forms import (
+.venv/lib/python3.14/site-packages/invenio_accounts/forms.py:16: in &lt;module&gt;
+    from .captcha import AltchaField, has_legacy_recaptcha_config, is_altcha_enabled
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+    # SPDX-FileCopyrightText: 2026 CERN.
+    # SPDX-License-Identifier: MIT
+    
+    """ALTCHA proof-of-work captcha support.
+    
+    ALTCHA (https://altcha.org) is a privacy-friendly, self-hosted captcha: the
+    browser solves a small proof-of-work challenge issued and signed by this
+    server, and the server verifies the solution on submission. No third-party
+    service is contacted.
+    """
+    
+    import hashlib
+    import hmac
+    import warnings
+    from datetime import datetime, timezone
+    
+&gt;   from altcha import Payload, create_challenge, verify_solution
+E   ModuleNotFoundError: No module named 'altcha'
+
+.venv/lib/python3.14/site-packages/invenio_accounts/captcha.py:17: ModuleNotFoundError</error></testcase><testcase classname="tests.test_app" name="ISORT" time="0.004" /><testcase classname="tests.test_app" name="black" time="0.140" /><testcase classname="tests.test_app" name="test_version" time="0.000" /><testcase classname="tests.test_app" name="test_init" time="0.002" /><testcase classname="tests.test_invenio_oaiserver" name="ISORT" time="0.004" /><testcase classname="tests.test_invenio_oaiserver" name="black" time="0.150" /><testcase classname="tests.test_invenio_oaiserver" name="test_version" time="0.000" /><testcase classname="tests.test_invenio_oaiserver" name="test_init" time="0.003" /><testcase classname="tests.test_invenio_oaiserver" name="test_view" time="0.013"><error message="failed on setup with &quot;ModuleNotFoundError: No module named 'altcha'&quot;">request = &lt;SubRequest '_monkeypatch_response_class' for &lt;Function test_view&gt;&gt;
+monkeypatch = &lt;_pytest.monkeypatch.MonkeyPatch object at 0x7db6343fb550&gt;
+
+    @pytest.fixture(autouse=True)
+    def _monkeypatch_response_class(request, monkeypatch):
+        """Set custom response class before test suite and restore the original
+        after. Custom response has `json` property to easily test JSON responses::
+    
+            @app.route('/ping')
+            def ping():
+                return jsonify(ping='pong')
+    
+            def test_json(client):
+                res = client.get(url_for('ping'))
+                assert res.json == {'ping': 'pong'}
+    
+        """
+    
+        if "app" not in request.fixturenames:
+            return
+    
+&gt;       app = getfixturevalue(request, "app")
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.venv/lib/python3.14/site-packages/pytest_flask/plugin.py:75: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+.venv/lib/python3.14/site-packages/pytest_flask/pytest_compat.py:3: in getfixturevalue
+    return request.getfixturevalue(value)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+tests/conftest.py:60: in app
+    InvenioDB(app)
+.venv/lib/python3.14/site-packages/invenio_db/ext.py:102: in __init__
+    self.init_app(app, **kwargs)
+.venv/lib/python3.14/site-packages/invenio_db/ext.py:106: in init_app
+    self.init_db(app, **kwargs)
+.venv/lib/python3.14/site-packages/invenio_db/ext.py:199: in init_db
+    base_entry.load()
+/opt/hostedtoolcache/Python/3.14.10/x64/lib/python3.14/importlib/metadata/__init__.py:179: in load
+    module = import_module(match.group('module'))
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+/opt/hostedtoolcache/Python/3.14.10/x64/lib/python3.14/importlib/__init__.py:88: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.venv/lib/python3.14/site-packages/invenio_accounts/__init__.py:52: in &lt;module&gt;
+    from .ext import InvenioAccounts, InvenioAccountsREST, InvenioAccountsUI
+.venv/lib/python3.14/site-packages/invenio_accounts/ext.py:24: in &lt;module&gt;
+    from invenio_accounts.forms import (
+.venv/lib/python3.14/site-packages/invenio_accounts/forms.py:16: in &lt;module&gt;
+    from .captcha import AltchaField, has_legacy_recaptcha_config, is_altcha_enabled
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+    # SPDX-FileCopyrightText: 2026 CERN.
+    # SPDX-License-Identifier: MIT
+    
+    """ALTCHA proof-of-work captcha support.
+    
+    ALTCHA (https://altcha.org) is a privacy-friendly, self-hosted captcha: the
+    browser solves a small proof-of-work challenge issued and signed by this
+    server, and the server verifies the solution on submission. No third-party
+    service is contacted.
+    """
+    
+    import hashlib
+    import hmac
+    import warnings
+    from datetime import datetime, timezone
+    
+&gt;   from altcha import Payload, create_challenge, verify_solution
+E   ModuleNotFoundError: No module named 'altcha'
+
+.venv/lib/python3.14/site-packages/invenio_accounts/captcha.py:17: ModuleNotFoundError</error></testcase><testcase classname="tests.test_invenio_oaiserver" name="test_view_with_xsl" time="0.012"><error message="failed on setup with &quot;ModuleNotFoundError: No module named 'altcha'&quot;">request = &lt;SubRequest '_monkeypatch_response_class' for &lt;Function test_view_with_xsl&gt;&gt;
+monkeypatch = &lt;_pytest.monkeypatch.MonkeyPatch object at 0x7db63454cb90&gt;
+
+    @pytest.fixture(autouse=True)
+    def _monkeypatch_response_class(request, monkeypatch):
+        """Set custom response class before test suite and restore the original
+        after. Custom response has `json` property to easily test JSON responses::
+    
+            @app.route('/ping')
+            def ping():
+                return jsonify(ping='pong')
+    
+            def test_json(client):
+                res = client.get(url_for('ping'))
+                assert res.json == {'ping': 'pong'}
+    
+        """
+    
+        if "app" not in request.fixturenames:
+            return
+    
+&gt;       app = getfixturevalue(request, "app")
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.venv/lib/python3.14/site-packages/pytest_flask/plugin.py:75: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+.venv/lib/python3.14/site-packages/pytest_flask/pytest_compat.py:3: in getfixturevalue
+    return request.getfixturevalue(value)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+tests/conftest.py:60: in app
+    InvenioDB(app)
+.venv/lib/python3.14/site-packages/invenio_db/ext.py:102: in __init__
+    self.init_app(app, **kwargs)
+.venv/lib/python3.14/site-packages/invenio_db/ext.py:106: in init_app
+    self.init_db(app, **kwargs)
+.venv/lib/python3.14/site-packages/invenio_db/ext.py:199: in init_db
+    base_entry.load()
+/opt/hostedtoolcache/Python/3.14.10/x64/lib/python3.14/importlib/metadata/__init__.py:179: in load
+    module = import_module(match.group('module'))
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+/opt/hostedtoolcache/Python/3.14.10/x64/lib/python3.14/importlib/__init__.py:88: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.venv/lib/python3.14/site-packages/invenio_accounts/__init__.py:52: in &lt;module&gt;
+    from .ext import InvenioAccounts, InvenioAccountsREST, InvenioAccountsUI
+.venv/lib/python3.14/site-packages/invenio_accounts/ext.py:24: in &lt;module&gt;
+    from invenio_accounts.forms import (
+.venv/lib/python3.14/site-packages/invenio_accounts/forms.py:16: in &lt;module&gt;
+    from .captcha import AltchaField, has_legacy_recaptcha_config, is_altcha_enabled
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+    # SPDX-FileCopyrightText: 2026 CERN.
+    # SPDX-License-Identifier: MIT
+    
+    """ALTCHA proof-of-work captcha support.
+    
+    ALTCHA (https://altcha.org) is a privacy-friendly, self-hosted captcha: the
+    browser solves a small proof-of-work challenge issued and signed by this
+    server, and the server verifies the solution on submission. No third-party
+    service is contacted.
+    """
+    
+    import hashlib
+    import hmac
+    import warnings
+    from datetime import datetime, timezone
+    
+&gt;   from altcha import Payload, create_challenge, verify_solution
+E   ModuleNotFoundError: No module named 'altcha'
+
+.venv/lib/python3.14/site-packages/invenio_accounts/captcha.py:17: ModuleNotFoundError</error></testcase><testcase classname="tests.test_invenio_oaiserver" name="test_no_id_prefix" time="0.002" /><testcase classname="tests.test_invenio_oaiserver" name="test_alembic" time="0.000"><skipped type="pytest.skip" message="Mergepoint is on invenio-access.">/home/runner/work/itd-runner/itd-runner/workdir/tests/invenio-oaiserver/original/tests/test_invenio_oaiserver.py:66: Mergepoint is on invenio-access.</skipped></testcase><testcase classname="tests.test_percolator" name="ISORT" time="0.004" /><testcase classname="tests.test_percolator" name="black" time="0.149" /><testcase classname="tests.test_percolator" name="test_set_with_no_records" time="0.013"><error message="failed on setup with &quot;ModuleNotFoundError: No module named 'altcha'&quot;">request = &lt;SubRequest '_monkeypatch_response_class' for &lt;Function test_set_with_no_records&gt;&gt;
+monkeypatch = &lt;_pytest.monkeypatch.MonkeyPatch object at 0x7db63417b690&gt;
+
+    @pytest.fixture(autouse=True)
+    def _monkeypatch_response_class(request, monkeypatch):
+        """Set custom response class before test suite and restore the original
+        after. Custom response has `json` property to easily test JSON responses::
+    
+            @app.route('/ping')
+            def ping():
+                return jsonify(ping='pong')
+    
+            def test_json(client):
+                res = client.get(url_for('ping'))
+                assert res.json == {'ping': 'pong'}
+    
+        """
+    
+        if "app" not in request.fixturenames:
+            return
+    
+&gt;       app = getfixturevalue(request, "app")
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.venv/lib/python3.14/site-packages/pytest_flask/plugin.py:75: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+.venv/lib/python3.14/site-packages/pytest_flask/pytest_compat.py:3: in getfixturevalue
+    return request.getfixturevalue(value)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+tests/conftest.py:60: in app
+    InvenioDB(app)
+.venv/lib/python3.14/site-packages/invenio_db/ext.py:102: in __init__
+    self.init_app(app, **kwargs)
+.venv/lib/python3.14/site-packages/invenio_db/ext.py:106: in init_app
+    self.init_db(app, **kwargs)
+.venv/lib/python3.14/site-packages/invenio_db/ext.py:199: in init_db
+    base_entry.load()
+/opt/hostedtoolcache/Python/3.14.10/x64/lib/python3.14/importlib/metadata/__init__.py:179: in load
+    module = import_module(match.group('module'))
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+/opt/hostedtoolcache/Python/3.14.10/x64/lib/python3.14/importlib/__init__.py:88: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.venv/lib/python3.14/site-packages/invenio_accounts/__init__.py:52: in &lt;module&gt;
+    from .ext import InvenioAccounts, InvenioAccountsREST, InvenioAccountsUI
+.venv/lib/python3.14/site-packages/invenio_accounts/ext.py:24: in &lt;module&gt;
+    from invenio_accounts.forms import (
+.venv/lib/python3.14/site-packages/invenio_accounts/forms.py:16: in &lt;module&gt;
+    from .captcha import AltchaField, has_legacy_recaptcha_config, is_altcha_enabled
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+    # SPDX-FileCopyrightText: 2026 CERN.
+    # SPDX-License-Identifier: MIT
+    
+    """ALTCHA proof-of-work captcha support.
+    
+    ALTCHA (https://altcha.org) is a privacy-friendly, self-hosted captcha: the
+    browser solves a small proof-of-work challenge issued and signed by this
+    server, and the server verifies the solution on submission. No third-party
+    service is contacted.
+    """
+    
+    import hashlib
+    import hmac
+    import warnings
+    from datetime import datetime, timezone
+    
+&gt;   from altcha import Payload, create_challenge, verify_solution
+E   ModuleNotFoundError: No module named 'altcha'
+
+.venv/lib/python3.14/site-packages/invenio_accounts/captcha.py:17: ModuleNotFoundError</error></testcase><testcase classname="tests.test_percolator" name="test_empty_set" time="0.012"><error message="failed on setup with &quot;ModuleNotFoundError: No module named 'altcha'&quot;">request = &lt;SubRequest '_monkeypatch_response_class' for &lt;Function test_empty_set&gt;&gt;
+monkeypatch = &lt;_pytest.monkeypatch.MonkeyPatch object at 0x7db634b0cf30&gt;
+
+    @pytest.fixture(autouse=True)
+    def _monkeypatch_response_class(request, monkeypatch):
+        """Set custom response class before test suite and restore the original
+        after. Custom response has `json` property to easily test JSON responses::
+    
+            @app.route('/ping')
+            def ping():
+                return jsonify(ping='pong')
+    
+            def test_json(client):
+                res = client.get(url_for('ping'))
+                assert res.json == {'ping': 'pong'}
+    
+        """
+    
+        if "app" not in request.fixturenames:
+            return
+    
+&gt;       app = getfixturevalue(request, "app")
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.venv/lib/python3.14/site-packages/pytest_flask/plugin.py:75: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+.venv/lib/python3.14/site-packages/pytest_flask/pytest_compat.py:3: in getfixturevalue
+    return request.getfixturevalue(value)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+tests/conftest.py:60: in app
+    InvenioDB(app)
+.venv/lib/python3.14/site-packages/invenio_db/ext.py:102: in __init__
+    self.init_app(app, **kwargs)
+.venv/lib/python3.14/site-packages/invenio_db/ext.py:106: in init_app
+    self.init_db(app, **kwargs)
+.venv/lib/python3.14/site-packages/invenio_db/ext.py:199: in init_db
+    base_entry.load()
+/opt/hostedtoolcache/Python/3.14.10/x64/lib/python3.14/importlib/metadata/__init__.py:179: in load
+    module = import_module(match.group('module'))
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+/opt/hostedtoolcache/Python/3.14.10/x64/lib/python3.14/importlib/__init__.py:88: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.venv/lib/python3.14/site-packages/invenio_accounts/__init__.py:52: in &lt;module&gt;
+    from .ext import InvenioAccounts, InvenioAccountsREST, InvenioAccountsUI
+.venv/lib/python3.14/site-packages/invenio_accounts/ext.py:24: in &lt;module&gt;
+    from invenio_accounts.forms import (
+.venv/lib/python3.14/site-packages/invenio_accounts/forms.py:16: in &lt;module&gt;
+    from .captcha import AltchaField, has_legacy_recaptcha_config, is_altcha_enabled
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+    # SPDX-FileCopyrightText: 2026 CERN.
+    # SPDX-License-Identifier: MIT
+    
+    """ALTCHA proof-of-work captcha support.
+    
+    ALTCHA (https://altcha.org) is a privacy-friendly, self-hosted captcha: the
+    browser solves a small proof-of-work challenge issued and signed by this
+    server, and the server verifies the solution on submission. No third-party
+    service is contacted.
+    """
+    
+    import hashlib
+    import hmac
+    import warnings
+    from datetime import datetime, timezone
+    
+&gt;   from altcha import Payload, create_challenge, verify_solution
+E   ModuleNotFoundError: No module named 'altcha'
+
+.venv/lib/python3.14/site-packages/invenio_accounts/captcha.py:17: ModuleNotFoundError</error></testcase><testcase classname="tests.test_percolator" name="test_set_with_records" time="0.012"><error message="failed on setup with &quot;ModuleNotFoundError: No module named 'altcha'&quot;">request = &lt;SubRequest '_monkeypatch_response_class' for &lt;Function test_set_with_records&gt;&gt;
+monkeypatch = &lt;_pytest.monkeypatch.MonkeyPatch object at 0x7db634596d00&gt;
+
+    @pytest.fixture(autouse=True)
+    def _monkeypatch_response_class(request, monkeypatch):
+        """Set custom response class before test suite and restore the original
+        after. Custom response has `json` property to easily test JSON responses::
+    
+            @app.route('/ping')
+            def ping():
+                return jsonify(ping='pong')
+    
+            def test_json(client):
+                res = client.get(url_for('ping'))
+                assert res.json == {'ping': 'pong'}
+    
+        """
+    
+        if "app" not in request.fixturenames:
+            return
+    
+&gt;       app = getfixturevalue(request, "app")
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.venv/lib/python3.14/site-packages/pytest_flask/plugin.py:75: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+.venv/lib/python3.14/site-packages/pytest_flask/pytest_compat.py:3: in getfixturevalue
+    return request.getfixturevalue(value)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+tests/conftest.py:60: in app
+    InvenioDB(app)
+.venv/lib/python3.14/site-packages/invenio_db/ext.py:102: in __init__
+    self.init_app(app, **kwargs)
+.venv/lib/python3.14/site-packages/invenio_db/ext.py:106: in init_app
+    self.init_db(app, **kwargs)
+.venv/lib/python3.14/site-packages/invenio_db/ext.py:199: in init_db
+    base_entry.load()
+/opt/hostedtoolcache/Python/3.14.10/x64/lib/python3.14/importlib/metadata/__init__.py:179: in load
+    module = import_module(match.group('module'))
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+/opt/hostedtoolcache/Python/3.14.10/x64/lib/python3.14/importlib/__init__.py:88: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.venv/lib/python3.14/site-packages/invenio_accounts/__init__.py:52: in &lt;module&gt;
+    from .ext import InvenioAccounts, InvenioAccountsREST, InvenioAccountsUI
+.venv/lib/python3.14/site-packages/invenio_accounts/ext.py:24: in &lt;module&gt;
+    from invenio_accounts.forms import (
+.venv/lib/python3.14/site-packages/invenio_accounts/forms.py:16: in &lt;module&gt;
+    from .captcha import AltchaField, has_legacy_recaptcha_config, is_altcha_enabled
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+    # SPDX-FileCopyrightText: 2026 CERN.
+    # SPDX-License-Identifier: MIT
+    
+    """ALTCHA proof-of-work captcha support.
+    
+    ALTCHA (https://altcha.org) is a privacy-friendly, self-hosted captcha: the
+    browser solves a small proof-of-work challenge issued and signed by this
+    server, and the server verifies the solution on submission. No third-party
+    service is contacted.
+    """
+    
+    import hashlib
+    import hmac
+    import warnings
+    from datetime import datetime, timezone
+    
+&gt;   from altcha import Payload, create_challenge, verify_solution
+E   ModuleNotFoundError: No module named 'altcha'
+
+.venv/lib/python3.14/site-packages/invenio_accounts/captcha.py:17: ModuleNotFoundError</error></testcase><testcase classname="tests.test_percolator" name="test_search_pattern_change" time="0.013"><error message="failed on setup with &quot;ModuleNotFoundError: No module named 'altcha'&quot;">request = &lt;SubRequest '_monkeypatch_response_class' for &lt;Function test_search_pattern_change&gt;&gt;
+monkeypatch = &lt;_pytest.monkeypatch.MonkeyPatch object at 0x7db634523650&gt;
+
+    @pytest.fixture(autouse=True)
+    def _monkeypatch_response_class(request, monkeypatch):
+        """Set custom response class before test suite and restore the original
+        after. Custom response has `json` property to easily test JSON responses::
+    
+            @app.route('/ping')
+            def ping():
+                return jsonify(ping='pong')
+    
+            def test_json(client):
+                res = client.get(url_for('ping'))
+                assert res.json == {'ping': 'pong'}
+    
+        """
+    
+        if "app" not in request.fixturenames:
+            return
+    
+&gt;       app = getfixturevalue(request, "app")
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.venv/lib/python3.14/site-packages/pytest_flask/plugin.py:75: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+.venv/lib/python3.14/site-packages/pytest_flask/pytest_compat.py:3: in getfixturevalue
+    return request.getfixturevalue(value)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+tests/conftest.py:60: in app
+    InvenioDB(app)
+.venv/lib/python3.14/site-packages/invenio_db/ext.py:102: in __init__
+    self.init_app(app, **kwargs)
+.venv/lib/python3.14/site-packages/invenio_db/ext.py:106: in init_app
+    self.init_db(app, **kwargs)
+.venv/lib/python3.14/site-packages/invenio_db/ext.py:199: in init_db
+    base_entry.load()
+/opt/hostedtoolcache/Python/3.14.10/x64/lib/python3.14/importlib/metadata/__init__.py:179: in load
+    module = import_module(match.group('module'))
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+/opt/hostedtoolcache/Python/3.14.10/x64/lib/python3.14/importlib/__init__.py:88: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.venv/lib/python3.14/site-packages/invenio_accounts/__init__.py:52: in &lt;module&gt;
+    from .ext import InvenioAccounts, InvenioAccountsREST, InvenioAccountsUI
+.venv/lib/python3.14/site-packages/invenio_accounts/ext.py:24: in &lt;module&gt;
+    from invenio_accounts.forms import (
+.venv/lib/python3.14/site-packages/invenio_accounts/forms.py:16: in &lt;module&gt;
+    from .captcha import AltchaField, has_legacy_recaptcha_config, is_altcha_enabled
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+    # SPDX-FileCopyrightText: 2026 CERN.
+    # SPDX-License-Identifier: MIT
+    
+    """ALTCHA proof-of-work captcha support.
+    
+    ALTCHA (https://altcha.org) is a privacy-friendly, self-hosted captcha: the
+    browser solves a small proof-of-work challenge issued and signed by this
+    server, and the server verifies the solution on submission. No third-party
+    service is contacted.
+    """
+    
+    import hashlib
+    import hmac
+    import warnings
+    from datetime import datetime, timezone
+    
+&gt;   from altcha import Payload, create_challenge, verify_solution
+E   ModuleNotFoundError: No module named 'altcha'
+
+.venv/lib/python3.14/site-packages/invenio_accounts/captcha.py:17: ModuleNotFoundError</error></testcase><testcase classname="tests.test_verbs" name="ISORT" time="0.008" /><testcase classname="tests.test_verbs" name="black" time="0.308" /><testcase classname="tests.test_verbs" name="test_no_verb" time="0.013"><error message="failed on setup with &quot;ModuleNotFoundError: No module named 'altcha'&quot;">request = &lt;SubRequest '_monkeypatch_response_class' for &lt;Function test_no_verb&gt;&gt;
+monkeypatch = &lt;_pytest.monkeypatch.MonkeyPatch object at 0x7db63458d610&gt;
+
+    @pytest.fixture(autouse=True)
+    def _monkeypatch_response_class(request, monkeypatch):
+        """Set custom response class before test suite and restore the original
+        after. Custom response has `json` property to easily test JSON responses::
+    
+            @app.route('/ping')
+            def ping():
+                return jsonify(ping='pong')
+    
+            def test_json(client):
+                res = client.get(url_for('ping'))
+                assert res.json == {'ping': 'pong'}
+    
+        """
+    
+        if "app" not in request.fixturenames:
+            return
+    
+&gt;       app = getfixturevalue(request, "app")
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.venv/lib/python3.14/site-packages/pytest_flask/plugin.py:75: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+.venv/lib/python3.14/site-packages/pytest_flask/pytest_compat.py:3: in getfixturevalue
+    return request.getfixturevalue(value)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+tests/conftest.py:60: in app
+    InvenioDB(app)
+.venv/lib/python3.14/site-packages/invenio_db/ext.py:102: in __init__
+    self.init_app(app, **kwargs)
+.venv/lib/python3.14/site-packages/invenio_db/ext.py:106: in init_app
+    self.init_db(app, **kwargs)
+.venv/lib/python3.14/site-packages/invenio_db/ext.py:199: in init_db
+    base_entry.load()
+/opt/hostedtoolcache/Python/3.14.10/x64/lib/python3.14/importlib/metadata/__init__.py:179: in load
+    module = import_module(match.group('module'))
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+/opt/hostedtoolcache/Python/3.14.10/x64/lib/python3.14/importlib/__init__.py:88: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.venv/lib/python3.14/site-packages/invenio_accounts/__init__.py:52: in &lt;module&gt;
+    from .ext import InvenioAccounts, InvenioAccountsREST, InvenioAccountsUI
+.venv/lib/python3.14/site-packages/invenio_accounts/ext.py:24: in &lt;module&gt;
+    from invenio_accounts.forms import (
+.venv/lib/python3.14/site-packages/invenio_accounts/forms.py:16: in &lt;module&gt;
+    from .captcha import AltchaField, has_legacy_recaptcha_config, is_altcha_enabled
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+    # SPDX-FileCopyrightText: 2026 CERN.
+    # SPDX-License-Identifier: MIT
+    
+    """ALTCHA proof-of-work captcha support.
+    
+    ALTCHA (https://altcha.org) is a privacy-friendly, self-hosted captcha: the
+    browser solves a small proof-of-work challenge issued and signed by this
+    server, and the server verifies the solution on submission. No third-party
+    service is contacted.
+    """
+    
+    import hashlib
+    import hmac
+    import warnings
+    from datetime import datetime, timezone
+    
+&gt;   from altcha import Payload, create_challenge, verify_solution
+E   ModuleNotFoundError: No module named 'altcha'
+
+.venv/lib/python3.14/site-packages/invenio_accounts/captcha.py:17: ModuleNotFoundError</error></testcase><testcase classname="tests.test_verbs" name="test_wrong_verb" time="0.012"><error message="failed on setup with &quot;ModuleNotFoundError: No module named 'altcha'&quot;">request = &lt;SubRequest '_monkeypatch_response_class' for &lt;Function test_wrong_verb&gt;&gt;
+monkeypatch = &lt;_pytest.monkeypatch.MonkeyPatch object at 0x7db633f54520&gt;
+
+    @pytest.fixture(autouse=True)
+    def _monkeypatch_response_class(request, monkeypatch):
+        """Set custom response class before test suite and restore the original
+        after. Custom response has `json` property to easily test JSON responses::
+    
+            @app.route('/ping')
+            def ping():
+                return jsonify(ping='pong')
+    
+            def test_json(client):
+                res = client.get(url_for('ping'))
+                assert res.json == {'ping': 'pong'}
+    
+        """
+    
+        if "app" not in request.fixturenames:
+            return
+    
+&gt;       app = getfixturevalue(request, "app")
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.venv/lib/python3.14/site-packages/pytest_flask/plugin.py:75: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+.venv/lib/python3.14/site-packages/pytest_flask/pytest_compat.py:3: in getfixturevalue
+    return request.getfixturevalue(value)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+tests/conftest.py:60: in app
+    InvenioDB(app)
+.venv/lib/python3.14/site-packages/invenio_db/ext.py:102: in __init__
+    self.init_app(app, **kwargs)
+.venv/lib/python3.14/site-packages/invenio_db/ext.py:106: in init_app
+    self.init_db(app, **kwargs)
+.venv/lib/python3.14/site-packages/invenio_db/ext.py:199: in init_db
+    base_entry.load()
+/opt/hostedtoolcache/Python/3.14.10/x64/lib/python3.14/importlib/metadata/__init__.py:179: in load
+    module = import_module(match.group('module'))
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+/opt/hostedtoolcache/Python/3.14.10/x64/lib/python3.14/importlib/__init__.py:88: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.venv/lib/python3.14/site-packages/invenio_accounts/__init__.py:52: in &lt;module&gt;
+    from .ext import InvenioAccounts, InvenioAccountsREST, InvenioAccountsUI
+.venv/lib/python3.14/site-packages/invenio_accounts/ext.py:24: in &lt;module&gt;
+    from invenio_accounts.forms import (
+.venv/lib/python3.14/site-packages/invenio_accounts/forms.py:16: in &lt;module&gt;
+    from .captcha import AltchaField, has_legacy_recaptcha_config, is_altcha_enabled
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+    # SPDX-FileCopyrightText: 2026 CERN.
+    # SPDX-License-Identifier: MIT
+    
+    """ALTCHA proof-of-work captcha support.
+    
+    ALTCHA (https://altcha.org) is a privacy-friendly, self-hosted captcha: the
+    browser solves a small proof-of-work challenge issued and signed by this
+    server, and the server verifies the solution on submission. No third-party
+    service is contacted.
+    """
+    
+    import hashlib
+    import hmac
+    import warnings
+    from datetime import datetime, timezone
+    
+&gt;   from altcha import Payload, create_challenge, verify_solution
+E   ModuleNotFoundError: No module named 'altcha'
+
+.venv/lib/python3.14/site-packages/invenio_accounts/captcha.py:17: ModuleNotFoundError</error></testcase><testcase classname="tests.test_verbs" name="test_verb_with_control_characters" time="0.012"><error message="failed on setup with &quot;ModuleNotFoundError: No module named 'altcha'&quot;">request = &lt;SubRequest '_monkeypatch_response_class' for &lt;Function test_verb_with_control_characters&gt;&gt;
+monkeypatch = &lt;_pytest.monkeypatch.MonkeyPatch object at 0x7db6345ff280&gt;
+
+    @pytest.fixture(autouse=True)
+    def _monkeypatch_response_class(request, monkeypatch):
+        """Set custom response class before test suite and restore the original
+        after. Custom response has `json` property to easily test JSON responses::
+    
+            @app.route('/ping')
+            def ping():
+                return jsonify(ping='pong')
+    
+            def test_json(client):
+                res = client.get(url_for('ping'))
+                assert res.json == {'ping': 'pong'}
+    
+        """
+    
+        if "app" not in request.fixturenames:
+            return
+    
+&gt;       app = getfixturevalue(request, "app")
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.venv/lib/python3.14/site-packages/pytest_flask/plugin.py:75: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+.venv/lib/python3.14/site-packages/pytest_flask/pytest_compat.py:3: in getfixturevalue
+    return request.getfixturevalue(value)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+tests/conftest.py:60: in app
+    InvenioDB(app)
+.venv/lib/python3.14/site-packages/invenio_db/ext.py:102: in __init__
+    self.init_app(app, **kwargs)
+.venv/lib/python3.14/site-packages/invenio_db/ext.py:106: in init_app
+    self.init_db(app, **kwargs)
+.venv/lib/python3.14/site-packages/invenio_db/ext.py:199: in init_db
+    base_entry.load()
+/opt/hostedtoolcache/Python/3.14.10/x64/lib/python3.14/importlib/metadata/__init__.py:179: in load
+    module = import_module(match.group('module'))
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+/opt/hostedtoolcache/Python/3.14.10/x64/lib/python3.14/importlib/__init__.py:88: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.venv/lib/python3.14/site-packages/invenio_accounts/__init__.py:52: in &lt;module&gt;
+    from .ext import InvenioAccounts, InvenioAccountsREST, InvenioAccountsUI
+.venv/lib/python3.14/site-packages/invenio_accounts/ext.py:24: in &lt;module&gt;
+    from invenio_accounts.forms import (
+.venv/lib/python3.14/site-packages/invenio_accounts/forms.py:16: in &lt;module&gt;
+    from .captcha import AltchaField, has_legacy_recaptcha_config, is_altcha_enabled
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+    # SPDX-FileCopyrightText: 2026 CERN.
+    # SPDX-License-Identifier: MIT
+    
+    """ALTCHA proof-of-work captcha support.
+    
+    ALTCHA (https://altcha.org) is a privacy-friendly, self-hosted captcha: the
+    browser solves a small proof-of-work challenge issued and signed by this
+    server, and the server verifies the solution on submission. No third-party
+    service is contacted.
+    """
+    
+    import hashlib
+    import hmac
+    import warnings
+    from datetime import datetime, timezone
+    
+&gt;   from altcha import Payload, create_challenge, verify_solution
+E   ModuleNotFoundError: No module named 'altcha'
+
+.venv/lib/python3.14/site-packages/invenio_accounts/captcha.py:17: ModuleNotFoundError</error></testcase><testcase classname="tests.test_verbs" name="test_identify" time="0.012"><error message="failed on setup with &quot;ModuleNotFoundError: No module named 'altcha'&quot;">request = &lt;SubRequest '_monkeypatch_response_class' for &lt;Function test_identify&gt;&gt;
+monkeypatch = &lt;_pytest.monkeypatch.MonkeyPatch object at 0x7db634586df0&gt;
+
+    @pytest.fixture(autouse=True)
+    def _monkeypatch_response_class(request, monkeypatch):
+        """Set custom response class before test suite and restore the original
+        after. Custom response has `json` property to easily test JSON responses::
+    
+            @app.route('/ping')
+            def ping():
+                return jsonify(ping='pong')
+    
+            def test_json(client):
+                res = client.get(url_for('ping'))
+                assert res.json == {'ping': 'pong'}
+    
+        """
+    
+        if "app" not in request.fixturenames:
+            return
+    
+&gt;       app = getfixturevalue(request, "app")
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.venv/lib/python3.14/site-packages/pytest_flask/plugin.py:75: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+.venv/lib/python3.14/site-packages/pytest_flask/pytest_compat.py:3: in getfixturevalue
+    return request.getfixturevalue(value)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+tests/conftest.py:60: in app
+    InvenioDB(app)
+.venv/lib/python3.14/site-packages/invenio_db/ext.py:102: in __init__
+    self.init_app(app, **kwargs)
+.venv/lib/python3.14/site-packages/invenio_db/ext.py:106: in init_app
+    self.init_db(app, **kwargs)
+.venv/lib/python3.14/site-packages/invenio_db/ext.py:199: in init_db
+    base_entry.load()
+/opt/hostedtoolcache/Python/3.14.10/x64/lib/python3.14/importlib/metadata/__init__.py:179: in load
+    module = import_module(match.group('module'))
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+/opt/hostedtoolcache/Python/3.14.10/x64/lib/python3.14/importlib/__init__.py:88: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.venv/lib/python3.14/site-packages/invenio_accounts/__init__.py:52: in &lt;module&gt;
+    from .ext import InvenioAccounts, InvenioAccountsREST, InvenioAccountsUI
+.venv/lib/python3.14/site-packages/invenio_accounts/ext.py:24: in &lt;module&gt;
+    from invenio_accounts.forms import (
+.venv/lib/python3.14/site-packages/invenio_accounts/forms.py:16: in &lt;module&gt;
+    from .captcha import AltchaField, has_legacy_recaptcha_config, is_altcha_enabled
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+    # SPDX-FileCopyrightText: 2026 CERN.
+    # SPDX-License-Identifier: MIT
+    
+    """ALTCHA proof-of-work captcha support.
+    
+    ALTCHA (https://altcha.org) is a privacy-friendly, self-hosted captcha: the
+    browser solves a small proof-of-work challenge issued and signed by this
+    server, and the server verifies the solution on submission. No third-party
+    service is contacted.
+    """
+    
+    import hashlib
+    import hmac
+    import warnings
+    from datetime import datetime, timezone
+    
+&gt;   from altcha import Payload, create_challenge, verify_solution
+E   ModuleNotFoundError: No module named 'altcha'
+
+.venv/lib/python3.14/site-packages/invenio_accounts/captcha.py:17: ModuleNotFoundError</error></testcase><testcase classname="tests.test_verbs" name="test_identify_earliest_date" time="0.012"><error message="failed on setup with &quot;ModuleNotFoundError: No module named 'altcha'&quot;">request = &lt;SubRequest '_monkeypatch_response_class' for &lt;Function test_identify_earliest_date&gt;&gt;
+monkeypatch = &lt;_pytest.monkeypatch.MonkeyPatch object at 0x7db634587d90&gt;
+
+    @pytest.fixture(autouse=True)
+    def _monkeypatch_response_class(request, monkeypatch):
+        """Set custom response class before test suite and restore the original
+        after. Custom response has `json` property to easily test JSON responses::
+    
+            @app.route('/ping')
+            def ping():
+                return jsonify(ping='pong')
+    
+            def test_json(client):
+                res = client.get(url_for('ping'))
+                assert res.json == {'ping': 'pong'}
+    
+        """
+    
+        if "app" not in request.fixturenames:
+            return
+    
+&gt;       app = getfixturevalue(request, "app")
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.venv/lib/python3.14/site-packages/pytest_flask/plugin.py:75: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+.venv/lib/python3.14/site-packages/pytest_flask/pytest_compat.py:3: in getfixturevalue
+    return request.getfixturevalue(value)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+tests/conftest.py:60: in app
+    InvenioDB(app)
+.venv/lib/python3.14/site-packages/invenio_db/ext.py:102: in __init__
+    self.init_app(app, **kwargs)
+.venv/lib/python3.14/site-packages/invenio_db/ext.py:106: in init_app
+    self.init_db(app, **kwargs)
+.venv/lib/python3.14/site-packages/invenio_db/ext.py:199: in init_db
+    base_entry.load()
+/opt/hostedtoolcache/Python/3.14.10/x64/lib/python3.14/importlib/metadata/__init__.py:179: in load
+    module = import_module(match.group('module'))
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+/opt/hostedtoolcache/Python/3.14.10/x64/lib/python3.14/importlib/__init__.py:88: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.venv/lib/python3.14/site-packages/invenio_accounts/__init__.py:52: in &lt;module&gt;
+    from .ext import InvenioAccounts, InvenioAccountsREST, InvenioAccountsUI
+.venv/lib/python3.14/site-packages/invenio_accounts/ext.py:24: in &lt;module&gt;
+    from invenio_accounts.forms import (
+.venv/lib/python3.14/site-packages/invenio_accounts/forms.py:16: in &lt;module&gt;
+    from .captcha import AltchaField, has_legacy_recaptcha_config, is_altcha_enabled
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+    # SPDX-FileCopyrightText: 2026 CERN.
+    # SPDX-License-Identifier: MIT
+    
+    """ALTCHA proof-of-work captcha support.
+    
+    ALTCHA (https://altcha.org) is a privacy-friendly, self-hosted captcha: the
+    browser solves a small proof-of-work challenge issued and signed by this
+    server, and the server verifies the solution on submission. No third-party
+    service is contacted.
+    """
+    
+    import hashlib
+    import hmac
+    import warnings
+    from datetime import datetime, timezone
+    
+&gt;   from altcha import Payload, create_challenge, verify_solution
+E   ModuleNotFoundError: No module named 'altcha'
+
+.venv/lib/python3.14/site-packages/invenio_accounts/captcha.py:17: ModuleNotFoundError</error></testcase><testcase classname="tests.test_verbs" name="test_getrecord" time="0.012"><error message="failed on setup with &quot;ModuleNotFoundError: No module named 'altcha'&quot;">request = &lt;SubRequest '_monkeypatch_response_class' for &lt;Function test_getrecord&gt;&gt;
+monkeypatch = &lt;_pytest.monkeypatch.MonkeyPatch object at 0x7db633f983b0&gt;
+
+    @pytest.fixture(autouse=True)
+    def _monkeypatch_response_class(request, monkeypatch):
+        """Set custom response class before test suite and restore the original
+        after. Custom response has `json` property to easily test JSON responses::
+    
+            @app.route('/ping')
+            def ping():
+                return jsonify(ping='pong')
+    
+            def test_json(client):
+                res = client.get(url_for('ping'))
+                assert res.json == {'ping': 'pong'}
+    
+        """
+    
+        if "app" not in request.fixturenames:
+            return
+    
+&gt;       app = getfixturevalue(request, "app")
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.venv/lib/python3.14/site-packages/pytest_flask/plugin.py:75: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+.venv/lib/python3.14/site-packages/pytest_flask/pytest_compat.py:3: in getfixturevalue
+    return request.getfixturevalue(value)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+tests/conftest.py:60: in app
+    InvenioDB(app)
+.venv/lib/python3.14/site-packages/invenio_db/ext.py:102: in __init__
+    self.init_app(app, **kwargs)
+.venv/lib/python3.14/site-packages/invenio_db/ext.py:106: in init_app
+    self.init_db(app, **kwargs)
+.venv/lib/python3.14/site-packages/invenio_db/ext.py:199: in init_db
+    base_entry.load()
+/opt/hostedtoolcache/Python/3.14.10/x64/lib/python3.14/importlib/metadata/__init__.py:179: in load
+    module = import_module(match.group('module'))
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+/opt/hostedtoolcache/Python/3.14.10/x64/lib/python3.14/importlib/__init__.py:88: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.venv/lib/python3.14/site-packages/invenio_accounts/__init__.py:52: in &lt;module&gt;
+    from .ext import InvenioAccounts, InvenioAccountsREST, InvenioAccountsUI
+.venv/lib/python3.14/site-packages/invenio_accounts/ext.py:24: in &lt;module&gt;
+    from invenio_accounts.forms import (
+.venv/lib/python3.14/site-packages/invenio_accounts/forms.py:16: in &lt;module&gt;
+    from .captcha import AltchaField, has_legacy_recaptcha_config, is_altcha_enabled
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+    # SPDX-FileCopyrightText: 2026 CERN.
+    # SPDX-License-Identifier: MIT
+    
+    """ALTCHA proof-of-work captcha support.
+    
+    ALTCHA (https://altcha.org) is a privacy-friendly, self-hosted captcha: the
+    browser solves a small proof-of-work challenge issued and signed by this
+    server, and the server verifies the solution on submission. No third-party
+    service is contacted.
+    """
+    
+    import hashlib
+    import hmac
+    import warnings
+    from datetime import datetime, timezone
+    
+&gt;   from altcha import Payload, create_challenge, verify_solution
+E   ModuleNotFoundError: No module named 'altcha'
+
+.venv/lib/python3.14/site-packages/invenio_accounts/captcha.py:17: ModuleNotFoundError</error></testcase><testcase classname="tests.test_verbs" name="test_getrecord_with_about" time="0.012"><error message="failed on setup with &quot;ModuleNotFoundError: No module named 'altcha'&quot;">request = &lt;SubRequest '_monkeypatch_response_class' for &lt;Function test_getrecord_with_about&gt;&gt;
+monkeypatch = &lt;_pytest.monkeypatch.MonkeyPatch object at 0x7db633907f50&gt;
+
+    @pytest.fixture(autouse=True)
+    def _monkeypatch_response_class(request, monkeypatch):
+        """Set custom response class before test suite and restore the original
+        after. Custom response has `json` property to easily test JSON responses::
+    
+            @app.route('/ping')
+            def ping():
+                return jsonify(ping='pong')
+    
+            def test_json(client):
+                res = client.get(url_for('ping'))
+                assert res.json == {'ping': 'pong'}
+    
+        """
+    
+        if "app" not in request.fixturenames:
+            return
+    
+&gt;       app = getfixturevalue(request, "app")
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.venv/lib/python3.14/site-packages/pytest_flask/plugin.py:75: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+.venv/lib/python3.14/site-packages/pytest_flask/pytest_compat.py:3: in getfixturevalue
+    return request.getfixturevalue(value)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+tests/conftest.py:60: in app
+    InvenioDB(app)
+.venv/lib/python3.14/site-packages/invenio_db/ext.py:102: in __init__
+    self.init_app(app, **kwargs)
+.venv/lib/python3.14/site-packages/invenio_db/ext.py:106: in init_app
+    self.init_db(app, **kwargs)
+.venv/lib/python3.14/site-packages/invenio_db/ext.py:199: in init_db
+    base_entry.load()
+/opt/hostedtoolcache/Python/3.14.10/x64/lib/python3.14/importlib/metadata/__init__.py:179: in load
+    module = import_module(match.group('module'))
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+/opt/hostedtoolcache/Python/3.14.10/x64/lib/python3.14/importlib/__init__.py:88: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.venv/lib/python3.14/site-packages/invenio_accounts/__init__.py:52: in &lt;module&gt;
+    from .ext import InvenioAccounts, InvenioAccountsREST, InvenioAccountsUI
+.venv/lib/python3.14/site-packages/invenio_accounts/ext.py:24: in &lt;module&gt;
+    from invenio_accounts.forms import (
+.venv/lib/python3.14/site-packages/invenio_accounts/forms.py:16: in &lt;module&gt;
+    from .captcha import AltchaField, has_legacy_recaptcha_config, is_altcha_enabled
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+    # SPDX-FileCopyrightText: 2026 CERN.
+    # SPDX-License-Identifier: MIT
+    
+    """ALTCHA proof-of-work captcha support.
+    
+    ALTCHA (https://altcha.org) is a privacy-friendly, self-hosted captcha: the
+    browser solves a small proof-of-work challenge issued and signed by this
+    server, and the server verifies the solution on submission. No third-party
+    service is contacted.
+    """
+    
+    import hashlib
+    import hmac
+    import warnings
+    from datetime import datetime, timezone
+    
+&gt;   from altcha import Payload, create_challenge, verify_solution
+E   ModuleNotFoundError: No module named 'altcha'
+
+.venv/lib/python3.14/site-packages/invenio_accounts/captcha.py:17: ModuleNotFoundError</error></testcase><testcase classname="tests.test_verbs" name="test_getrecord_fail" time="0.012"><error message="failed on setup with &quot;ModuleNotFoundError: No module named 'altcha'&quot;">request = &lt;SubRequest '_monkeypatch_response_class' for &lt;Function test_getrecord_fail&gt;&gt;
+monkeypatch = &lt;_pytest.monkeypatch.MonkeyPatch object at 0x7db6345ce6d0&gt;
+
+    @pytest.fixture(autouse=True)
+    def _monkeypatch_response_class(request, monkeypatch):
+        """Set custom response class before test suite and restore the original
+        after. Custom response has `json` property to easily test JSON responses::
+    
+            @app.route('/ping')
+            def ping():
+                return jsonify(ping='pong')
+    
+            def test_json(client):
+                res = client.get(url_for('ping'))
+                assert res.json == {'ping': 'pong'}
+    
+        """
+    
+        if "app" not in request.fixturenames:
+            return
+    
+&gt;       app = getfixturevalue(request, "app")
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.venv/lib/python3.14/site-packages/pytest_flask/plugin.py:75: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+.venv/lib/python3.14/site-packages/pytest_flask/pytest_compat.py:3: in getfixturevalue
+    return request.getfixturevalue(value)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+tests/conftest.py:60: in app
+    InvenioDB(app)
+.venv/lib/python3.14/site-packages/invenio_db/ext.py:102: in __init__
+    self.init_app(app, **kwargs)
+.venv/lib/python3.14/site-packages/invenio_db/ext.py:106: in init_app
+    self.init_db(app, **kwargs)
+.venv/lib/python3.14/site-packages/invenio_db/ext.py:199: in init_db
+    base_entry.load()
+/opt/hostedtoolcache/Python/3.14.10/x64/lib/python3.14/importlib/metadata/__init__.py:179: in load
+    module = import_module(match.group('module'))
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+/opt/hostedtoolcache/Python/3.14.10/x64/lib/python3.14/importlib/__init__.py:88: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.venv/lib/python3.14/site-packages/invenio_accounts/__init__.py:52: in &lt;module&gt;
+    from .ext import InvenioAccounts, InvenioAccountsREST, InvenioAccountsUI
+.venv/lib/python3.14/site-packages/invenio_accounts/ext.py:24: in &lt;module&gt;
+    from invenio_accounts.forms import (
+.venv/lib/python3.14/site-packages/invenio_accounts/forms.py:16: in &lt;module&gt;
+    from .captcha import AltchaField, has_legacy_recaptcha_config, is_altcha_enabled
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+    # SPDX-FileCopyrightText: 2026 CERN.
+    # SPDX-License-Identifier: MIT
+    
+    """ALTCHA proof-of-work captcha support.
+    
+    ALTCHA (https://altcha.org) is a privacy-friendly, self-hosted captcha: the
+    browser solves a small proof-of-work challenge issued and signed by this
+    server, and the server verifies the solution on submission. No third-party
+    service is contacted.
+    """
+    
+    import hashlib
+    import hmac
+    import warnings
+    from datetime import datetime, timezone
+    
+&gt;   from altcha import Payload, create_challenge, verify_solution
+E   ModuleNotFoundError: No module named 'altcha'
+
+.venv/lib/python3.14/site-packages/invenio_accounts/captcha.py:17: ModuleNotFoundError</error></testcase><testcase classname="tests.test_verbs" name="test_identify_with_additional_args" time="0.012"><error message="failed on setup with &quot;ModuleNotFoundError: No module named 'altcha'&quot;">request = &lt;SubRequest '_monkeypatch_response_class' for &lt;Function test_identify_with_additional_args&gt;&gt;
+monkeypatch = &lt;_pytest.monkeypatch.MonkeyPatch object at 0x7db633f87e70&gt;
+
+    @pytest.fixture(autouse=True)
+    def _monkeypatch_response_class(request, monkeypatch):
+        """Set custom response class before test suite and restore the original
+        after. Custom response has `json` property to easily test JSON responses::
+    
+            @app.route('/ping')
+            def ping():
+                return jsonify(ping='pong')
+    
+            def test_json(client):
+                res = client.get(url_for('ping'))
+                assert res.json == {'ping': 'pong'}
+    
+        """
+    
+        if "app" not in request.fixturenames:
+            return
+    
+&gt;       app = getfixturevalue(request, "app")
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.venv/lib/python3.14/site-packages/pytest_flask/plugin.py:75: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+.venv/lib/python3.14/site-packages/pytest_flask/pytest_compat.py:3: in getfixturevalue
+    return request.getfixturevalue(value)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+tests/conftest.py:60: in app
+    InvenioDB(app)
+.venv/lib/python3.14/site-packages/invenio_db/ext.py:102: in __init__
+    self.init_app(app, **kwargs)
+.venv/lib/python3.14/site-packages/invenio_db/ext.py:106: in init_app
+    self.init_db(app, **kwargs)
+.venv/lib/python3.14/site-packages/invenio_db/ext.py:199: in init_db
+    base_entry.load()
+/opt/hostedtoolcache/Python/3.14.10/x64/lib/python3.14/importlib/metadata/__init__.py:179: in load
+    module = import_module(match.group('module'))
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+/opt/hostedtoolcache/Python/3.14.10/x64/lib/python3.14/importlib/__init__.py:88: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.venv/lib/python3.14/site-packages/invenio_accounts/__init__.py:52: in &lt;module&gt;
+    from .ext import InvenioAccounts, InvenioAccountsREST, InvenioAccountsUI
+.venv/lib/python3.14/site-packages/invenio_accounts/ext.py:24: in &lt;module&gt;
+    from invenio_accounts.forms import (
+.venv/lib/python3.14/site-packages/invenio_accounts/forms.py:16: in &lt;module&gt;
+    from .captcha import AltchaField, has_legacy_recaptcha_config, is_altcha_enabled
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+    # SPDX-FileCopyrightText: 2026 CERN.
+    # SPDX-License-Identifier: MIT
+    
+    """ALTCHA proof-of-work captcha support.
+    
+    ALTCHA (https://altcha.org) is a privacy-friendly, self-hosted captcha: the
+    browser solves a small proof-of-work challenge issued and signed by this
+    server, and the server verifies the solution on submission. No third-party
+    service is contacted.
+    """
+    
+    import hashlib
+    import hmac
+    import warnings
+    from datetime import datetime, timezone
+    
+&gt;   from altcha import Payload, create_challenge, verify_solution
+E   ModuleNotFoundError: No module named 'altcha'
+
+.venv/lib/python3.14/site-packages/invenio_accounts/captcha.py:17: ModuleNotFoundError</error></testcase><testcase classname="tests.test_verbs" name="test_listmetadataformats" time="0.012"><error message="failed on setup with &quot;ModuleNotFoundError: No module named 'altcha'&quot;">request = &lt;SubRequest '_monkeypatch_response_class' for &lt;Function test_listmetadataformats&gt;&gt;
+monkeypatch = &lt;_pytest.monkeypatch.MonkeyPatch object at 0x7db6339c7620&gt;
+
+    @pytest.fixture(autouse=True)
+    def _monkeypatch_response_class(request, monkeypatch):
+        """Set custom response class before test suite and restore the original
+        after. Custom response has `json` property to easily test JSON responses::
+    
+            @app.route('/ping')
+            def ping():
+                return jsonify(ping='pong')
+    
+            def test_json(client):
+                res = client.get(url_for('ping'))
+                assert res.json == {'ping': 'pong'}
+    
+        """
+    
+        if "app" not in request.fixturenames:
+            return
+    
+&gt;       app = getfixturevalue(request, "app")
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.venv/lib/python3.14/site-packages/pytest_flask/plugin.py:75: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+.venv/lib/python3.14/site-packages/pytest_flask/pytest_compat.py:3: in getfixturevalue
+    return request.getfixturevalue(value)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+tests/conftest.py:60: in app
+    InvenioDB(app)
+.venv/lib/python3.14/site-packages/invenio_db/ext.py:102: in __init__
+    self.init_app(app, **kwargs)
+.venv/lib/python3.14/site-packages/invenio_db/ext.py:106: in init_app
+    self.init_db(app, **kwargs)
+.venv/lib/python3.14/site-packages/invenio_db/ext.py:199: in init_db
+    base_entry.load()
+/opt/hostedtoolcache/Python/3.14.10/x64/lib/python3.14/importlib/metadata/__init__.py:179: in load
+    module = import_module(match.group('module'))
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+/opt/hostedtoolcache/Python/3.14.10/x64/lib/python3.14/importlib/__init__.py:88: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.venv/lib/python3.14/site-packages/invenio_accounts/__init__.py:52: in &lt;module&gt;
+    from .ext import InvenioAccounts, InvenioAccountsREST, InvenioAccountsUI
+.venv/lib/python3.14/site-packages/invenio_accounts/ext.py:24: in &lt;module&gt;
+    from invenio_accounts.forms import (
+.venv/lib/python3.14/site-packages/invenio_accounts/forms.py:16: in &lt;module&gt;
+    from .captcha import AltchaField, has_legacy_recaptcha_config, is_altcha_enabled
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+    # SPDX-FileCopyrightText: 2026 CERN.
+    # SPDX-License-Identifier: MIT
+    
+    """ALTCHA proof-of-work captcha support.
+    
+    ALTCHA (https://altcha.org) is a privacy-friendly, self-hosted captcha: the
+    browser solves a small proof-of-work challenge issued and signed by this
+    server, and the server verifies the solution on submission. No third-party
+    service is contacted.
+    """
+    
+    import hashlib
+    import hmac
+    import warnings
+    from datetime import datetime, timezone
+    
+&gt;   from altcha import Payload, create_challenge, verify_solution
+E   ModuleNotFoundError: No module named 'altcha'
+
+.venv/lib/python3.14/site-packages/invenio_accounts/captcha.py:17: ModuleNotFoundError</error></testcase><testcase classname="tests.test_verbs" name="test_listmetadataformats_record" time="0.012"><error message="failed on setup with &quot;ModuleNotFoundError: No module named 'altcha'&quot;">request = &lt;SubRequest '_monkeypatch_response_class' for &lt;Function test_listmetadataformats_record&gt;&gt;
+monkeypatch = &lt;_pytest.monkeypatch.MonkeyPatch object at 0x7db6339c7e00&gt;
+
+    @pytest.fixture(autouse=True)
+    def _monkeypatch_response_class(request, monkeypatch):
+        """Set custom response class before test suite and restore the original
+        after. Custom response has `json` property to easily test JSON responses::
+    
+            @app.route('/ping')
+            def ping():
+                return jsonify(ping='pong')
+    
+            def test_json(client):
+                res = client.get(url_for('ping'))
+                assert res.json == {'ping': 'pong'}
+    
+        """
+    
+        if "app" not in request.fixturenames:
+            return
+    
+&gt;       app = getfixturevalue(request, "app")
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.venv/lib/python3.14/site-packages/pytest_flask/plugin.py:75: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+.venv/lib/python3.14/site-packages/pytest_flask/pytest_compat.py:3: in getfixturevalue
+    return request.getfixturevalue(value)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+tests/conftest.py:60: in app
+    InvenioDB(app)
+.venv/lib/python3.14/site-packages/invenio_db/ext.py:102: in __init__
+    self.init_app(app, **kwargs)
+.venv/lib/python3.14/site-packages/invenio_db/ext.py:106: in init_app
+    self.init_db(app, **kwargs)
+.venv/lib/python3.14/site-packages/invenio_db/ext.py:199: in init_db
+    base_entry.load()
+/opt/hostedtoolcache/Python/3.14.10/x64/lib/python3.14/importlib/metadata/__init__.py:179: in load
+    module = import_module(match.group('module'))
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+/opt/hostedtoolcache/Python/3.14.10/x64/lib/python3.14/importlib/__init__.py:88: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.venv/lib/python3.14/site-packages/invenio_accounts/__init__.py:52: in &lt;module&gt;
+    from .ext import InvenioAccounts, InvenioAccountsREST, InvenioAccountsUI
+.venv/lib/python3.14/site-packages/invenio_accounts/ext.py:24: in &lt;module&gt;
+    from invenio_accounts.forms import (
+.venv/lib/python3.14/site-packages/invenio_accounts/forms.py:16: in &lt;module&gt;
+    from .captcha import AltchaField, has_legacy_recaptcha_config, is_altcha_enabled
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+    # SPDX-FileCopyrightText: 2026 CERN.
+    # SPDX-License-Identifier: MIT
+    
+    """ALTCHA proof-of-work captcha support.
+    
+    ALTCHA (https://altcha.org) is a privacy-friendly, self-hosted captcha: the
+    browser solves a small proof-of-work challenge issued and signed by this
+    server, and the server verifies the solution on submission. No third-party
+    service is contacted.
+    """
+    
+    import hashlib
+    import hmac
+    import warnings
+    from datetime import datetime, timezone
+    
+&gt;   from altcha import Payload, create_challenge, verify_solution
+E   ModuleNotFoundError: No module named 'altcha'
+
+.venv/lib/python3.14/site-packages/invenio_accounts/captcha.py:17: ModuleNotFoundError</error></testcase><testcase classname="tests.test_verbs" name="test_listmetadataformats_record_fail" time="0.014"><error message="failed on setup with &quot;ModuleNotFoundError: No module named 'altcha'&quot;">request = &lt;SubRequest '_monkeypatch_response_class' for &lt;Function test_listmetadataformats_record_fail&gt;&gt;
+monkeypatch = &lt;_pytest.monkeypatch.MonkeyPatch object at 0x7db6339c5c50&gt;
+
+    @pytest.fixture(autouse=True)
+    def _monkeypatch_response_class(request, monkeypatch):
+        """Set custom response class before test suite and restore the original
+        after. Custom response has `json` property to easily test JSON responses::
+    
+            @app.route('/ping')
+            def ping():
+                return jsonify(ping='pong')
+    
+            def test_json(client):
+                res = client.get(url_for('ping'))
+                assert res.json == {'ping': 'pong'}
+    
+        """
+    
+        if "app" not in request.fixturenames:
+            return
+    
+&gt;       app = getfixturevalue(request, "app")
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.venv/lib/python3.14/site-packages/pytest_flask/plugin.py:75: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+.venv/lib/python3.14/site-packages/pytest_flask/pytest_compat.py:3: in getfixturevalue
+    return request.getfixturevalue(value)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+tests/conftest.py:60: in app
+    InvenioDB(app)
+.venv/lib/python3.14/site-packages/invenio_db/ext.py:102: in __init__
+    self.init_app(app, **kwargs)
+.venv/lib/python3.14/site-packages/invenio_db/ext.py:106: in init_app
+    self.init_db(app, **kwargs)
+.venv/lib/python3.14/site-packages/invenio_db/ext.py:199: in init_db
+    base_entry.load()
+/opt/hostedtoolcache/Python/3.14.10/x64/lib/python3.14/importlib/metadata/__init__.py:179: in load
+    module = import_module(match.group('module'))
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+/opt/hostedtoolcache/Python/3.14.10/x64/lib/python3.14/importlib/__init__.py:88: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.venv/lib/python3.14/site-packages/invenio_accounts/__init__.py:52: in &lt;module&gt;
+    from .ext import InvenioAccounts, InvenioAccountsREST, InvenioAccountsUI
+.venv/lib/python3.14/site-packages/invenio_accounts/ext.py:24: in &lt;module&gt;
+    from invenio_accounts.forms import (
+.venv/lib/python3.14/site-packages/invenio_accounts/forms.py:16: in &lt;module&gt;
+    from .captcha import AltchaField, has_legacy_recaptcha_config, is_altcha_enabled
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+    # SPDX-FileCopyrightText: 2026 CERN.
+    # SPDX-License-Identifier: MIT
+    
+    """ALTCHA proof-of-work captcha support.
+    
+    ALTCHA (https://altcha.org) is a privacy-friendly, self-hosted captcha: the
+    browser solves a small proof-of-work challenge issued and signed by this
+    server, and the server verifies the solution on submission. No third-party
+    service is contacted.
+    """
+    
+    import hashlib
+    import hmac
+    import warnings
+    from datetime import datetime, timezone
+    
+&gt;   from altcha import Payload, create_challenge, verify_solution
+E   ModuleNotFoundError: No module named 'altcha'
+
+.venv/lib/python3.14/site-packages/invenio_accounts/captcha.py:17: ModuleNotFoundError</error></testcase><testcase classname="tests.test_verbs" name="test_listsets" time="0.012"><error message="failed on setup with &quot;ModuleNotFoundError: No module named 'altcha'&quot;">request = &lt;SubRequest '_monkeypatch_response_class' for &lt;Function test_listsets&gt;&gt;
+monkeypatch = &lt;_pytest.monkeypatch.MonkeyPatch object at 0x7db633967f50&gt;
+
+    @pytest.fixture(autouse=True)
+    def _monkeypatch_response_class(request, monkeypatch):
+        """Set custom response class before test suite and restore the original
+        after. Custom response has `json` property to easily test JSON responses::
+    
+            @app.route('/ping')
+            def ping():
+                return jsonify(ping='pong')
+    
+            def test_json(client):
+                res = client.get(url_for('ping'))
+                assert res.json == {'ping': 'pong'}
+    
+        """
+    
+        if "app" not in request.fixturenames:
+            return
+    
+&gt;       app = getfixturevalue(request, "app")
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.venv/lib/python3.14/site-packages/pytest_flask/plugin.py:75: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+.venv/lib/python3.14/site-packages/pytest_flask/pytest_compat.py:3: in getfixturevalue
+    return request.getfixturevalue(value)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+tests/conftest.py:60: in app
+    InvenioDB(app)
+.venv/lib/python3.14/site-packages/invenio_db/ext.py:102: in __init__
+    self.init_app(app, **kwargs)
+.venv/lib/python3.14/site-packages/invenio_db/ext.py:106: in init_app
+    self.init_db(app, **kwargs)
+.venv/lib/python3.14/site-packages/invenio_db/ext.py:199: in init_db
+    base_entry.load()
+/opt/hostedtoolcache/Python/3.14.10/x64/lib/python3.14/importlib/metadata/__init__.py:179: in load
+    module = import_module(match.group('module'))
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+/opt/hostedtoolcache/Python/3.14.10/x64/lib/python3.14/importlib/__init__.py:88: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.venv/lib/python3.14/site-packages/invenio_accounts/__init__.py:52: in &lt;module&gt;
+    from .ext import InvenioAccounts, InvenioAccountsREST, InvenioAccountsUI
+.venv/lib/python3.14/site-packages/invenio_accounts/ext.py:24: in &lt;module&gt;
+    from invenio_accounts.forms import (
+.venv/lib/python3.14/site-packages/invenio_accounts/forms.py:16: in &lt;module&gt;
+    from .captcha import AltchaField, has_legacy_recaptcha_config, is_altcha_enabled
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+    # SPDX-FileCopyrightText: 2026 CERN.
+    # SPDX-License-Identifier: MIT
+    
+    """ALTCHA proof-of-work captcha support.
+    
+    ALTCHA (https://altcha.org) is a privacy-friendly, self-hosted captcha: the
+    browser solves a small proof-of-work challenge issued and signed by this
+    server, and the server verifies the solution on submission. No third-party
+    service is contacted.
+    """
+    
+    import hashlib
+    import hmac
+    import warnings
+    from datetime import datetime, timezone
+    
+&gt;   from altcha import Payload, create_challenge, verify_solution
+E   ModuleNotFoundError: No module named 'altcha'
+
+.venv/lib/python3.14/site-packages/invenio_accounts/captcha.py:17: ModuleNotFoundError</error></testcase><testcase classname="tests.test_verbs" name="test_listsets_invalid_name" time="0.012"><error message="failed on setup with &quot;ModuleNotFoundError: No module named 'altcha'&quot;">request = &lt;SubRequest '_monkeypatch_response_class' for &lt;Function test_listsets_invalid_name&gt;&gt;
+monkeypatch = &lt;_pytest.monkeypatch.MonkeyPatch object at 0x7db6339aaac0&gt;
+
+    @pytest.fixture(autouse=True)
+    def _monkeypatch_response_class(request, monkeypatch):
+        """Set custom response class before test suite and restore the original
+        after. Custom response has `json` property to easily test JSON responses::
+    
+            @app.route('/ping')
+            def ping():
+                return jsonify(ping='pong')
+    
+            def test_json(client):
+                res = client.get(url_for('ping'))
+                assert res.json == {'ping': 'pong'}
+    
+        """
+    
+        if "app" not in request.fixturenames:
+            return
+    
+&gt;       app = getfixturevalue(request, "app")
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.venv/lib/python3.14/site-packages/pytest_flask/plugin.py:75: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+.venv/lib/python3.14/site-packages/pytest_flask/pytest_compat.py:3: in getfixturevalue
+    return request.getfixturevalue(value)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+tests/conftest.py:60: in app
+    InvenioDB(app)
+.venv/lib/python3.14/site-packages/invenio_db/ext.py:102: in __init__
+    self.init_app(app, **kwargs)
+.venv/lib/python3.14/site-packages/invenio_db/ext.py:106: in init_app
+    self.init_db(app, **kwargs)
+.venv/lib/python3.14/site-packages/invenio_db/ext.py:199: in init_db
+    base_entry.load()
+/opt/hostedtoolcache/Python/3.14.10/x64/lib/python3.14/importlib/metadata/__init__.py:179: in load
+    module = import_module(match.group('module'))
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+/opt/hostedtoolcache/Python/3.14.10/x64/lib/python3.14/importlib/__init__.py:88: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.venv/lib/python3.14/site-packages/invenio_accounts/__init__.py:52: in &lt;module&gt;
+    from .ext import InvenioAccounts, InvenioAccountsREST, InvenioAccountsUI
+.venv/lib/python3.14/site-packages/invenio_accounts/ext.py:24: in &lt;module&gt;
+    from invenio_accounts.forms import (
+.venv/lib/python3.14/site-packages/invenio_accounts/forms.py:16: in &lt;module&gt;
+    from .captcha import AltchaField, has_legacy_recaptcha_config, is_altcha_enabled
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+    # SPDX-FileCopyrightText: 2026 CERN.
+    # SPDX-License-Identifier: MIT
+    
+    """ALTCHA proof-of-work captcha support.
+    
+    ALTCHA (https://altcha.org) is a privacy-friendly, self-hosted captcha: the
+    browser solves a small proof-of-work challenge issued and signed by this
+    server, and the server verifies the solution on submission. No third-party
+    service is contacted.
+    """
+    
+    import hashlib
+    import hmac
+    import warnings
+    from datetime import datetime, timezone
+    
+&gt;   from altcha import Payload, create_challenge, verify_solution
+E   ModuleNotFoundError: No module named 'altcha'
+
+.venv/lib/python3.14/site-packages/invenio_accounts/captcha.py:17: ModuleNotFoundError</error></testcase><testcase classname="tests.test_verbs" name="test_fail_missing_metadataPrefix" time="0.012"><error message="failed on setup with &quot;ModuleNotFoundError: No module named 'altcha'&quot;">request = &lt;SubRequest '_monkeypatch_response_class' for &lt;Function test_fail_missing_metadataPrefix&gt;&gt;
+monkeypatch = &lt;_pytest.monkeypatch.MonkeyPatch object at 0x7db633967620&gt;
+
+    @pytest.fixture(autouse=True)
+    def _monkeypatch_response_class(request, monkeypatch):
+        """Set custom response class before test suite and restore the original
+        after. Custom response has `json` property to easily test JSON responses::
+    
+            @app.route('/ping')
+            def ping():
+                return jsonify(ping='pong')
+    
+            def test_json(client):
+                res = client.get(url_for('ping'))
+                assert res.json == {'ping': 'pong'}
+    
+        """
+    
+        if "app" not in request.fixturenames:
+            return
+    
+&gt;       app = getfixturevalue(request, "app")
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.venv/lib/python3.14/site-packages/pytest_flask/plugin.py:75: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+.venv/lib/python3.14/site-packages/pytest_flask/pytest_compat.py:3: in getfixturevalue
+    return request.getfixturevalue(value)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+tests/conftest.py:60: in app
+    InvenioDB(app)
+.venv/lib/python3.14/site-packages/invenio_db/ext.py:102: in __init__
+    self.init_app(app, **kwargs)
+.venv/lib/python3.14/site-packages/invenio_db/ext.py:106: in init_app
+    self.init_db(app, **kwargs)
+.venv/lib/python3.14/site-packages/invenio_db/ext.py:199: in init_db
+    base_entry.load()
+/opt/hostedtoolcache/Python/3.14.10/x64/lib/python3.14/importlib/metadata/__init__.py:179: in load
+    module = import_module(match.group('module'))
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+/opt/hostedtoolcache/Python/3.14.10/x64/lib/python3.14/importlib/__init__.py:88: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.venv/lib/python3.14/site-packages/invenio_accounts/__init__.py:52: in &lt;module&gt;
+    from .ext import InvenioAccounts, InvenioAccountsREST, InvenioAccountsUI
+.venv/lib/python3.14/site-packages/invenio_accounts/ext.py:24: in &lt;module&gt;
+    from invenio_accounts.forms import (
+.venv/lib/python3.14/site-packages/invenio_accounts/forms.py:16: in &lt;module&gt;
+    from .captcha import AltchaField, has_legacy_recaptcha_config, is_altcha_enabled
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+    # SPDX-FileCopyrightText: 2026 CERN.
+    # SPDX-License-Identifier: MIT
+    
+    """ALTCHA proof-of-work captcha support.
+    
+    ALTCHA (https://altcha.org) is a privacy-friendly, self-hosted captcha: the
+    browser solves a small proof-of-work challenge issued and signed by this
+    server, and the server verifies the solution on submission. No third-party
+    service is contacted.
+    """
+    
+    import hashlib
+    import hmac
+    import warnings
+    from datetime import datetime, timezone
+    
+&gt;   from altcha import Payload, create_challenge, verify_solution
+E   ModuleNotFoundError: No module named 'altcha'
+
+.venv/lib/python3.14/site-packages/invenio_accounts/captcha.py:17: ModuleNotFoundError</error></testcase><testcase classname="tests.test_verbs" name="test_fail_not_exist_metadataPrefix" time="0.012"><error message="failed on setup with &quot;ModuleNotFoundError: No module named 'altcha'&quot;">request = &lt;SubRequest '_monkeypatch_response_class' for &lt;Function test_fail_not_exist_metadataPrefix&gt;&gt;
+monkeypatch = &lt;_pytest.monkeypatch.MonkeyPatch object at 0x7db633921fd0&gt;
+
+    @pytest.fixture(autouse=True)
+    def _monkeypatch_response_class(request, monkeypatch):
+        """Set custom response class before test suite and restore the original
+        after. Custom response has `json` property to easily test JSON responses::
+    
+            @app.route('/ping')
+            def ping():
+                return jsonify(ping='pong')
+    
+            def test_json(client):
+                res = client.get(url_for('ping'))
+                assert res.json == {'ping': 'pong'}
+    
+        """
+    
+        if "app" not in request.fixturenames:
+            return
+    
+&gt;       app = getfixturevalue(request, "app")
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.venv/lib/python3.14/site-packages/pytest_flask/plugin.py:75: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+.venv/lib/python3.14/site-packages/pytest_flask/pytest_compat.py:3: in getfixturevalue
+    return request.getfixturevalue(value)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+tests/conftest.py:60: in app
+    InvenioDB(app)
+.venv/lib/python3.14/site-packages/invenio_db/ext.py:102: in __init__
+    self.init_app(app, **kwargs)
+.venv/lib/python3.14/site-packages/invenio_db/ext.py:106: in init_app
+    self.init_db(app, **kwargs)
+.venv/lib/python3.14/site-packages/invenio_db/ext.py:199: in init_db
+    base_entry.load()
+/opt/hostedtoolcache/Python/3.14.10/x64/lib/python3.14/importlib/metadata/__init__.py:179: in load
+    module = import_module(match.group('module'))
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+/opt/hostedtoolcache/Python/3.14.10/x64/lib/python3.14/importlib/__init__.py:88: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.venv/lib/python3.14/site-packages/invenio_accounts/__init__.py:52: in &lt;module&gt;
+    from .ext import InvenioAccounts, InvenioAccountsREST, InvenioAccountsUI
+.venv/lib/python3.14/site-packages/invenio_accounts/ext.py:24: in &lt;module&gt;
+    from invenio_accounts.forms import (
+.venv/lib/python3.14/site-packages/invenio_accounts/forms.py:16: in &lt;module&gt;
+    from .captcha import AltchaField, has_legacy_recaptcha_config, is_altcha_enabled
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+    # SPDX-FileCopyrightText: 2026 CERN.
+    # SPDX-License-Identifier: MIT
+    
+    """ALTCHA proof-of-work captcha support.
+    
+    ALTCHA (https://altcha.org) is a privacy-friendly, self-hosted captcha: the
+    browser solves a small proof-of-work challenge issued and signed by this
+    server, and the server verifies the solution on submission. No third-party
+    service is contacted.
+    """
+    
+    import hashlib
+    import hmac
+    import warnings
+    from datetime import datetime, timezone
+    
+&gt;   from altcha import Payload, create_challenge, verify_solution
+E   ModuleNotFoundError: No module named 'altcha'
+
+.venv/lib/python3.14/site-packages/invenio_accounts/captcha.py:17: ModuleNotFoundError</error></testcase><testcase classname="tests.test_verbs" name="test_listrecords_fail_missing_metadataPrefix" time="0.013"><error message="failed on setup with &quot;ModuleNotFoundError: No module named 'altcha'&quot;">request = &lt;SubRequest '_monkeypatch_response_class' for &lt;Function test_listrecords_fail_missing_metadataPrefix&gt;&gt;
+monkeypatch = &lt;_pytest.monkeypatch.MonkeyPatch object at 0x7db633922f90&gt;
+
+    @pytest.fixture(autouse=True)
+    def _monkeypatch_response_class(request, monkeypatch):
+        """Set custom response class before test suite and restore the original
+        after. Custom response has `json` property to easily test JSON responses::
+    
+            @app.route('/ping')
+            def ping():
+                return jsonify(ping='pong')
+    
+            def test_json(client):
+                res = client.get(url_for('ping'))
+                assert res.json == {'ping': 'pong'}
+    
+        """
+    
+        if "app" not in request.fixturenames:
+            return
+    
+&gt;       app = getfixturevalue(request, "app")
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.venv/lib/python3.14/site-packages/pytest_flask/plugin.py:75: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+.venv/lib/python3.14/site-packages/pytest_flask/pytest_compat.py:3: in getfixturevalue
+    return request.getfixturevalue(value)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+tests/conftest.py:60: in app
+    InvenioDB(app)
+.venv/lib/python3.14/site-packages/invenio_db/ext.py:102: in __init__
+    self.init_app(app, **kwargs)
+.venv/lib/python3.14/site-packages/invenio_db/ext.py:106: in init_app
+    self.init_db(app, **kwargs)
+.venv/lib/python3.14/site-packages/invenio_db/ext.py:199: in init_db
+    base_entry.load()
+/opt/hostedtoolcache/Python/3.14.10/x64/lib/python3.14/importlib/metadata/__init__.py:179: in load
+    module = import_module(match.group('module'))
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+/opt/hostedtoolcache/Python/3.14.10/x64/lib/python3.14/importlib/__init__.py:88: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.venv/lib/python3.14/site-packages/invenio_accounts/__init__.py:52: in &lt;module&gt;
+    from .ext import InvenioAccounts, InvenioAccountsREST, InvenioAccountsUI
+.venv/lib/python3.14/site-packages/invenio_accounts/ext.py:24: in &lt;module&gt;
+    from invenio_accounts.forms import (
+.venv/lib/python3.14/site-packages/invenio_accounts/forms.py:16: in &lt;module&gt;
+    from .captcha import AltchaField, has_legacy_recaptcha_config, is_altcha_enabled
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+    # SPDX-FileCopyrightText: 2026 CERN.
+    # SPDX-License-Identifier: MIT
+    
+    """ALTCHA proof-of-work captcha support.
+    
+    ALTCHA (https://altcha.org) is a privacy-friendly, self-hosted captcha: the
+    browser solves a small proof-of-work challenge issued and signed by this
+    server, and the server verifies the solution on submission. No third-party
+    service is contacted.
+    """
+    
+    import hashlib
+    import hmac
+    import warnings
+    from datetime import datetime, timezone
+    
+&gt;   from altcha import Payload, create_challenge, verify_solution
+E   ModuleNotFoundError: No module named 'altcha'
+
+.venv/lib/python3.14/site-packages/invenio_accounts/captcha.py:17: ModuleNotFoundError</error></testcase><testcase classname="tests.test_verbs" name="test_listrecords" time="0.012"><error message="failed on setup with &quot;ModuleNotFoundError: No module named 'altcha'&quot;">request = &lt;SubRequest '_monkeypatch_response_class' for &lt;Function test_listrecords&gt;&gt;
+monkeypatch = &lt;_pytest.monkeypatch.MonkeyPatch object at 0x7db6339679a0&gt;
+
+    @pytest.fixture(autouse=True)
+    def _monkeypatch_response_class(request, monkeypatch):
+        """Set custom response class before test suite and restore the original
+        after. Custom response has `json` property to easily test JSON responses::
+    
+            @app.route('/ping')
+            def ping():
+                return jsonify(ping='pong')
+    
+            def test_json(client):
+                res = client.get(url_for('ping'))
+                assert res.json == {'ping': 'pong'}
+    
+        """
+    
+        if "app" not in request.fixturenames:
+            return
+    
+&gt;       app = getfixturevalue(request, "app")
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.venv/lib/python3.14/site-packages/pytest_flask/plugin.py:75: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+.venv/lib/python3.14/site-packages/pytest_flask/pytest_compat.py:3: in getfixturevalue
+    return request.getfixturevalue(value)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+tests/conftest.py:60: in app
+    InvenioDB(app)
+.venv/lib/python3.14/site-packages/invenio_db/ext.py:102: in __init__
+    self.init_app(app, **kwargs)
+.venv/lib/python3.14/site-packages/invenio_db/ext.py:106: in init_app
+    self.init_db(app, **kwargs)
+.venv/lib/python3.14/site-packages/invenio_db/ext.py:199: in init_db
+    base_entry.load()
+/opt/hostedtoolcache/Python/3.14.10/x64/lib/python3.14/importlib/metadata/__init__.py:179: in load
+    module = import_module(match.group('module'))
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+/opt/hostedtoolcache/Python/3.14.10/x64/lib/python3.14/importlib/__init__.py:88: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.venv/lib/python3.14/site-packages/invenio_accounts/__init__.py:52: in &lt;module&gt;
+    from .ext import InvenioAccounts, InvenioAccountsREST, InvenioAccountsUI
+.venv/lib/python3.14/site-packages/invenio_accounts/ext.py:24: in &lt;module&gt;
+    from invenio_accounts.forms import (
+.venv/lib/python3.14/site-packages/invenio_accounts/forms.py:16: in &lt;module&gt;
+    from .captcha import AltchaField, has_legacy_recaptcha_config, is_altcha_enabled
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+    # SPDX-FileCopyrightText: 2026 CERN.
+    # SPDX-License-Identifier: MIT
+    
+    """ALTCHA proof-of-work captcha support.
+    
+    ALTCHA (https://altcha.org) is a privacy-friendly, self-hosted captcha: the
+    browser solves a small proof-of-work challenge issued and signed by this
+    server, and the server verifies the solution on submission. No third-party
+    service is contacted.
+    """
+    
+    import hashlib
+    import hmac
+    import warnings
+    from datetime import datetime, timezone
+    
+&gt;   from altcha import Payload, create_challenge, verify_solution
+E   ModuleNotFoundError: No module named 'altcha'
+
+.venv/lib/python3.14/site-packages/invenio_accounts/captcha.py:17: ModuleNotFoundError</error></testcase><testcase classname="tests.test_verbs" name="test_listidentifiers" time="0.012"><error message="failed on setup with &quot;ModuleNotFoundError: No module named 'altcha'&quot;">request = &lt;SubRequest '_monkeypatch_response_class' for &lt;Function test_listidentifiers&gt;&gt;
+monkeypatch = &lt;_pytest.monkeypatch.MonkeyPatch object at 0x7db633847380&gt;
+
+    @pytest.fixture(autouse=True)
+    def _monkeypatch_response_class(request, monkeypatch):
+        """Set custom response class before test suite and restore the original
+        after. Custom response has `json` property to easily test JSON responses::
+    
+            @app.route('/ping')
+            def ping():
+                return jsonify(ping='pong')
+    
+            def test_json(client):
+                res = client.get(url_for('ping'))
+                assert res.json == {'ping': 'pong'}
+    
+        """
+    
+        if "app" not in request.fixturenames:
+            return
+    
+&gt;       app = getfixturevalue(request, "app")
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.venv/lib/python3.14/site-packages/pytest_flask/plugin.py:75: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+.venv/lib/python3.14/site-packages/pytest_flask/pytest_compat.py:3: in getfixturevalue
+    return request.getfixturevalue(value)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+tests/conftest.py:60: in app
+    InvenioDB(app)
+.venv/lib/python3.14/site-packages/invenio_db/ext.py:102: in __init__
+    self.init_app(app, **kwargs)
+.venv/lib/python3.14/site-packages/invenio_db/ext.py:106: in init_app
+    self.init_db(app, **kwargs)
+.venv/lib/python3.14/site-packages/invenio_db/ext.py:199: in init_db
+    base_entry.load()
+/opt/hostedtoolcache/Python/3.14.10/x64/lib/python3.14/importlib/metadata/__init__.py:179: in load
+    module = import_module(match.group('module'))
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+/opt/hostedtoolcache/Python/3.14.10/x64/lib/python3.14/importlib/__init__.py:88: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.venv/lib/python3.14/site-packages/invenio_accounts/__init__.py:52: in &lt;module&gt;
+    from .ext import InvenioAccounts, InvenioAccountsREST, InvenioAccountsUI
+.venv/lib/python3.14/site-packages/invenio_accounts/ext.py:24: in &lt;module&gt;
+    from invenio_accounts.forms import (
+.venv/lib/python3.14/site-packages/invenio_accounts/forms.py:16: in &lt;module&gt;
+    from .captcha import AltchaField, has_legacy_recaptcha_config, is_altcha_enabled
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+    # SPDX-FileCopyrightText: 2026 CERN.
+    # SPDX-License-Identifier: MIT
+    
+    """ALTCHA proof-of-work captcha support.
+    
+    ALTCHA (https://altcha.org) is a privacy-friendly, self-hosted captcha: the
+    browser solves a small proof-of-work challenge issued and signed by this
+    server, and the server verifies the solution on submission. No third-party
+    service is contacted.
+    """
+    
+    import hashlib
+    import hmac
+    import warnings
+    from datetime import datetime, timezone
+    
+&gt;   from altcha import Payload, create_challenge, verify_solution
+E   ModuleNotFoundError: No module named 'altcha'
+
+.venv/lib/python3.14/site-packages/invenio_accounts/captcha.py:17: ModuleNotFoundError</error></testcase><testcase classname="tests.test_verbs" name="test_timestamp_filtering[ListRecords]" time="0.012"><error message="failed on setup with &quot;ModuleNotFoundError: No module named 'altcha'&quot;">request = &lt;SubRequest '_monkeypatch_response_class' for &lt;Function test_timestamp_filtering[ListRecords]&gt;&gt;
+monkeypatch = &lt;_pytest.monkeypatch.MonkeyPatch object at 0x7db6338a8830&gt;
+
+    @pytest.fixture(autouse=True)
+    def _monkeypatch_response_class(request, monkeypatch):
+        """Set custom response class before test suite and restore the original
+        after. Custom response has `json` property to easily test JSON responses::
+    
+            @app.route('/ping')
+            def ping():
+                return jsonify(ping='pong')
+    
+            def test_json(client):
+                res = client.get(url_for('ping'))
+                assert res.json == {'ping': 'pong'}
+    
+        """
+    
+        if "app" not in request.fixturenames:
+            return
+    
+&gt;       app = getfixturevalue(request, "app")
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.venv/lib/python3.14/site-packages/pytest_flask/plugin.py:75: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+.venv/lib/python3.14/site-packages/pytest_flask/pytest_compat.py:3: in getfixturevalue
+    return request.getfixturevalue(value)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+tests/conftest.py:60: in app
+    InvenioDB(app)
+.venv/lib/python3.14/site-packages/invenio_db/ext.py:102: in __init__
+    self.init_app(app, **kwargs)
+.venv/lib/python3.14/site-packages/invenio_db/ext.py:106: in init_app
+    self.init_db(app, **kwargs)
+.venv/lib/python3.14/site-packages/invenio_db/ext.py:199: in init_db
+    base_entry.load()
+/opt/hostedtoolcache/Python/3.14.10/x64/lib/python3.14/importlib/metadata/__init__.py:179: in load
+    module = import_module(match.group('module'))
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+/opt/hostedtoolcache/Python/3.14.10/x64/lib/python3.14/importlib/__init__.py:88: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.venv/lib/python3.14/site-packages/invenio_accounts/__init__.py:52: in &lt;module&gt;
+    from .ext import InvenioAccounts, InvenioAccountsREST, InvenioAccountsUI
+.venv/lib/python3.14/site-packages/invenio_accounts/ext.py:24: in &lt;module&gt;
+    from invenio_accounts.forms import (
+.venv/lib/python3.14/site-packages/invenio_accounts/forms.py:16: in &lt;module&gt;
+    from .captcha import AltchaField, has_legacy_recaptcha_config, is_altcha_enabled
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+    # SPDX-FileCopyrightText: 2026 CERN.
+    # SPDX-License-Identifier: MIT
+    
+    """ALTCHA proof-of-work captcha support.
+    
+    ALTCHA (https://altcha.org) is a privacy-friendly, self-hosted captcha: the
+    browser solves a small proof-of-work challenge issued and signed by this
+    server, and the server verifies the solution on submission. No third-party
+    service is contacted.
+    """
+    
+    import hashlib
+    import hmac
+    import warnings
+    from datetime import datetime, timezone
+    
+&gt;   from altcha import Payload, create_challenge, verify_solution
+E   ModuleNotFoundError: No module named 'altcha'
+
+.venv/lib/python3.14/site-packages/invenio_accounts/captcha.py:17: ModuleNotFoundError</error></testcase><testcase classname="tests.test_verbs" name="test_timestamp_filtering[ListIdentifiers]" time="0.012"><error message="failed on setup with &quot;ModuleNotFoundError: No module named 'altcha'&quot;">request = &lt;SubRequest '_monkeypatch_response_class' for &lt;Function test_timestamp_filtering[ListIdentifiers]&gt;&gt;
+monkeypatch = &lt;_pytest.monkeypatch.MonkeyPatch object at 0x7db633847150&gt;
+
+    @pytest.fixture(autouse=True)
+    def _monkeypatch_response_class(request, monkeypatch):
+        """Set custom response class before test suite and restore the original
+        after. Custom response has `json` property to easily test JSON responses::
+    
+            @app.route('/ping')
+            def ping():
+                return jsonify(ping='pong')
+    
+            def test_json(client):
+                res = client.get(url_for('ping'))
+                assert res.json == {'ping': 'pong'}
+    
+        """
+    
+        if "app" not in request.fixturenames:
+            return
+    
+&gt;       app = getfixturevalue(request, "app")
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.venv/lib/python3.14/site-packages/pytest_flask/plugin.py:75: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+.venv/lib/python3.14/site-packages/pytest_flask/pytest_compat.py:3: in getfixturevalue
+    return request.getfixturevalue(value)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+tests/conftest.py:60: in app
+    InvenioDB(app)
+.venv/lib/python3.14/site-packages/invenio_db/ext.py:102: in __init__
+    self.init_app(app, **kwargs)
+.venv/lib/python3.14/site-packages/invenio_db/ext.py:106: in init_app
+    self.init_db(app, **kwargs)
+.venv/lib/python3.14/site-packages/invenio_db/ext.py:199: in init_db
+    base_entry.load()
+/opt/hostedtoolcache/Python/3.14.10/x64/lib/python3.14/importlib/metadata/__init__.py:179: in load
+    module = import_module(match.group('module'))
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+/opt/hostedtoolcache/Python/3.14.10/x64/lib/python3.14/importlib/__init__.py:88: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.venv/lib/python3.14/site-packages/invenio_accounts/__init__.py:52: in &lt;module&gt;
+    from .ext import InvenioAccounts, InvenioAccountsREST, InvenioAccountsUI
+.venv/lib/python3.14/site-packages/invenio_accounts/ext.py:24: in &lt;module&gt;
+    from invenio_accounts.forms import (
+.venv/lib/python3.14/site-packages/invenio_accounts/forms.py:16: in &lt;module&gt;
+    from .captcha import AltchaField, has_legacy_recaptcha_config, is_altcha_enabled
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+    # SPDX-FileCopyrightText: 2026 CERN.
+    # SPDX-License-Identifier: MIT
+    
+    """ALTCHA proof-of-work captcha support.
+    
+    ALTCHA (https://altcha.org) is a privacy-friendly, self-hosted captcha: the
+    browser solves a small proof-of-work challenge issued and signed by this
+    server, and the server verifies the solution on submission. No third-party
+    service is contacted.
+    """
+    
+    import hashlib
+    import hmac
+    import warnings
+    from datetime import datetime, timezone
+    
+&gt;   from altcha import Payload, create_challenge, verify_solution
+E   ModuleNotFoundError: No module named 'altcha'
+
+.venv/lib/python3.14/site-packages/invenio_accounts/captcha.py:17: ModuleNotFoundError</error></testcase><testcase classname="tests.test_verbs" name="test_list_sets_long" time="0.012"><error message="failed on setup with &quot;ModuleNotFoundError: No module named 'altcha'&quot;">request = &lt;SubRequest '_monkeypatch_response_class' for &lt;Function test_list_sets_long&gt;&gt;
+monkeypatch = &lt;_pytest.monkeypatch.MonkeyPatch object at 0x7db6338ab700&gt;
+
+    @pytest.fixture(autouse=True)
+    def _monkeypatch_response_class(request, monkeypatch):
+        """Set custom response class before test suite and restore the original
+        after. Custom response has `json` property to easily test JSON responses::
+    
+            @app.route('/ping')
+            def ping():
+                return jsonify(ping='pong')
+    
+            def test_json(client):
+                res = client.get(url_for('ping'))
+                assert res.json == {'ping': 'pong'}
+    
+        """
+    
+        if "app" not in request.fixturenames:
+            return
+    
+&gt;       app = getfixturevalue(request, "app")
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.venv/lib/python3.14/site-packages/pytest_flask/plugin.py:75: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+.venv/lib/python3.14/site-packages/pytest_flask/pytest_compat.py:3: in getfixturevalue
+    return request.getfixturevalue(value)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+tests/conftest.py:60: in app
+    InvenioDB(app)
+.venv/lib/python3.14/site-packages/invenio_db/ext.py:102: in __init__
+    self.init_app(app, **kwargs)
+.venv/lib/python3.14/site-packages/invenio_db/ext.py:106: in init_app
+    self.init_db(app, **kwargs)
+.venv/lib/python3.14/site-packages/invenio_db/ext.py:199: in init_db
+    base_entry.load()
+/opt/hostedtoolcache/Python/3.14.10/x64/lib/python3.14/importlib/metadata/__init__.py:179: in load
+    module = import_module(match.group('module'))
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+/opt/hostedtoolcache/Python/3.14.10/x64/lib/python3.14/importlib/__init__.py:88: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.venv/lib/python3.14/site-packages/invenio_accounts/__init__.py:52: in &lt;module&gt;
+    from .ext import InvenioAccounts, InvenioAccountsREST, InvenioAccountsUI
+.venv/lib/python3.14/site-packages/invenio_accounts/ext.py:24: in &lt;module&gt;
+    from invenio_accounts.forms import (
+.venv/lib/python3.14/site-packages/invenio_accounts/forms.py:16: in &lt;module&gt;
+    from .captcha import AltchaField, has_legacy_recaptcha_config, is_altcha_enabled
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+    # SPDX-FileCopyrightText: 2026 CERN.
+    # SPDX-License-Identifier: MIT
+    
+    """ALTCHA proof-of-work captcha support.
+    
+    ALTCHA (https://altcha.org) is a privacy-friendly, self-hosted captcha: the
+    browser solves a small proof-of-work challenge issued and signed by this
+    server, and the server verifies the solution on submission. No third-party
+    service is contacted.
+    """
+    
+    import hashlib
+    import hmac
+    import warnings
+    from datetime import datetime, timezone
+    
+&gt;   from altcha import Payload, create_challenge, verify_solution
+E   ModuleNotFoundError: No module named 'altcha'
+
+.venv/lib/python3.14/site-packages/invenio_accounts/captcha.py:17: ModuleNotFoundError</error></testcase><testcase classname="tests.test_verbs" name="test_list_sets_with_resumption_token_and_other_args" time="0.012"><error message="failed on setup with &quot;ModuleNotFoundError: No module named 'altcha'&quot;">request = &lt;SubRequest '_monkeypatch_response_class' for &lt;Function test_list_sets_with_resumption_token_and_other_args&gt;&gt;
+monkeypatch = &lt;_pytest.monkeypatch.MonkeyPatch object at 0x7db63387b3f0&gt;
+
+    @pytest.fixture(autouse=True)
+    def _monkeypatch_response_class(request, monkeypatch):
+        """Set custom response class before test suite and restore the original
+        after. Custom response has `json` property to easily test JSON responses::
+    
+            @app.route('/ping')
+            def ping():
+                return jsonify(ping='pong')
+    
+            def test_json(client):
+                res = client.get(url_for('ping'))
+                assert res.json == {'ping': 'pong'}
+    
+        """
+    
+        if "app" not in request.fixturenames:
+            return
+    
+&gt;       app = getfixturevalue(request, "app")
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.venv/lib/python3.14/site-packages/pytest_flask/plugin.py:75: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+.venv/lib/python3.14/site-packages/pytest_flask/pytest_compat.py:3: in getfixturevalue
+    return request.getfixturevalue(value)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+tests/conftest.py:60: in app
+    InvenioDB(app)
+.venv/lib/python3.14/site-packages/invenio_db/ext.py:102: in __init__
+    self.init_app(app, **kwargs)
+.venv/lib/python3.14/site-packages/invenio_db/ext.py:106: in init_app
+    self.init_db(app, **kwargs)
+.venv/lib/python3.14/site-packages/invenio_db/ext.py:199: in init_db
+    base_entry.load()
+/opt/hostedtoolcache/Python/3.14.10/x64/lib/python3.14/importlib/metadata/__init__.py:179: in load
+    module = import_module(match.group('module'))
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+/opt/hostedtoolcache/Python/3.14.10/x64/lib/python3.14/importlib/__init__.py:88: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.venv/lib/python3.14/site-packages/invenio_accounts/__init__.py:52: in &lt;module&gt;
+    from .ext import InvenioAccounts, InvenioAccountsREST, InvenioAccountsUI
+.venv/lib/python3.14/site-packages/invenio_accounts/ext.py:24: in &lt;module&gt;
+    from invenio_accounts.forms import (
+.venv/lib/python3.14/site-packages/invenio_accounts/forms.py:16: in &lt;module&gt;
+    from .captcha import AltchaField, has_legacy_recaptcha_config, is_altcha_enabled
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+    # SPDX-FileCopyrightText: 2026 CERN.
+    # SPDX-License-Identifier: MIT
+    
+    """ALTCHA proof-of-work captcha support.
+    
+    ALTCHA (https://altcha.org) is a privacy-friendly, self-hosted captcha: the
+    browser solves a small proof-of-work challenge issued and signed by this
+    server, and the server verifies the solution on submission. No third-party
+    service is contacted.
+    """
+    
+    import hashlib
+    import hmac
+    import warnings
+    from datetime import datetime, timezone
+    
+&gt;   from altcha import Payload, create_challenge, verify_solution
+E   ModuleNotFoundError: No module named 'altcha'
+
+.venv/lib/python3.14/site-packages/invenio_accounts/captcha.py:17: ModuleNotFoundError</error></testcase><testcase classname="invenio_oaiserver.__init__" name="PYDOCSTYLE" time="0.003" /><testcase classname="invenio_oaiserver.__init__" name="ISORT" time="0.002" /><testcase classname="invenio_oaiserver.__init__" name="black" time="0.142" /><testcase classname="invenio_oaiserver.admin" name="PYDOCSTYLE" time="0.003" /><testcase classname="invenio_oaiserver.admin" name="ISORT" time="0.003" /><testcase classname="invenio_oaiserver.admin" name="black" time="0.147" /><testcase classname="invenio_oaiserver.alembic.5d25c1981985_add_system_created_field" name="PYDOCSTYLE" time="0.002" /><testcase classname="invenio_oaiserver.alembic.5d25c1981985_add_system_created_field" name="ISORT" time="0.003" /><testcase classname="invenio_oaiserver.alembic.5d25c1981985_add_system_created_field" name="black" time="0.145" /><testcase classname="invenio_oaiserver.alembic.759d47cbdba7_create_oaiserver_branch" name="PYDOCSTYLE" time="0.002" /><testcase classname="invenio_oaiserver.alembic.759d47cbdba7_create_oaiserver_branch" name="ISORT" time="0.003" /><testcase classname="invenio_oaiserver.alembic.759d47cbdba7_create_oaiserver_branch" name="black" time="0.142" /><testcase classname="invenio_oaiserver.alembic.e655021de0de_create_oiaserver_tables" name="PYDOCSTYLE" time="0.003" /><testcase classname="invenio_oaiserver.alembic.e655021de0de_create_oiaserver_tables" name="ISORT" time="0.003" /><testcase classname="invenio_oaiserver.alembic.e655021de0de_create_oiaserver_tables" name="black" time="0.150" /><testcase classname="invenio_oaiserver.alembic.f9b1e3f7d3b1_change_datetime_types" name="PYDOCSTYLE" time="0.003" /><testcase classname="invenio_oaiserver.alembic.f9b1e3f7d3b1_change_datetime_types" name="ISORT" time="0.003" /><testcase classname="invenio_oaiserver.alembic.f9b1e3f7d3b1_change_datetime_types" name="black" time="0.148" /><testcase classname="invenio_oaiserver.config" name="PYDOCSTYLE" time="0.003" /><testcase classname="invenio_oaiserver.config" name="ISORT" time="0.003" /><testcase classname="invenio_oaiserver.config" name="black" time="0.151" /><testcase classname="invenio_oaiserver.errors" name="PYDOCSTYLE" time="0.002" /><testcase classname="invenio_oaiserver.errors" name="ISORT" time="0.002" /><testcase classname="invenio_oaiserver.errors" name="black" time="0.141" /><testcase classname="invenio_oaiserver.ext" name="PYDOCSTYLE" time="0.009" /><testcase classname="invenio_oaiserver.ext" name="ISORT" time="0.005" /><testcase classname="invenio_oaiserver.ext" name="black" time="0.156" /><testcase classname="invenio_oaiserver.fetchers" name="PYDOCSTYLE" time="0.003" /><testcase classname="invenio_oaiserver.fetchers" name="ISORT" time="0.003" /><testcase classname="invenio_oaiserver.fetchers" name="black" time="0.141" /><testcase classname="invenio_oaiserver.minters" name="PYDOCSTYLE" time="0.003" /><testcase classname="invenio_oaiserver.minters" name="ISORT" time="0.003" /><testcase classname="invenio_oaiserver.minters" name="black" time="0.145" /><testcase classname="invenio_oaiserver.models" name="PYDOCSTYLE" time="0.003" /><testcase classname="invenio_oaiserver.models" name="ISORT" time="0.003" /><testcase classname="invenio_oaiserver.models" name="black" time="0.145" /><testcase classname="invenio_oaiserver.percolator" name="PYDOCSTYLE" time="0.007" /><testcase classname="invenio_oaiserver.percolator" name="ISORT" time="0.004" /><testcase classname="invenio_oaiserver.percolator" name="black" time="0.166" /><testcase classname="invenio_oaiserver.provider" name="PYDOCSTYLE" time="0.003" /><testcase classname="invenio_oaiserver.provider" name="ISORT" time="0.003" /><testcase classname="invenio_oaiserver.provider" name="black" time="0.137" /><testcase classname="invenio_oaiserver.proxies" name="PYDOCSTYLE" time="0.001" /><testcase classname="invenio_oaiserver.proxies" name="ISORT" time="0.003" /><testcase classname="invenio_oaiserver.proxies" name="black" time="0.137" /><testcase classname="invenio_oaiserver.query" name="PYDOCSTYLE" time="0.006" /><testcase classname="invenio_oaiserver.query" name="ISORT" time="0.004" /><testcase classname="invenio_oaiserver.query" name="black" time="0.150" /><testcase classname="invenio_oaiserver.receivers" name="PYDOCSTYLE" time="0.002" /><testcase classname="invenio_oaiserver.receivers" name="ISORT" time="0.002" /><testcase classname="invenio_oaiserver.receivers" name="black" time="0.140" /><testcase classname="invenio_oaiserver.response" name="PYDOCSTYLE" time="0.013" /><testcase classname="invenio_oaiserver.response" name="ISORT" time="0.004" /><testcase classname="invenio_oaiserver.response" name="black" time="0.189" /><testcase classname="invenio_oaiserver.resumption_token" name="PYDOCSTYLE" time="0.004" /><testcase classname="invenio_oaiserver.resumption_token" name="ISORT" time="0.004" /><testcase classname="invenio_oaiserver.resumption_token" name="black" time="0.148" /><testcase classname="invenio_oaiserver.schemas.__init__" name="PYDOCSTYLE" time="0.001" /><testcase classname="invenio_oaiserver.schemas.__init__" name="ISORT" time="0.002" /><testcase classname="invenio_oaiserver.schemas.__init__" name="black" time="0.137" /><testcase classname="invenio_oaiserver.search.__init__" name="PYDOCSTYLE" time="0.001" /><testcase classname="invenio_oaiserver.search.__init__" name="ISORT" time="0.002" /><testcase classname="invenio_oaiserver.search.__init__" name="black" time="0.134" /><testcase classname="invenio_oaiserver.search.component_templates.__init__" name="PYDOCSTYLE" time="0.001" /><testcase classname="invenio_oaiserver.search.component_templates.__init__" name="ISORT" time="0.002" /><testcase classname="invenio_oaiserver.search.component_templates.__init__" name="black" time="0.136" /><testcase classname="invenio_oaiserver.search.component_templates.os-v2.__init__" name="PYDOCSTYLE" time="0.001" /><testcase classname="invenio_oaiserver.search.component_templates.os-v2.__init__" name="ISORT" time="0.002" /><testcase classname="invenio_oaiserver.search.component_templates.os-v2.__init__" name="black" time="0.136" /><testcase classname="invenio_oaiserver.search.component_templates.v7.__init__" name="PYDOCSTYLE" time="0.001" /><testcase classname="invenio_oaiserver.search.component_templates.v7.__init__" name="ISORT" time="0.002" /><testcase classname="invenio_oaiserver.search.component_templates.v7.__init__" name="black" time="0.138" /><testcase classname="invenio_oaiserver.utils" name="PYDOCSTYLE" time="0.009" /><testcase classname="invenio_oaiserver.utils" name="ISORT" time="0.006" /><testcase classname="invenio_oaiserver.utils" name="black" time="0.161" /><testcase classname="invenio_oaiserver.verbs" name="PYDOCSTYLE" time="0.103" /><testcase classname="invenio_oaiserver.verbs" name="ISORT" time="0.005" /><testcase classname="invenio_oaiserver.verbs" name="black" time="0.157" /><testcase classname="invenio_oaiserver.views.__init__" name="PYDOCSTYLE" time="0.001" /><testcase classname="invenio_oaiserver.views.__init__" name="ISORT" time="0.002" /><testcase classname="invenio_oaiserver.views.__init__" name="black" time="0.135" /><testcase classname="invenio_oaiserver.views.server" name="PYDOCSTYLE" time="0.006" /><testcase classname="invenio_oaiserver.views.server" name="ISORT" time="0.004" /><testcase classname="invenio_oaiserver.views.server" name="black" time="0.155" /></testsuite></testsuites>

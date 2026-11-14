@@ -1,0 +1,77 @@
+ Image postgres:18 Pulling 
+ Image postgres:18 Pulled 
+ Network docker_services_cli_default Creating 
+ Network docker_services_cli_default Created 
+ Container docker_services_cli-postgresql-1 Creating 
+ Container docker_services_cli-postgresql-1 Created 
+ Container docker_services_cli-postgresql-1 Starting 
+ Container docker_services_cli-postgresql-1 Started 
+============================= test session starts ==============================
+platform linux -- Python 3.14.10, pytest-8.4.2, pluggy-1.7.0
+rootdir: /home/runner/work/itd-runner/itd-runner/workdir/tests/invenio-db/original
+configfile: pyproject.toml
+testpaths: tests, invenio_db
+plugins: black-ng-0.4.1, github-actions-annotate-failures-0.4.2, isort-4.0.0, invenio-4.1.0, pydocstyle-2.4.0, cov-7.1.0, flask-1.3.0, platformdirs-4.14.8, pycodestyle-2.5.0
+collected 94 items
+tests/conftest.py ...                                                    [  3%]
+tests/demo/__init__.py ...                                               [  6%]
+tests/demo/child.py ...                                                  [  9%]
+tests/demo/parent.py ...                                                 [ 12%]
+tests/demo/versioned_a.py ...                                            [ 15%]
+tests/demo/versioned_b.py ...                                            [ 19%]
+tests/mocks.py ...                                                       [ 22%]
+tests/test_db.py 
+                                               [ 31%]
+tests/test_lock_timeout.py 
+                                        [ 38%]
+tests/test_session.py ......                                             [ 44%]
+tests/test_uow.py ....                                                   [ 48%]
+tests/test_utc.py ....                                                   [ 53%]
+tests/test_utils.py ....                                                 [ 57%]
+tests/test_versioning.py .......                                         [ 64%]
+tests/utils.py ...                                                       [ 68%]
+invenio_db/__init__.py ...                                               [ 71%]
+invenio_db/alembic/35c1075e6360_force_naming_convention.py ...           [ 74%]
+invenio_db/alembic/96e796392533_create_database_migrations.py ...        [ 77%]
+invenio_db/alembic/dbdbc1b19cf2_create_transaction_table.py ...          [ 80%]
+invenio_db/cli.py ...                                                    [ 84%]
+invenio_db/ext.py ...                                                    [ 87%]
+invenio_db/proxies.py ...                                                [ 90%]
+invenio_db/shared.py ...                                                 [ 93%]
+invenio_db/uow.py ...                                                    [ 96%]
+invenio_db/utils.py ...                                                  [100%]
+=============================== warnings summary ===============================
+tests/test_db.py::test_alembic
+tests/test_db.py::test_naming_convention
+tests/test_db.py::test_naming_convention
+tests/test_db.py::test_entry_points
+tests/test_db.py::test_db_create_alembic_upgrade
+tests/test_lock_timeout.py::test_alembic_lock_timeout
+tests/test_lock_timeout.py::test_alembic_lock_timeout_custom
+tests/test_lock_timeout.py::test_alembic_lock_timeout_prevents_long_waits
+tests/test_lock_timeout.py::test_alembic_lock_timeout_retry
+    util.warn_deprecated(
+tests/test_db.py::test_entry_points
+    with runner.isolated_filesystem():
+- generated xml file: /home/runner/work/itd-runner/itd-runner/workdir/artifacts/invenio-db/original_junit.xml -
+================================ tests coverage ================================
+_______________ coverage: platform linux, python 3.14.10-final-0 _______________
+Name                                                            Stmts   Miss  Cover   Missing
+invenio_db/__init__.py                                              4      0   100%
+invenio_db/alembic/35c1075e6360_force_naming_convention.py         57      2    96%   81, 102
+invenio_db/alembic/96e796392533_create_database_migrations.py       8      0   100%
+invenio_db/alembic/dbdbc1b19cf2_create_transaction_table.py        16      0   100%
+invenio_db/cli.py                                                  59      5    92%   19, 98-101
+invenio_db/ext.py                                                 106      7    93%   80, 109, 173-182, 207-208
+invenio_db/proxies.py                                               3      0   100%
+invenio_db/shared.py                                               60     13    78%   41, 44-46, 49-50, 53-54, 61, 64-65, 107, 119
+invenio_db/uow.py                                                  79     16    80%   139-140, 144, 184, 240-255
+invenio_db/utils.py                                                71      6    92%   100-101, 118, 139-141, 148
+TOTAL                                                             463     49    89%
+======================= 94 passed, 10 warnings in 10.36s =======================
+ Container docker_services_cli-postgresql-1 Stopping 
+ Container docker_services_cli-postgresql-1 Stopped 
+ Container docker_services_cli-postgresql-1 Removing 
+ Container docker_services_cli-postgresql-1 Removed 
+ Network docker_services_cli_default Removing 
+ Network docker_services_cli_default Removed 

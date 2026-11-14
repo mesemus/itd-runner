@@ -1,0 +1,73 @@
+{
+  "dependencies": [],
+  "package": {
+    "github_entry": {
+      "_extra": {},
+      "default_branch": null,
+      "exclude": [
+        "invenio-xrootd",
+        "invenio-swh"
+      ],
+      "extras": [
+        "tests",
+        "opensearch2",
+        "s3",
+        "devs",
+        "s3fs",
+        "oaipmh",
+        "rdf",
+        "sparql",
+        "postgresql",
+        "admin"
+      ],
+      "freeze": [
+        "setuptools<82.0.0"
+      ],
+      "include": [
+        "invenio-.*",
+        "pytest-invenio",
+        "citeproc-py-styles"
+      ],
+      "install": [],
+      "org": "inveniosoftware",
+      "package_map": {},
+      "slow_packages": {
+        "invenio-rdm-records": [
+          "tests/resources/test_iiif_image_api.py",
+          "tests/resources/test_resources_review.py",
+          "tests/services/test_rdm_service.py"
+        ]
+      },
+      "test": [
+        "./run-tests.sh"
+      ]
+    },
+    "patched_reference": null,
+    "patches": [],
+    "reference": {
+      "actual_version": "5.1.2",
+      "base": null,
+      "branch": "v5.1.2",
+      "commit": "bd54a8f5f49f6e648fec66fab8ec903a833031ac",
+      "commits_from_version": [],
+      "org": "inveniosoftware",
+      "package": "invenio-oaiserver",
+      "pr": null,
+      "pr_info": null,
+      "repo": "invenio-oaiserver"
+    },
+    "unpatched_reference": {
+      "actual_version": "6.0.3",
+      "base": null,
+      "branch": null,
+      "commit": "1cc78000898027d180ee7457d2ee6c7817b1e5ac",
+      "commits_from_version": [],
+      "org": "inveniosoftware",
+      "package": "invenio-oaiserver",
+      "pr": null,
+      "pr_info": null,
+      "repo": "invenio-oaiserver"
+    }
+  },
+  "status": "skipped"
+}
